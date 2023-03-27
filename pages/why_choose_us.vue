@@ -2,11 +2,11 @@
   <div>
     <PageHeader title="Why Choose us" />
     <BestCompany />
-    <TestimonialThree />
-    <BenefitsTwo />
+    <!-- <TestimonialThree /> -->
+    <!-- <BenefitsTwo />
     <WhyChooseOne />
     <CompanySolutions />
-    <BrandFour />
+    <BrandFour /> -->
   </div>
 </template>
 
@@ -14,24 +14,24 @@
 
   import PageHeader from "../components/PageHeader";
   import BestCompany from "../components/BestCompany";
-  import TestimonialThree from "../components/TestimonialThree";
-  import BenefitsTwo from "../components/BenefitsTwo";
-  import WhyChooseOne from "../components/WhyChooseOne";
-  import CompanySolutions from "../components/CompanySolutions";
-  import BrandFour from "../components/BrandFour";
+  // import TestimonialThree from "../components/TestimonialThree";
+  // import BenefitsTwo from "../components/BenefitsTwo";
+  // import WhyChooseOne from "../components/WhyChooseOne";
+  // import CompanySolutions from "../components/CompanySolutions";
+  // import BrandFour from "@/components/Brands/BrandFour";
   export default {
     components: {
-      BrandFour,
-      CompanySolutions,
-      WhyChooseOne,
-      BenefitsTwo,
-      TestimonialThree,
+      // BrandFour,
+      // CompanySolutions,
+      // WhyChooseOne,
+      // BenefitsTwo,
+      // TestimonialThree,
       BestCompany,
       PageHeader
     },
     head(){
       return {
-        title: "Agrikol  | Why Choose us"
+        title: "NovNat  | Why Choose us"
       }
     }
   }

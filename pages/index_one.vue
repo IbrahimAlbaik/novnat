@@ -20,9 +20,9 @@
 <script>
 import Slider from "../components/Slider";
 import Nav from "../components/Nav";
-import AboutOne from "../components/AboutOne";
+import AboutOne from "@/components/About/AboutOne";
 import ServiceOne from "../components/Services/ServiceOne";
-import BrandOne from "../components/BrandOne";
+import BrandOne from "@/components/Brands/BrandOne";
 import FeaturedOne from "../components/FeaturedOne";
 import VideoOne from "../components/VideoOne";
 import TestimonialOne from "../components/TestimonialOne";

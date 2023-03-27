@@ -3,17 +3,17 @@
     <div class="topbar-one topbar_four">
       <div class="container">
         <div class="topbar-one__left">
-          <a href="mailto:needhelp@tripo.com"
-            ><span class="icon-message"></span>needhelp@agrikol.com</a
+          <a :href="`mailto:${aboutNovNat.email}`"
+            ><span class="icon-message"></span>{{aboutNovNat.email}}</a
           >
-          <a href="tel:666-999-0000"
-            ><span class="icon-phone-call"></span>666 888 0000</a
+          <a :href="`tel:${aboutNovNat.phone}`"
+            ><span class="icon-phone-call"></span>{{aboutNovNat.phone}}</a
           >
         </div>
         <div class="topbar-one__middle">
           <a href="/" class="main-nav__logo">
             <img
-              src="/assets/images/resources/logo-2.png"
+              src="/assets/images/resources/novnat-logo.png"
               class="main-logo"
               alt="Awesome Image"
             />
@@ -66,7 +66,7 @@
               <li>
                 <nuxt-link to="/why_choose_us">Why Choose Us</nuxt-link>
               </li>
-              <li><nuxt-link to="/team">Team</nuxt-link></li>
+              <li><nuxt-link to="/teams">Team</nuxt-link></li>
               <li>
                 <nuxt-link to="/contact">Contact</nuxt-link>
               </li>
@@ -83,36 +83,14 @@
         <!-- content is loading via js -->
 
         <ul class="main-nav__navigation-box">
-          <li class="dropdown current">
+          <li><nuxt-link to="/">Home</nuxt-link>Home</li>
+          <!-- <li class="dropdown current">
             <div class="menu-holder">
               Home<button class="dropdown-btn">
                 <i class="fa fa-angle-right"></i>
               </button>
             </div>
-            <ul>
-              <li><nuxt-link to="/">Home 01</nuxt-link></li>
-              <li><nuxt-link to="/index2">Home 02</nuxt-link></li>
-              <li><nuxt-link to="/index3">Home 03</nuxt-link></li>
-              <li><nuxt-link to="/index4">Home 04</nuxt-link></li>
-              <li><nuxt-link to="/index5">Home 05</nuxt-link></li>
-              <li class="dropdown">
-                <div class="menu-holder">
-                  Header Versions<button class="dropdown-btn">
-                    <i class="fa fa-angle-right"></i>
-                  </button>
-                </div>
-                <ul>
-                  <li><nuxt-link to="/">Header 01</nuxt-link></li>
-                  <li><nuxt-link to="/index2">Header 02</nuxt-link></li>
-                  <li><nuxt-link to="/index3">Header 03</nuxt-link></li>
-                  <li><nuxt-link to="/index4">Header 04</nuxt-link></li>
-                  <li><nuxt-link to="/index5">Header 05</nuxt-link></li>
-                </ul>
-                <!-- /.sub-menu -->
-              </li>
-            </ul>
-            <!-- /.sub-menu -->
-          </li>
+          </li> -->
           <!-- <li class="dropdown">
             <div class="menu-holder">
               Services<button class="dropdown-btn">
@@ -126,7 +104,7 @@
               </li>
             </ul>
           </li> -->
-          <li><nuxt-link to="/product">Products</nuxt-link>asanmama</li>
+          <!-- <li><nuxt-link to="/product">Products</nuxt-link>asanmama</li> -->
           <!-- <li class="dropdown">
             <div class="menu-holder">
               Our Projects<button class="dropdown-btn">
@@ -202,6 +180,9 @@ export default {
   computed: {
     searchPopup() {
       return this.$store.state.searchPopupStatus;
+    },
+    aboutNovNat() {
+      return this.$store.state.novnat;
     }
   },
   mounted() {

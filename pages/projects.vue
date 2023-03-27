@@ -7,7 +7,7 @@
 
 <script>
 import PageHeader from "../components/PageHeader";
-import ProjectPage from "../components/ProjectPage";
+import ProjectPage from "@/components/Projects/ProjectPage";
 export default {
   components: {
     ProjectPage,

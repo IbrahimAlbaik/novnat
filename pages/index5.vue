@@ -18,7 +18,7 @@
 <script>
   import NavFive from "../components/NavFive";
   import SliderFive from "../components/SliderFive";
-  import BrandOne from "../components/BrandOne";
+  import BrandOne from "@/components/Brands/BrandOne";
   import ServiceTwo from "../components/Services/ServiceTwo";
   import TrustedOne from "../components/TrustedOne";
   import TestimonialFour from "../components/TestimonialFour";

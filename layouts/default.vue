@@ -1,6 +1,5 @@
 <template>
   <div class="page-wrapper">
-    <NavFour />
     <nuxt />
     <Footer />
     <SearchPopup />
@@ -9,17 +8,15 @@
 
 <script>
 import SearchPopup from "../components/SearchPopup";
-import NavFour from "../components/NavFour";
 import Footer from "../components/Footer";
 export default {
   components: {
     SearchPopup,
-    NavFour,
     Footer
   },
   head() {
     return {
-      title: "Agrikol - Vue Nuxt Template for Agriculture Farm & Farmers"
+      title: "NovNat - Vue Nuxt Template for Agriculture Farm & Farmers"
     };
   },
   mounted() {

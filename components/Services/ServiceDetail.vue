@@ -6,9 +6,13 @@
           <div class="service_details_left">
             <ul class="list-unstyled service_all_list">
               <li><a href="#">All Services</a></li>
-              <li><a href="#" class="active">test</a></li>
-              <li v-for="service in this.services" :key="service.id">
-                <a href="#">{{ service.title }}</a>
+              <li v-for="service in services" :key="service.id">
+                <nuxt-link
+                  :to="'/service-detail/' + service.id"
+                  v-if="singleService"
+                  :class="service.id == singleService.id ? 'active' : ''"
+                  >{{ service.title }}</nuxt-link
+                >
               </li>
             </ul>
             <div class="need_help_box">
@@ -75,9 +79,9 @@
               </div>
             </div> -->
             <div class="agriculture_solutions">
-              <h3>{{ this.singleService.title }}</h3>
+              <h3>{{ singleService.title }}</h3>
               <div
-                v-for="service in this.singleService.details"
+                v-for="service in singleService.details"
                 :key="service.detail"
               >
                 <p>
@@ -118,6 +122,8 @@ export default {
         (service) => service.id == this.$route.params.id
       );
     },
+  },
+  methods: {
     isActive(service) {
       return service.id == this.singleService.id ? "active" : null;
     },

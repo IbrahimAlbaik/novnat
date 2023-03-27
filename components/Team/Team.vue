@@ -3,9 +3,12 @@
     <div class="container">
       <div class="row">
         <div class="col-xl-4 col-lg-4 col-md-6">
-          <div class="team_one_single wow fadeInUp animated" style="visibility: visible; animation-name: fadeInUp;">
+          <div
+            class="team_one_single wow fadeInUp animated"
+            style="visibility: visible; animation-name: fadeInUp"
+          >
             <div class="team_one_image">
-              <img src="/assets/images/team/farmers-1.jpg" alt="">
+              <img src="/assets/images/team/farmers-1.jpg" alt="" />
             </div>
             <div class="team_one_deatils">
               <p>farmer</p>
@@ -18,10 +21,13 @@
             </div>
           </div>
         </div>
-        <div class="col-xl-4 col-lg-4 col-md-6">
-          <div class="team_one_single wow fadeInDown animated" style="visibility: visible; animation-name: fadeInDown;">
+        <!-- <div class="col-xl-4 col-lg-4 col-md-6">
+          <div
+            class="team_one_single wow fadeInDown animated"
+            style="visibility: visible; animation-name: fadeInDown"
+          >
             <div class="team_one_image">
-              <img src="/assets/images/team/farmers-2.jpg" alt="">
+              <img src="/assets/images/team/farmers-2.jpg" alt="" />
             </div>
             <div class="team_one_deatils">
               <p>farmer</p>
@@ -35,9 +41,12 @@
           </div>
         </div>
         <div class="col-xl-4 col-lg-4 col-md-6">
-          <div class="team_one_single wow fadeInUp animated" style="visibility: visible; animation-name: fadeInUp;">
+          <div
+            class="team_one_single wow fadeInUp animated"
+            style="visibility: visible; animation-name: fadeInUp"
+          >
             <div class="team_one_image">
-              <img src="/assets/images/team/farmers-3.jpg" alt="">
+              <img src="/assets/images/team/farmers-3.jpg" alt="" />
             </div>
             <div class="team_one_deatils">
               <p>farmer</p>
@@ -51,9 +60,12 @@
           </div>
         </div>
         <div class="col-xl-4 col-lg-4 col-md-6">
-          <div class="team_one_single wow fadeInDown animated" style="visibility: visible; animation-name: fadeInDown;">
+          <div
+            class="team_one_single wow fadeInDown animated"
+            style="visibility: visible; animation-name: fadeInDown"
+          >
             <div class="team_one_image">
-              <img src="/assets/images/team/farmers-4.jpg" alt="">
+              <img src="/assets/images/team/farmers-4.jpg" alt="" />
             </div>
             <div class="team_one_deatils">
               <p>farmer</p>
@@ -67,9 +79,12 @@
           </div>
         </div>
         <div class="col-xl-4 col-lg-4 col-md-6">
-          <div class="team_one_single wow fadeInUp animated" style="visibility: visible; animation-name: fadeInUp;">
+          <div
+            class="team_one_single wow fadeInUp animated"
+            style="visibility: visible; animation-name: fadeInUp"
+          >
             <div class="team_one_image">
-              <img src="/assets/images/team/farmers-5.jpg" alt="">
+              <img src="/assets/images/team/farmers-5.jpg" alt="" />
             </div>
             <div class="team_one_deatils">
               <p>farmer</p>
@@ -83,9 +98,12 @@
           </div>
         </div>
         <div class="col-xl-4 col-lg-4 col-md-6">
-          <div class="team_one_single wow fadeInDown animated" style="visibility: visible; animation-name: fadeInDown;">
+          <div
+            class="team_one_single wow fadeInDown animated"
+            style="visibility: visible; animation-name: fadeInDown"
+          >
             <div class="team_one_image">
-              <img src="/assets/images/team/farmers-6.jpg" alt="">
+              <img src="/assets/images/team/farmers-6.jpg" alt="" />
             </div>
             <div class="team_one_deatils">
               <p>farmer</p>
@@ -97,18 +115,21 @@
               </div>
             </div>
           </div>
-        </div>
+        </div> -->
       </div>
     </div>
   </section>
 </template>
 
 <script>
-    export default {
-        name: "Farmers"
-    }
+export default {
+  name: "teams",
+  computed: {
+    teams() {
+      return this.$store.state.teams;
+    },
+  },
+};
 </script>
 
-<style scoped>
-
-</style>
+<style scoped></style>

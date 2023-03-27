@@ -7,16 +7,17 @@
           <div class="slide-item">
             <div
               class="image-layer"
-              style="background-image: url(/assets/images/main-slider/slide_1.jpg);"
+              style="
+                background-image: url(/assets/images/main-slider/1.jpg);
+              "
             ></div>
             <div class="auto-container">
               <div class="content-box">
                 <div class="content text-right">
                   <div class="inner">
                     <h1>
-                      <span>Organic</span> farming<br />
-                      is better for the<br />
-                      environment
+                      <span>Harvesting</span> water from air,<br />
+                      one drop at a time
                     </h1>
                     <div class="link-box">
                       <nuxt-link to="/about" class="thm-btn"
@@ -33,16 +34,17 @@
           <div class="slide-item">
             <div
               class="image-layer"
-              style="background-image: url(/assets/images/main-slider/slide_2.jpg);"
+              style="
+                background-image: url(/assets/images/main-slider/2.jpg);
+              "
             ></div>
             <div class="auto-container">
               <div class="content-box">
                 <div class="content text-right">
                   <div class="inner">
                     <h1>
-                      <span>Organic</span> farming<br />
-                      is better for the<br />
-                      environment
+                      <span>Pioneering</span> nanomaterials<br />
+                      of the future
                     </h1>
                     <div class="link-box">
                       <nuxt-link to="/about" class="thm-btn"
@@ -59,16 +61,18 @@
           <div class="slide-item">
             <div
               class="image-layer"
-              style="background-image: url(/assets/images/main-slider/slide_5.jpg);"
+              style="
+                background-image: url(/assets/images/main-slider/3.jpg);
+              "
             ></div>
             <div class="auto-container">
               <div class="content-box">
                 <div class="content text-right">
                   <div class="inner">
                     <h1>
-                      <span>Organic</span> farming<br />
-                      is better for the<br />
-                      environment
+                      <span>Meshing</span> chemistry<br />
+                      and engineering to solve <br />
+                      today's problems
                     </h1>
                     <div class="link-box">
                       <nuxt-link to="/about" class="thm-btn"
@@ -94,14 +98,21 @@ export default {
       silderList: [
         {
           image: "",
-          boldText: "",
-          firstText: "",
-          breakingText: "",
-          breakingText2: ""
-        }
-      ]
+          boldText: "Harvesting",
+          firstText: " water from air,",
+          breakingText: "one drop at a time",
+          breakingText2: "",
+        },
+        {
+          image: "",
+          boldText: "Harvesting",
+          firstText: " water from air,",
+          breakingText: "one drop at a time",
+          breakingText2: "",
+        },
+      ],
     };
-  }
+  },
 };
 </script>
 

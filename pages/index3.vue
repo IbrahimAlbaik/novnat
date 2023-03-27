@@ -28,7 +28,7 @@
   import QuoteOne from "../components/QuoteOne";
   import WhyChooseOne from "../components/WhyChooseOne";
   import TeamOne from "../components/Team/TeamOne";
-  import BrandThree from "../components/BrandThree";
+  import BrandThree from "@/components/Brands/BrandThree";
   import WhatMakes from "../components/WhatMakes";
   import BlogTwo from "../components/Blogs/BlogTwo";
   import CallToActionThree from "../components/CallToActionThree";

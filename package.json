@@ -1,7 +1,7 @@
 {
-  "name": "agrikol",
+  "name": "novnat",
   "version": "2.0.0",
-  "description": "Agrikol - Vue Nuxt Template for Agriculture Farm & Farmers",
+  "description": "novnat - Vue Nuxt Template for Agriculture",
   "author": "Layerdrops",
   "private": true,
   "scripts": {

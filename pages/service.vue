@@ -14,7 +14,7 @@
   import PageHeader from "../components/PageHeader";
   import ServicePage from "../components/Services/ServicePage";
   import ServiceOne from "../components/Services/ServiceOne";
-  import BrandOne from "../components/BrandOne";
+  import BrandOne from "@/components/Brands/BrandOne";
   import FaqOne from "../components/FaqOne";
   import CallToActionThree from "../components/CallToActionThree";
   export default {

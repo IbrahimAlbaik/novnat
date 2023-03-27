@@ -18,13 +18,14 @@
           <div
             class="service_four_single wow fadeInLeft"
             data-wow-delay="300ms"
+            data-wow-offset="1500"
           >
             <div class="service_four_icon">
               <span :class="service.icon"></span>
             </div>
             <div class="service_four_deatils">
               <h3>
-                <nuxt-link to="/service-detail" class="service_four_title">{{
+                <nuxt-link :to="'/service-detail/'+ service.id" class="service_four_title">{{
                   service.title
                 }}</nuxt-link>
               </h3>

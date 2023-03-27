@@ -28,7 +28,7 @@
   import RecentProject from "../components/RecentProject";
   import TestimonialTwo from "../components/TestimonialTwo";
   import VideoOne from "../components/VideoOne";
-  import BrandTwo from "../components/BrandTwo";
+  import BrandTwo from "@/components/Brands/BrandTwo";
   import GetQuote from "../components/GetQuote";
   import GMap from "../components/GMap";
   import GalleryOne from "../components/GalleryOne";
