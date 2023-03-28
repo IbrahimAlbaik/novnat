@@ -30,7 +30,7 @@
               <ul class="footer-widget__links-list type2 list-unstyled">
                 <li><a href="#">About Us</a></li>
                 <li><a href="#">Services</a></li>
-                <li><a href="#">Our Projects</a></li>
+                <li><a href="#">Our Technology</a></li>
                 <li><a href="#">Meet the Farmers</a></li>
                 <li><a href="#">Latest News</a></li>
                 <li><a href="#">Contact</a></li>

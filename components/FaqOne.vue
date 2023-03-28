@@ -14,14 +14,14 @@
             <div
               class="faq_one_image"
               style="
-                background-image: url(/assets/images/resources/question.jpg);
+                background-image: url(/assets/images/resources/question_2.jpg);
               "
             >
               <div class="phone_number">
                 <p>
-                  If you have emergency call nows<a
-                    :href="`tel:${aboutNovNat.phone}`"
-                    >{{ aboutNovNat.phone }}</a
+                  email us<a
+                    :href="`mailto:${aboutNovNat.email}`"
+                    >{{ aboutNovNat.email }}</a
                   >
                 </p>
               </div>

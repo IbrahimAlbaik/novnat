@@ -1,6 +1,6 @@
 <template>
   <div>
-    <PageHeader title="Project Detail" />
+    <PageHeader title="technology Detail" />
     <ProjectDetail :singleProject="singleProject" />
   </div>
 </template>
@@ -15,7 +15,7 @@ export default {
   },
   head() {
     return {
-      title: "NovNat  | Project Detail",
+      title: "NovNat  | Technology Detail",
     };
   },
   computed: {

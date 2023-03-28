@@ -4,10 +4,10 @@
       <div class="container">
         <div class="topbar-one__left">
           <a :href="`mailto:${aboutNovNat.email}`"
-            ><span class="icon-message"></span>{{aboutNovNat.email}}</a
+            ><span class="icon-message"></span>{{ aboutNovNat.email }}</a
           >
           <a :href="`tel:${aboutNovNat.phone}`"
-            ><span class="icon-phone-call"></span>{{aboutNovNat.phone}}</a
+            ><span class="icon-phone-call"></span>{{ aboutNovNat.phone }}</a
           >
         </div>
         <div class="topbar-one__middle">
@@ -32,21 +32,19 @@
 
     <header class="main-nav__header-one main-nav__header-four">
       <nav
-        :class="
-          `header-navigation stricky ${
-            sticky ? 'stricked-menu stricky-fixed' : ''
-          }`
-        "
+        :class="`header-navigation stricky ${
+          sticky ? 'stricked-menu stricky-fixed' : ''
+        }`"
       >
         <div class="container clearfix">
           <!-- Brand and toggle get grouped for better mobile display -->
           <div class="main-nav__left main_nav__left_four">
-            <a
+            <!-- <a
               href="#"
               class="main-nav__search search-popup__toggler"
               @click="searchPopupStatusChange"
               ><i class="icon-magnifying-glass"></i
-            ></a>
+            ></a> -->
             <a href="#" class="side-menu__toggler">
               <i @click="mobileToggle = !mobileToggle" class="fa fa-bars"></i>
             </a>
@@ -60,12 +58,12 @@
                 <nuxt-link to="/service">Services</nuxt-link>
               </li>
               <li>
-                <nuxt-link to="/projects">Our Projects</nuxt-link>
+                <nuxt-link to="/projects">Our Technology</nuxt-link>
               </li>
               <li><nuxt-link to="/about">About</nuxt-link></li>
-              <li>
+              <!-- <li>
                 <nuxt-link to="/why_choose_us">Why Choose Us</nuxt-link>
-              </li>
+              </li> -->
               <li><nuxt-link to="/teams">Team</nuxt-link></li>
               <li>
                 <nuxt-link to="/contact">Contact</nuxt-link>
@@ -83,7 +81,24 @@
         <!-- content is loading via js -->
 
         <ul class="main-nav__navigation-box">
-          <li><nuxt-link to="/">Home</nuxt-link>Home</li>
+          <li>
+            <nuxt-link to="/">Home</nuxt-link>
+          </li>
+          <li>
+            <nuxt-link to="/service">Services</nuxt-link>
+          </li>
+          <li>
+            <nuxt-link to="/projects">Our Technology</nuxt-link>
+          </li>
+          <li><nuxt-link to="/about">About</nuxt-link></li>
+          <!-- <li>
+                <nuxt-link to="/why_choose_us">Why Choose Us</nuxt-link>
+              </li> -->
+          <li><nuxt-link to="/teams">Team</nuxt-link></li>
+          <li>
+            <nuxt-link to="/contact">Contact</nuxt-link>
+          </li>
+          <!-- <li><nuxt-link to="/">Home</nuxt-link></li> -->
           <!-- <li class="dropdown current">
             <div class="menu-holder">
               Home<button class="dropdown-btn">
@@ -107,7 +122,7 @@
           <!-- <li><nuxt-link to="/product">Products</nuxt-link>asanmama</li> -->
           <!-- <li class="dropdown">
             <div class="menu-holder">
-              Our Projects<button class="dropdown-btn">
+              Our Technology<button class="dropdown-btn">
                 <i class="fa fa-angle-right"></i>
               </button>
             </div>
@@ -157,9 +172,9 @@
               <li><nuxt-link to="/news_detail">News Details</nuxt-link></li>
             </ul>
           </li> -->
-          <li>
+          <!-- <li>
             <nuxt-link to="/contact">Contact</nuxt-link>
-          </li>
+          </li> -->
         </ul>
       </nav>
     </header>
@@ -174,7 +189,7 @@ export default {
   data() {
     return {
       sticky: false,
-      mobileToggle: false
+      mobileToggle: false,
     };
   },
   computed: {
@@ -183,7 +198,7 @@ export default {
     },
     aboutNovNat() {
       return this.$store.state.novnat;
-    }
+    },
   },
   mounted() {
     window.addEventListener("scroll", this.handleScroll);
@@ -197,9 +212,9 @@ export default {
       }
     },
     ...mapMutations({
-      searchPopupStatusChange: "changeSearchPopupStatus"
-    })
-  }
+      searchPopupStatusChange: "changeSearchPopupStatus",
+    }),
+  },
 };
 </script>
 

@@ -2,7 +2,7 @@
   <section class="banner_four_section">
     <div class="banner-carousel-four owl-theme owl-carousel">
       <no-ssr>
-        <carousel :items="1" :autoplay="true" :nav="false">
+        <carousel :items="1" :autoplay="true" :nav="false" autoplaySpeed="1000ms">
           <!-- Slide Item -->
           <div class="slide-item">
             <div

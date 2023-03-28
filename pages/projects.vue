@@ -1,6 +1,6 @@
 <template>
   <div>
-    <PageHeader title="Our Projects" />
+    <PageHeader title="Our Technology" />
     <ProjectPage />
   </div>
 </template>
@@ -15,7 +15,7 @@ export default {
   },
   head() {
     return {
-      title: "Agrikol  | Our Projects"
+      title: "Agrikol  | Our Technology"
     };
   }
 };

@@ -3,7 +3,7 @@
     <div class="container">
       <div class="block-title text-center">
         <p>our team members</p>
-        <h3>meet the Engineering</h3>
+        <h3>meet the brilliants</h3>
         <div class="leaf">
           <img src="/assets/images/resources/leaf.png" alt="" />
         </div>
@@ -29,9 +29,9 @@
                 </nuxt-link>
               </h2>
               <div class="team_one_social">
-                <a href="#"><i class="fab fa-facebook-square"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
+                <!-- <a href="#"><i class="fab fa-facebook-square"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a> -->
+                <a href="#"><i class="fab fa-linkedin"></i></a>
               </div>
             </div>
           </div>

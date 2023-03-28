@@ -22,7 +22,7 @@
                 tyran nically talkative jeepers crud.</p> -->
             </div>
             <div class="project_challenges" v-if="singleProject.challenges.length">
-              <h2>Project challenges</h2>
+              <h2>Technology challenges</h2>
               <ul class="list-unstyled project_challenges_box">
                 <li v-for="challenge in singleProject.challenges" :key="challenge.id">
                   <div class="project_challenges_icon">

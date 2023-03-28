@@ -72,7 +72,7 @@
                         <!-- /.sub-menu -->
                       </li>
                       <li class="dropdown">
-                        <nuxt-link to="/projects">Our Projects</nuxt-link>
+                        <nuxt-link to="/projects">Our Technology</nuxt-link>
                         <ul>
                           <li>
                             <nuxt-link to="/projects">Projects</nuxt-link>
@@ -216,7 +216,7 @@
         </li>
         <li class="dropdown">
           <div class="menu-holder">
-            Our Projects<button class="dropdown-btn">
+            Our Technology<button class="dropdown-btn">
               <i class="fa fa-angle-right"></i>
             </button>
           </div>

@@ -29,7 +29,7 @@
                 <h3>{{ project.title }}</h3>
               </div>
               <div class="hover_box">
-                <nuxt-link :to="`/projects-detail/${project.id}`"
+                <nuxt-link :to="`/project-details/${project.id}`"
                   ><span class="icon-left-arrow"></span
                 ></nuxt-link>
               </div>

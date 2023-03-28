@@ -78,15 +78,6 @@ export const state = () => ({
   teams: [
     {
       id: 1,
-      name: 'Dr. Ibrahim Albaik',
-      position: 'Co-Founder and CEO',
-      image: 'ibrahim.jpg',
-      about: `Ibrahim is responsible for designing the integration of MOFs in systems for gas storage,
-      gas separation and HVAC applications. Ibrahim completed his PhD at the University of Birmingham,
-      where he developed MOF-based cooling and desalination adsorption systems. He also holds an MSc in Advanced Mechanical Engineering from Birmingham, where he was awarded a Ratcliffe Prize for the best post-graduate performance in the Engineering School. His first degree in Mechanical Engineering is from Islamic University of Gaza. He has industrial and research experiences in different electro-mechanical projects such as pump stations, wastewater treatment and desalination plants as well as renewable energy systems such as Solar-Organic Rankine cycle, Stirling engine and biogas systems. Ibrahim has managed several large-scale projects throughout his career.`
-    },
-    {
-      id: 2,
       name: 'Kamal Diab',
       position: 'Co-Founder and CSO',
       image: 'kamal.png',
@@ -94,6 +85,15 @@ export const state = () => ({
       Kamal is especially fascinated by the creation of solid-state materials that can be adjusted synthetically, allowing precise control of the atomic-scale and/or electronic-scale structure for specific purposes.  His current research spans diverse areas of chemistry and materials science, ranging from energy to global water-related challenges. Specifically, his research focuses on the rational design of metal-organic frameworks (MOFs) for applications in water and gas storage, separations, and purification.
       Kamal responsible for synthesis, optimization, and characterization to transition porous chemistry into real-world products. At NovNat, Kamal leverages his extensive experience in chemistry and specialty gas materials to accelerate the discovery of novel materials that can address global challenges in energy and sustainability. Prior to joining NovNat, He was a research graduate from the University of Birmingham in the UK, he obtained his MSc in Nanoscience from E-JUST and his BSc from Alexandria, with a specialization in developing novel MOFs for efficient sorption-driven applications.
       `
+    },
+    {
+      id: 2,
+      name: 'Dr. Ibrahim Albaik',
+      position: 'Co-Founder and CEO',
+      image: 'ibrahim.jpg',
+      about: `Ibrahim is responsible for designing the integration of MOFs in systems for gas storage,
+      gas separation and HVAC applications. Ibrahim completed his PhD at the University of Birmingham,
+      where he developed MOF-based cooling and desalination adsorption systems. He also holds an MSc in Advanced Mechanical Engineering from Birmingham, where he was awarded a Ratcliffe Prize for the best post-graduate performance in the Engineering School. His first degree in Mechanical Engineering is from Islamic University of Gaza. He has industrial and research experiences in different electro-mechanical projects such as pump stations, wastewater treatment and desalination plants as well as renewable energy systems such as Solar-Organic Rankine cycle, Stirling engine and biogas systems. Ibrahim has managed several large-scale projects throughout his career.`
     },
     {
       id: 3,
@@ -105,8 +105,8 @@ export const state = () => ({
     },
     {
       id: 4,
-      name: 'Asmaa Diab',
-      position: 'Co-Founder and CSO',
+      name: 'Asmaa Hanafi',
+      position: 'Research Chemist',
       image: 'asmaa.jpg',
       about: `Asmaa is a highly accomplished research scientist with a strong background in materials chemistry.
        She earned her Bachelor's degree in Chemistry from IMAC at the University of Alexandria. She later worked as a research assistant at the American University in Cairo and the Egypt Japan University of Science and Technology, where she gained extensive experience in the preparation and characterization of metal-organic frameworks (MOFs) for applications in drug delivery, water treatment, and carbon capture. Asmaa's research focuses on the development of novel materials for addressing global challenges in energy and sustainability. She uses fundamental chemistry, high-throughput materials screening, and experimental chemistry to accelerate the discovery of materials with desirable properties.

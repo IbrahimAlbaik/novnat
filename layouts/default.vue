@@ -2,16 +2,16 @@
   <div class="page-wrapper">
     <nuxt />
     <Footer />
-    <SearchPopup />
+    <!-- <SearchPopup /> -->
   </div>
 </template>
 
 <script>
-import SearchPopup from "../components/SearchPopup";
+// import SearchPopup from "../components/SearchPopup";
 import Footer from "../components/Footer";
 export default {
   components: {
-    SearchPopup,
+    // SearchPopup,
     Footer
   },
   head() {

@@ -6216,6 +6216,50 @@ h6 {
   transition: all 500ms ease;
 }
 
+.service_four_single.uniqueness_card {
+  padding: 60px 0px 0px 0px;
+  /* position: relative; */
+  /* border-radius: 50%; */
+  border-style: dashed;
+  min-height: 548px;
+  cursor: pointer;
+  margin-bottom: 1rem;
+}
+
+.uniqueness .uniqueness_card .uniqueness_content {
+  /* position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 2rem; */
+}
+
+.uniqueness .uniqueness_card:nth-of-type(odd)::after {
+  content: '';
+  border: solid var(--thm-primary);
+  border-width: 0 11px 11px 0;
+  display: inline-block;
+  padding: 10px;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  position: absolute;
+  top: 50%;
+  right: -1.5rem;
+  z-index: 9;
+}
+
+/* .service_four_single.uniqueness_card:nth-of-type(3)::after {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  right: 50%;
+  bottom: 0;
+  top: auto;
+} */
+
+.service_four_single .eco_friendly_content img {
+  width: 60px;
+  height: 60px;
+}
+
 .service_four_single:hover {
   box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.05);
 }
@@ -7515,7 +7559,7 @@ h6 {
 }
 
 /*--------------------------------------------------------------
-#  Our Projects
+#  Our Technology
 --------------------------------------------------------------*/
 .recent-project.our_projects {
   padding-bottom: 120px;

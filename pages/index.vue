@@ -5,11 +5,13 @@
     <DetailsOne />
     <WelcomeTwo id="welcome" />
     <EcoFriendly id="eco" />
+    <Uniqueness />
     <ServiceFour id="service" />
     <ProjectPage />
     <FaqOne id="faq" />
     <TeamOne id="team" />
     <!-- <TestimonialThree /> -->
+    <Timeline />
     <BrandFour />
     <!-- <AchievedOne /> -->
     <!-- <FunfactOne /> -->
@@ -24,30 +26,30 @@ import DetailsOne from "../components/DetailsOne";
 import WelcomeTwo from "../components/WelcomeTwo";
 import EcoFriendly from "../components/EcoFriendly";
 import ServiceFour from "@/components/Services/ServiceFour";
+import Uniqueness from "@/components/Services/Uniqueness";
 import ProjectPage from "@/components/Projects/ProjectPage";
 import FaqOne from "../components/FaqOne";
-import TestimonialThree from "../components/TestimonialThree";
+import Timeline from "@/components/About/Timeline";
+// import TestimonialThree from "../components/TestimonialThree";
 import BrandFour from "@/components/Brands/BrandFour";
-import AchievedOne from "../components/AchievedOne";
-import FunfactOne from "../components/FunfactOne";
-import BlogFour from "../components/Blogs/BlogFour";
+// import AchievedOne from "../components/AchievedOne";
+// import FunfactOne from "../components/FunfactOne";
+// import BlogFour from "../components/Blogs/BlogFour";
 import TeamOne from "../components/Team/TeamOne";
 export default {
   components: {
     NavFour,
-    BlogFour,
-    FunfactOne,
-    AchievedOne,
     BrandFour,
-    TestimonialThree,
     FaqOne,
     TeamOne,
     ServiceFour,
+    Uniqueness,
     ProjectPage,
     EcoFriendly,
     WelcomeTwo,
     DetailsOne,
     SliderFour,
+    Timeline,
   },
   head() {
     return {
