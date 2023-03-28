@@ -7,7 +7,7 @@
     <div class="container">
       <div class="block-title text-center">
         <p>Welcome to NovNat</p>
-        <h3>We’ve 40 Years Agriculture<br />Experiences</h3>
+        <h3>We create novelty<br />for nature</h3>
         <div class="leaf">
           <img src="assets/images/resources/leaf.png" alt="" />
         </div>
