@@ -1,10 +1,12 @@
 export default {
-  mode: 'universal',
-
+  // mode: 'universal',
+  target: 'static',
+  router: {
+    base: 'NovNat'
+  },
   generate: {
     fallback: true
   },
-
   /*
    ** Headers of the page
    */

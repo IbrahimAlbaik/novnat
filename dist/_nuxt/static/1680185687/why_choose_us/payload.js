@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/why_choose_us", {data:[{}],fetch:[],mutations:[]});

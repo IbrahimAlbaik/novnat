@@ -1,6 +1,6 @@
 <template>
   <div>
-    <PageHeader title="technology Detail" />
+    <PageHeader :title="singleProject.title" />
     <ProjectDetail :singleProject="singleProject" />
   </div>
 </template>

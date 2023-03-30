@@ -1,4 +1,5 @@
 {
+  "homepage": "https://AsmaaAlbaik.github.io/NovNat",
   "name": "novnat",
   "version": "2.0.0",
   "description": "novnat - Vue Nuxt Template for Agriculture",
@@ -6,9 +7,10 @@
   "private": true,
   "scripts": {
     "dev": "nuxt",
-    "build": "nuxt build --output dist",
+    "build": "nuxt build",
     "start": "nuxt start",
-    "generate": "nuxt generate"
+    "generate": "nuxt generate",
+    "deploy": "push-dir --dir=dist --branch=gh-pages --cleanup"
   },
   "dependencies": {
     "nuxt": "^2.0.0",
@@ -19,5 +21,8 @@
     "vue-observe-visibility": "^0.4.6",
     "vue-slick-carousel": "^1.0.6"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "gh-pages": "^5.0.0",
+    "push-dir": "^0.4.1"
+  }
 }
