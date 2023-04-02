@@ -2877,6 +2877,16 @@ h6 {
   position: relative;
 }
 
+.about1_img.discover {
+  text-align: center;
+  margin-top: -7rem;
+}
+
+.about1_img.discover img {
+  height: 600px;
+  width: 100%;
+}
+
 .about1_shape_1 {
   position: absolute;
   left: -215px;
@@ -2890,6 +2900,9 @@ h6 {
 
 .about1_img>img {
   border-radius: 5px;
+  height: 570px;
+  width: 450px;
+  object-fit: cover;
 }
 
 .about1_icon-box {
@@ -3105,6 +3118,12 @@ h6 {
   border-bottom: 1px solid #f5f0e9;
 }
 
+.single_brand_item h4 {
+  color: var(--thm-black);
+  font-weight: bold;
+  text-align: center;
+}
+
 .single_brand_item img {
   opacity: 0.3;
   -webkit-transition: all 500ms ease;
@@ -3114,6 +3133,19 @@ h6 {
 .single_brand_item img:hover {
   opacity: 0.6;
 }
+
+.single_brand_item.target {
+  border-radius: 1rem;
+  margin: 0 1rem;
+}
+
+.single_brand_item.target img {
+  width: 200px;
+  height: 200px;
+  border-radius: 1rem;
+  /* object-fit: contain; */
+}
+
 
 /*--------------------------------------------------------------
 # Featured One
@@ -5584,7 +5616,7 @@ h6 {
 
 .team_one_deatils {
   background: #ffffff;
-  padding: 24px 40px 30px;
+  padding: 24px 30px 30px;
   margin-top: -20px;
   margin-left: 20px;
   margin-right: 20px;
@@ -5970,6 +6002,7 @@ h6 {
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
   z-index: 1;
+  height: 160px;
 }
 
 .details_one_single:before {
@@ -5998,8 +6031,18 @@ h6 {
   transition: 500ms;
 }
 
+.details_one_icon svg path {
+  fill: var(--thm-base);
+  font-size: 60px;
+  transition: 500ms;
+}
+
 .details_one_single:hover .details_one_icon span {
   color: var(--thm-black);
+}
+
+.details_one_single:hover svg path {
+  fill: var(--thm-black) !important;
 }
 
 .details_one_content h2 {
@@ -6126,6 +6169,14 @@ h6 {
   transition: 500ms;
 }
 
+.eco_friendly_icon_box svg {
+  height: 60px;
+}
+
+.eco_friendly_icon_box:hover svg path {
+  fill: var(--thm-base);
+}
+
 .eco_friendly_icon_box:hover {
   background-color: var(--thm-black);
   color: #fff;
@@ -6222,7 +6273,6 @@ h6 {
   /* border-radius: 50%; */
   border-style: dashed;
   min-height: 548px;
-  cursor: pointer;
   margin-bottom: 1rem;
 }
 
@@ -6233,7 +6283,7 @@ h6 {
   padding: 2rem; */
 }
 
-.uniqueness .uniqueness_card:nth-of-type(odd)::after {
+.uniqueness .uniqueness_card::after {
   content: '';
   border: solid var(--thm-primary);
   border-width: 0 11px 11px 0;
@@ -6245,6 +6295,28 @@ h6 {
   top: 50%;
   right: -1.5rem;
   z-index: 9;
+}
+
+.uniqueness .uniqueness_card.three::after {
+  transform: rotate(45deg) !important;
+  -webkit-transform: rotate(45deg) !important;
+  bottom: -1rem;
+  right: 50%;
+  transform: translateX(-50%);
+  top: auto;
+}
+
+.uniqueness .uniqueness_card.left::after {
+  transform: rotate(135deg) !important;
+  -webkit-transform: rotate(135deg) !important;
+  left: -1.5rem;
+  right: auto;
+  transform: translateY(-50%);
+  top: 50%;
+}
+
+.uniqueness .uniqueness_card.last::after {
+  display: none;
 }
 
 /* .service_four_single.uniqueness_card:nth-of-type(3)::after {
@@ -7585,12 +7657,13 @@ h6 {
 
 .project_detail_image {
   margin-bottom: 45px;
+  margin-top: -6rem;
 }
 
 .project_detail_image img {
   width: 100%;
   border-radius: 5px;
-  height: 300px;
+  height: 600px;
   object-fit: cover;
 }
 
@@ -8333,6 +8406,10 @@ h6 {
 # Contact One
 --------------------------------------------------------------*/
 
+.contact-one {
+  margin: 5rem 0;
+}
+
 .contact-one__form__wrap {
   position: relative;
   display: block;
@@ -8448,7 +8525,7 @@ h6 {
   position: relative;
   display: block;
   text-align: center;
-  margin-left: 110px;
+  /* margin-left: 110px; */
 }
 
 .have_questions .image_box {
@@ -10424,6 +10501,7 @@ h6 {
   background-color: #111111;
   color: #ffffff;
   overflow: hidden;
+  height: 100vh;
 }
 
 .banner-carousel-four .slide-item:before {
@@ -10472,7 +10550,7 @@ h6 {
 
 .banner-carousel-four .content-box .content {
   position: relative;
-  padding: 334px 0px 160px;
+  padding: 250px 0px 160px;
 }
 
 .banner-carousel-four .content-box .inner {
@@ -10485,7 +10563,7 @@ h6 {
   display: block;
   margin: 0 0 32px;
   color: #ffffff;
-  font-size: 120px;
+  font-size: 90px;
   line-height: 1.1em;
   font-weight: 400;
   opacity: 0;

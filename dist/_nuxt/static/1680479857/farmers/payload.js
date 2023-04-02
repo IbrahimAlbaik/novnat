@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/farmers", {data:[],fetch:[],mutations:[]});
