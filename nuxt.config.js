@@ -1,9 +1,6 @@
 export default {
   // mode: 'universal',
   target: 'static',
-  router: {
-    base: 'NovNat'
-  },
   generate: {
     fallback: true
   },
@@ -26,19 +23,19 @@ export default {
         rel: 'apple-touch-icon',
         sizes: '180x180',
         type: 'image/x-icon',
-        href: '/assets/images/favicons/apple-touch-icon.png'
+        href: '/assets/images/resources/logo_novnat.png'
       },
       {
         rel: 'icon',
         sizes: '32x32',
         type: 'image/png',
-        href: '/assets/images/favicons/favicon-32x32.png'
+        href: '/assets/images/resources/logo_novnat.png'
       },
       {
         rel: 'icon',
         sizes: '16x16',
         type: 'image/png',
-        href: '/assets/images/favicons/favicon-16x16.png'
+        href: '/assets/images/resources/logo_novnat.png'
       },
       {
         rel: 'stylesheet',
@@ -64,6 +61,34 @@ export default {
       { src: '/assets/plugins/accordion/accordion.min.js', body: true }
     ]
   },
+  router: {
+    scrollBehavior: async (to, from, savedPosition) => {
+      if (savedPosition) {
+        return savedPosition
+      }
+
+      const findEl = async (hash, x) => {
+        return document.querySelector(hash) ||
+          new Promise((resolve, reject) => {
+            if (x > 50) {
+              return resolve()
+            }
+            setTimeout(() => { resolve(findEl(hash, ++x || 1)) }, 100)
+          })
+      }
+
+      if (to.hash) {
+        let el = await findEl(to.hash)
+        if ('scrollBehavior' in document.documentElement.style) {
+          return window.scrollTo({ top: to.hash == '#services' || to.hash == '#uniqueness' ? el.offsetTop - 100 : el.offsetTop, behavior: 'smooth' })
+        } else {
+          return window.scrollTo(0, el.offsetTop)
+        }
+      }
+
+      return { x: 0, y: 0 }
+    }
+  },
   /*
    ** Customize the progress-bar color
    */
@@ -75,7 +100,7 @@ export default {
   /*
    ** Plugins to load before mounting the App
    */
-  plugins: [{ src: 'plugins/owl.js', ssr: false }],
+  plugins: [{ src: '~plugins/owl.js', ssr: false }],
   /*
    ** Nuxt.js dev-modules
    */

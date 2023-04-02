@@ -1,6 +1,6 @@
 <template>
 
-  <section class="page-header" style="background-image: url(/assets/images/backgrounds/header.jpg);">
+  <section class="page-header" style="background-image: url(/assets/images/backgrounds/shutterstock_1936156318.jpg);">
     <div class="container">
       <h2>{{ title }}</h2>
       <ul class="thm-breadcrumb list-unstyled">

@@ -21,9 +21,16 @@ export default {
   },
   computed: {
     singlePerson() {
-      return this.$store.state.teams.find(
-        (person) => person.id == this.$route.params.id
-      );
+      console.log(this.$route.params.id);
+      if (this.$route.params.id.includes("advisory")) {
+        return this.$store.state.otherTeam.find(
+          (person) => person.id == this.$route.params.id
+        );
+      } else {
+        return this.$store.state.team.find(
+          (person) => person.id == this.$route.params.id
+        );
+      }
     },
   },
 };

@@ -4,33 +4,39 @@
       <div class="row">
         <div class="col-xl-12 col-lg-12 col-md-12">
           <div class="project_detail_image">
-            <img :src="`/assets/images/project/${singleProject.image}`" alt="">
+            <img
+              :src="`/assets/images/project/${singleProject.image}`"
+              alt=""
+            />
           </div>
         </div>
       </div>
       <div class="row">
-        <div class="col-xl-8 col-lg-7">
+        <div class="col-xl-12 col-lg-12">
           <div class="project_detail_left_content">
             <div class="harvest_innovations_detail">
-              <h2>{{singleProject.title}}</h2>
-              <p>{{singleProject.description}}</p>
-
-              <!-- <p class="harvest_innovations_detail_bottom_text">Beyond more stoic this along goodness
-                hey this this wow manatee mongoose one as since a far flustered impressive manifest
-                far crud opened inside owing punitively around forewent and after wasteful telling
-                sprang coldly and spoke less clients. Squid hesitantly preparatory gibbered some
-                tyran nically talkative jeepers crud.</p> -->
+              <h2>{{ singleProject.title }}</h2>
+              <p>{{ singleProject.description }}</p>
             </div>
-            <div class="project_challenges" v-if="singleProject.challenges.length">
+            <div class="project_detail_image" v-if="singleProject.id == 2">
+              <img src="/assets/images/resources/AWG.svg" alt="" />
+            </div>
+            <div
+              class="project_challenges"
+              v-if="singleProject.challenges.length"
+            >
               <h2>Technology challenges</h2>
               <ul class="list-unstyled project_challenges_box">
-                <li v-for="challenge in singleProject.challenges" :key="challenge.id">
+                <li
+                  v-for="challenge in singleProject.challenges"
+                  :key="challenge.id"
+                >
                   <div class="project_challenges_icon">
                     <span class="icon-growth"></span>
                   </div>
                   <div class="project_challenges_content">
-                    <h4>{{challenge.title}}</h4>
-                    <p>{{challenge.description}}</p>
+                    <h4>{{ challenge.title }}</h4>
+                    <p>{{ challenge.description }}</p>
                   </div>
                 </li>
                 <!-- <li>
@@ -58,7 +64,7 @@
             </div> -->
           </div>
         </div>
-        <div class="col-xl-4 col-lg-5">
+        <!-- <div class="col-xl-4 col-lg-5">
           <div class="project_information_box">
             <h3>Project information</h3>
             <ul class="project_information_list list-unstyled">
@@ -75,19 +81,17 @@
               <a href="#"><i class="fab fa-dribbble"></i></a>
             </div>
           </div>
-        </div>
+        </div> -->
       </div>
     </div>
   </section>
 </template>
 
 <script>
-    export default {
-        name: "ProjectDetail",
-        props: ['singleProject'],
-    }
+export default {
+  name: "ProjectDetail",
+  props: ["singleProject"],
+};
 </script>
 
-<style scoped>
-
-</style>
+<style scoped></style>

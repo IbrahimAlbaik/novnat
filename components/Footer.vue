@@ -19,18 +19,18 @@
               </div>
               <div class="footer-widget_about_text">
                 <p>
-                  Lorem ipsum dolor sit amet, adipiscing elit. Nulla placerat
-                  posuere dui. Pellentesque venenatis sem non lacus ac auctor.
+                  We are committed to creating a world where water is accessible
+                  to all.
                 </p>
               </div>
-              <form>
+              <!-- <form>
                 <div class="footer_input-box">
                   <input type="Email" placeholder="Email Address" />
                   <button type="submit" class="button">
                     <i class="fa fa-check"></i>
                   </button>
                 </div>
-              </form>
+              </form> -->
             </div>
           </div>
           <div class="col-xl-2 col-lg-2 col-md-6">
@@ -42,12 +42,35 @@
                 <h3>Explore</h3>
               </div>
               <ul class="footer-widget__links-list list-unstyled">
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Our Technology</a></li>
-                <li><a href="#">Meet the Farmers</a></li>
-                <li><a href="#">Latest News</a></li>
-                <li><a href="#">Contact</a></li>
+                <li>
+                  <nuxt-link :to="{ path: '/', hash: 'uniqueness' }"
+                    >Uniqueness</nuxt-link
+                  >
+                </li>
+                <li>
+                  <nuxt-link :to="{ path: '/', hash: 'services' }"
+                    >Services</nuxt-link
+                  >
+                </li>
+                <li>
+                  <nuxt-link :to="{ path: '/', hash: 'projects' }"
+                    >Technology</nuxt-link
+                  >
+                </li>
+                <li>
+                  <nuxt-link :to="{ path: '/', hash: 'faqs' }">Faqs</nuxt-link>
+                </li>
+                <li>
+                  <nuxt-link :to="{ path: '/', hash: 'team' }">Team</nuxt-link>
+                </li>
+                <li>
+                  <nuxt-link :to="{ path: '/', hash: 'about' }"
+                    >About</nuxt-link
+                  >
+                </li>
+                <li>
+                  <nuxt-link to="/contact">Contact</nuxt-link>
+                </li>
               </ul>
             </div>
           </div>
@@ -99,7 +122,9 @@
               </ul>
             </div>
           </div> -->
-          <div class="col-xl-3 col-lg-3 col-md-6 offset-xl-3 offset-lg-3 offset-md-0">
+          <div
+            class="col-xl-3 col-lg-3 col-md-6 offset-xl-3 offset-lg-3 offset-md-0"
+          >
             <div
               class="footer-widget__column footer-widget__contact wow fadeInUp"
               data-wow-delay="400ms"
@@ -109,9 +134,13 @@
               </div>
               <div class="footer-widget_contact">
                 <p v-html="aboutNovNat.address"></p>
-                <a :href="`mailto:${aboutNovNat.email}`">{{aboutNovNat.email}}</a
+                <a :href="`mailto:${aboutNovNat.email}`">{{
+                  aboutNovNat.email
+                }}</a
                 ><br />
-                <a :href="`tel:${aboutNovNat.phone}`">{{aboutNovNat.phone}}</a>
+                <a :href="`tel:${aboutNovNat.phone}`">{{
+                  aboutNovNat.phone
+                }}</a>
                 <div class="site-footer__social">
                   <a href="#"><i class="fab fa-facebook-square"></i></a>
                   <a href="#"><i class="fab fa-twitter"></i></a>
@@ -128,14 +157,16 @@
     <div class="site-footer_bottom">
       <div class="container">
         <div class="site-footer_bottom_copyright">
-          <p>@ All copyright 2023, <a href="#">{{aboutNovNat.title}}</a></p>
+          <p>
+            @ All copyright 2023, <a href="#">{{ aboutNovNat.title }}</a>
+          </p>
         </div>
-        <div class="site-footer_bottom_menu">
+        <!-- <div class="site-footer_bottom_menu">
           <ul class="list-unstyled">
             <li><a href="#">Privacy Policy</a></li>
             <li><a href="#">Terms of Use</a></li>
           </ul>
-        </div>
+        </div> -->
       </div>
     </div>
 
@@ -160,7 +191,7 @@ export default {
   computed: {
     aboutNovNat() {
       return this.$store.state.novnat;
-    }
+    },
   },
   mounted() {
     window.addEventListener("scroll", this.handleScroll);

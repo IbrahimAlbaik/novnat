@@ -1,5 +1,5 @@
 <template>
-  <section class="welcome_two">
+  <section class="welcome_two" id="home">
     <div
       class="welcome_two_bg"
       style="background-image: url(/assets/images/resources/welcome_2_bg.png)"
@@ -34,7 +34,7 @@
               data-wow-delay="100ms"
             >
               <img
-                src="/assets/images/resources/welcome.jpg"
+                src="/assets/images/resources/welcome_1.jpg"
                 alt="Welcome Two Image"
               />
             </div>
@@ -47,7 +47,7 @@
               data-wow-delay="100ms"
             >
               <img
-                src="/assets/images/resources/welcome_1.jpg"
+                src="/assets/images/resources/welcome_2.jpg"
                 alt="Welcome Two Image"
               />
             </div>

@@ -2,7 +2,7 @@
   <section class="contact-one">
     <div class="container">
       <div class="row">
-        <div class="col-xl-7">
+        <!-- <div class="col-xl-7">
           <div class="contact-one__form__wrap">
             <div class="block-title text-left">
               <p>contact with us</p>
@@ -46,26 +46,31 @@
               </div>
             </form>
           </div>
-        </div>
-        <div class="col-xl-5">
+        </div> -->
+        <div class="col-xl-12">
           <div class="have_questions">
-            <div class="image_box">
+            <!-- <div class="image_box">
               <img src="/assets/images/resources/contact_img.jpg" alt="">
-            </div>
+            </div> -->
             <div class="block-title text-center">
               <p>get in touch with us</p>
               <h3>Have question?</h3>
               <div class="leaf">
-                <img src="/assets/images/resources/leaf.png" alt="">
+                <img src="/assets/images/resources/leaf.png" alt="" />
               </div>
             </div>
             <div class="have_questions_text">
-              <p>There are many variations of passages available but the majority have suffered
-                alteration in some form by inject humour or donec vel erat sollicitudin, dapibus dui
-                at, porttitor sem.</p>
+              <p>
+                There are many variations of passages available <br />
+                but the majority have suffered alteration in some form by inject
+                humour or donec vel erat sollicitudin,<br />
+                dapibus duiat, porttitor sem.
+              </p>
             </div>
             <div class="have_questions_btn">
-              <a href="#" class="thm-btn">Learn More</a>
+              <a :href="`mailto:${aboutNovNat.email}`" class="thm-btn"
+                >Send a Message</a
+              >
             </div>
           </div>
         </div>
@@ -75,11 +80,14 @@
 </template>
 
 <script>
-    export default {
-        name: "ContactTwo"
-    }
+export default {
+  name: "ContactTwo",
+  computed: {
+    aboutNovNat() {
+      return this.$store.state.novnat;
+    },
+  },
+};
 </script>
 
-<style scoped>
-
-</style>
+<style scoped></style>

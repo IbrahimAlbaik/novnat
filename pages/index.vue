@@ -3,15 +3,16 @@
     <NavFour />
     <SliderFour />
     <DetailsOne />
-    <WelcomeTwo id="welcome" />
-    <EcoFriendly id="eco" />
+    <WelcomeTwo />
+    <EcoFriendly />
     <Uniqueness />
-    <ServiceFour id="service" />
+    <ServiceFour />
     <ProjectPage />
-    <FaqOne id="faq" />
-    <TeamOne id="team" />
+    <FaqOne />
+    <TeamOne />
     <!-- <TestimonialThree /> -->
     <Timeline />
+    <BrandOne />
     <BrandFour />
     <!-- <AchievedOne /> -->
     <!-- <FunfactOne /> -->
@@ -31,6 +32,7 @@ import ProjectPage from "@/components/Projects/ProjectPage";
 import FaqOne from "../components/FaqOne";
 import Timeline from "@/components/About/Timeline";
 // import TestimonialThree from "../components/TestimonialThree";
+import BrandOne from "@/components/Brands/BrandOne";
 import BrandFour from "@/components/Brands/BrandFour";
 // import AchievedOne from "../components/AchievedOne";
 // import FunfactOne from "../components/FunfactOne";
@@ -39,6 +41,7 @@ import TeamOne from "../components/Team/TeamOne";
 export default {
   components: {
     NavFour,
+    BrandOne,
     BrandFour,
     FaqOne,
     TeamOne,
@@ -55,36 +58,6 @@ export default {
     return {
       title: "NovNat  | Home",
     };
-  },
-  scrollBehavior: async (to, from, savedPosition) => {
-    if (savedPosition) {
-      return savedPosition;
-    }
-
-    const findEl = async (hash, x) => {
-      return (
-        document.querySelector(hash) ||
-        new Promise((resolve, reject) => {
-          if (x > 50) {
-            return resolve();
-          }
-          setTimeout(() => {
-            resolve(findEl(hash, ++x || 1));
-          }, 100);
-        })
-      );
-    };
-    console.log(to);
-    if (to.hash) {
-      let el = await findEl(to.hash);
-      if ("scrollBehavior" in document.documentElement.style) {
-        return window.scrollTo({ top: el.offsetTop, behavior: "smooth" });
-      } else {
-        return window.scrollTo(0, el.offsetTop);
-      }
-    }
-
-    return { x: 0, y: 0 };
   },
 };
 </script>

@@ -16,7 +16,7 @@ export default {
   },
   head() {
     return {
-      title: "NovNat - Vue Nuxt Template for Agriculture Farm & Farmers"
+      title: "NovNat - "
     };
   },
   mounted() {

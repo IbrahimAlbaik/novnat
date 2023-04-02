@@ -1,23 +1,23 @@
 <template>
   <div>
     <PageHeader title="Contact" />
-    <Location />
+    <!-- <Location /> -->
     <ContactTwo />
-    <GMap />
+    <!-- <GMap /> -->
   </div>
 </template>
 
 <script>
 
   import PageHeader from "../components/PageHeader";
-  import Location from "../components/Location";
+  // import Location from "../components/Location";
   import ContactTwo from "../components/ContactTwo";
-  import GMap from "../components/GMap";
+  // import GMap from "../components/GMap";
   export default {
     components: {
-      GMap,
+      // GMap,
       ContactTwo,
-      Location,
+      // Location,
       PageHeader,
     },
     head(){

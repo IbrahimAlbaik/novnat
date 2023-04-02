@@ -1,9 +1,33 @@
 export const state = () => ({
+  silderList: [
+    {
+      id: "discover-1",
+      image: "1.jpg",
+      text: `<span>Harvesting</span> water from air,<br /> one drop at a time`,
+      more: `We have developed and patented a novel Metal Organic Framework (MOF) material, for an industrial-scale (passive) atmospheric water generator device. MOFs are porous materials with high functional and chemical control, making them ideal for harvesting water from air. NovNat Tech's MOF is capable of extracting water vapor from air at high capacity and speed; it bonds only with water molecules in the air and acts as a 'nano-scale selective sponge', ensuring the quality of water captured is not affected by impurities.
+      The major advantage of the patented MOF is its ability to capture water from air in environments where the RH is as low as 15%, making it functional in any part of the world, including deserts and has a maximum water capacity of 60% of its weight. Additionally, the MOF is made up of an abundant and highly recyclable metal and an organic linker, and is synthesized using only water, making the manufacturing process completely environmentally friendly and highly scalable. We  aim to develop an industrial-scale AWG system that uses low grade waste heat (40-100°C) from industrial operations to produce water.`
+    },
+    {
+      id: "discover-2",
+      image: "4.jpg",
+      text: `<span>Pioneering</span> nanomaterials<br /> of the future`,
+      more: ``,
+    },
+    {
+      id: "discover-3",
+      image: "3.jpg",
+      text: `<span>Meshing</span> chemistry<br /> and engineering to solve <br /> today's problems`,
+      more: `Meshing chemistry and engineering to solve today's problems
+      NovNat is an interdisciplinary company that blends the power of chemistry and engineering to pioneer novel solutions to address the contemporary global challenges facing our planet today. Our team of experts is driven by a passion for creating solutions that protect our planet and secure our future to make a real difference in the world by harnessing the power of science and technology (engineering). Our innovative approach starts at the molecular level, designing and synthesizing novel materials that possess exceptional properties. We then deploy these materials in advanced engineered systems, creating unprecedented solutions that can tackle some of the most pressing issues of our time.
+      Among our notable achievements, we have developed a cutting-edge technology to combat water scarcity by engineering a nanoscale biomimetic material that draws inspiration from Nature (spider webs), the way they capture water droplets from fog but in nanoscale and extremely arid environments which is then integrated into an innovative engineered system. This enables us to extract water from the air at any time, even in the most challenging environments. Our breakthrough innovation is a testament to our relentless pursuit of scientific excellence, marrying chemical design with engineering ingenuity to create an effective and sustainable solutions.
+      At NovNat, we are committed to making a difference in the world. We are tackling the problems that face our planet through our unique approach to science. By designing atoms and molecules that have never been found before, we are creating materials that can transform our world. And by integrating these materials into cutting-edge engineering systems, we are creating solutions that have never been possible before! Our mission is to inspire a better future for all, by meshing chemistry and engineering to solve today's problems. Our multidisciplinary team of experts endeavours to leverage the synergies between chemistry and engineering to innovate and push the boundaries of scientific knowledge.`
+    },
+  ],
   novnat: {
     id: 1,
     title: 'NovNat',
     logo: 'novnat-logo.png',
-    address: 'The Exchange, 3 Centenary Sq, <br /> Birmingham B1 2DR, Birmingham, <br /> B16 0PN',
+    address: 'The Exchange, 3 Centenary Sq, <br /> Birmingham B1 2DR',
     register: 'Company registered in England and Wales',
     phone: '+44 (0) 752 128 0697',
     location: '',
@@ -75,7 +99,7 @@ export const state = () => ({
       icon: "icon-harvest"
     },
   ],
-  teams: [
+  team: [
     {
       id: 1,
       name: 'Kamal Diab',
@@ -84,7 +108,8 @@ export const state = () => ({
       about: `Kamal Diab is the lead scientist for NovNat, specializing in high-throughput screening, material design, and process optimization. With years of experience in the field, he is an expert in designing and evaluating porous materials for a variety of applications. Kamal plays the critical role in providing technical solutions and developing new materials for NovNat. He is also highly skilled in identifying and defining new technical trends, working with partners to align technology roadmaps.
       Kamal is especially fascinated by the creation of solid-state materials that can be adjusted synthetically, allowing precise control of the atomic-scale and/or electronic-scale structure for specific purposes.  His current research spans diverse areas of chemistry and materials science, ranging from energy to global water-related challenges. Specifically, his research focuses on the rational design of metal-organic frameworks (MOFs) for applications in water and gas storage, separations, and purification.
       Kamal responsible for synthesis, optimization, and characterization to transition porous chemistry into real-world products. At NovNat, Kamal leverages his extensive experience in chemistry and specialty gas materials to accelerate the discovery of novel materials that can address global challenges in energy and sustainability. Prior to joining NovNat, He was a research graduate from the University of Birmingham in the UK, he obtained his MSc in Nanoscience from E-JUST and his BSc from Alexandria, with a specialization in developing novel MOFs for efficient sorption-driven applications.
-      `
+      `,
+      socialMediaLinks: ['https://www.linkedin.com/in/kamaldiab'],
     },
     {
       id: 2,
@@ -93,7 +118,8 @@ export const state = () => ({
       image: 'ibrahim.jpg',
       about: `Ibrahim is responsible for designing the integration of MOFs in systems for gas storage,
       gas separation and HVAC applications. Ibrahim completed his PhD at the University of Birmingham,
-      where he developed MOF-based cooling and desalination adsorption systems. He also holds an MSc in Advanced Mechanical Engineering from Birmingham, where he was awarded a Ratcliffe Prize for the best post-graduate performance in the Engineering School. His first degree in Mechanical Engineering is from Islamic University of Gaza. He has industrial and research experiences in different electro-mechanical projects such as pump stations, wastewater treatment and desalination plants as well as renewable energy systems such as Solar-Organic Rankine cycle, Stirling engine and biogas systems. Ibrahim has managed several large-scale projects throughout his career.`
+      where he developed MOF-based cooling and desalination adsorption systems. He also holds an MSc in Advanced Mechanical Engineering from Birmingham, where he was awarded a Ratcliffe Prize for the best post-graduate performance in the Engineering School. His first degree in Mechanical Engineering is from Islamic University of Gaza. He has industrial and research experiences in different electro-mechanical projects such as pump stations, wastewater treatment and desalination plants as well as renewable energy systems such as Solar-Organic Rankine cycle, Stirling engine and biogas systems. Ibrahim has managed several large-scale projects throughout his career.`,
+      socialMediaLinks: ['https://www.linkedin.com/in/ibrahim-albaik-70205b10b'],
     },
     {
       id: 3,
@@ -101,7 +127,9 @@ export const state = () => ({
       position: 'Co-Founder and COO',
       image: 'abed.jpg',
       about: `Abdulbari holds an MSc in advanced mechanical engineering from the University of Birmingham specialising
-       in engineering design using CAD and CFD software. Furthermore, he is highly capable in report writing and simplifying technical language for all stakeholders involved in this project.`
+       in engineering design using CAD and CFD software. Furthermore, he is highly capable in report writing and simplifying technical language for all stakeholders involved in this project.`,
+      socialMediaLinks: ['https://www.linkedin.com/in/abdulbari-belouafi-6b7697139'],
+
     },
     {
       id: 4,
@@ -110,8 +138,38 @@ export const state = () => ({
       image: 'asmaa.jpg',
       about: `Asmaa is a highly accomplished research scientist with a strong background in materials chemistry.
        She earned her Bachelor's degree in Chemistry from IMAC at the University of Alexandria. She later worked as a research assistant at the American University in Cairo and the Egypt Japan University of Science and Technology, where she gained extensive experience in the preparation and characterization of metal-organic frameworks (MOFs) for applications in drug delivery, water treatment, and carbon capture. Asmaa's research focuses on the development of novel materials for addressing global challenges in energy and sustainability. She uses fundamental chemistry, high-throughput materials screening, and experimental chemistry to accelerate the discovery of materials with desirable properties.
-       Asmaa is committed to advancing the field of materials chemistry and promoting scientific breakthrough at NovNat delivering kg-scale MOF production onsite, and undertaking research and design work for future tonne-scale projects. `
+       Asmaa is committed to advancing the field of materials chemistry and promoting scientific breakthrough at NovNat delivering kg-scale MOF production onsite, and undertaking research and design work for future tonne-scale projects. `,
+      socialMediaLinks: ['https://www.linkedin.com/in/asmaa-hanafi-01aa75259'],
+
     }
+  ],
+  otherTeam: [
+    {
+      id: 'advisory-1',
+      name: 'Richard Boocock',
+      position: 'former VP and CIO of AirProducts',
+      image: 'Richard.jpg',
+      about: `Richard's extensive industrial expertise helps with customer engagement and acquisition and identifying decision makers within various organisations.`,
+      socialMediaLinks: ['https://www.linkedin.com/in/richard-boocock-00b071196'],
+
+    },
+    {
+      id: 'advisory-2',
+      name: 'John Cooke',
+      position: 'successful entrepreneur',
+      image: 'John.jpg',
+      about: `provides mentoring, and training and formulating the commercia strategy.`,
+      socialMediaLinks: ['https://www.linkedin.com/in/jccooke'],
+
+    },
+    {
+      id: 'advisory-3',
+      name: 'Philip Gray',
+      position: 'commercial strategist',
+      image: 'Philip.jpg',
+      about: `helps in developing and implementing commercial and IP strategy.`,
+      socialMediaLinks: ['https://www.linkedin.com/in/philgraycommercialdoctor'],
+    },
   ],
   projects: [
     {
@@ -130,7 +188,7 @@ export const state = () => ({
       description: `Atmospheric water generation devices employ various technologies to extract and produce potable water from air.
       The technologies can be categorised into 2 main types, cooling condensation and hygroscopy (adsorption/absorption).
       While cooling condensation is the most commonly used technology it still remains energy-intensive and requires refrigerants which are potent greenhouse gases and extremely damaging to the ozone layer. These negative characteristics currently rule cooling condensation out as a viable application in a large-scale. On the other hand, hygroscopic technologies have shown great potential in large-scale applications and have garnered strong interest in recent times due to their lower energy requirements and significantly smaller carbon footprints.`,
-      image: "MOF-water-harvesting.jpg",
+      image: "System.jpg",
       challenges: [],
     },
     {
@@ -162,32 +220,32 @@ export const state = () => ({
         },
       ],
     },
-    {
-      id: 3,
-      title: "Our AWG",
-      description: `NovNat Tech’s proprietary MOF (UK patent application number:2218176.2), has shown breakthrough water sorption performance with unprecedented capacity and kinetics. With the capacity to capture from air at relative humidity (RH) as low as 10% the MOF is functional in any part of the world.`,
-      image: "MOF-sem.jpg",
-      challenges: [
-        {
-          id: 1,
-          title: "Design",
-          description: "Description text goes here",
-          icon: "",
-        },
-        {
-          id: 2,
-          title: "Cost",
-          description: "Description text goes here",
-          icon: "",
-        },
-        {
-          id: 3,
-          title: "Footprint",
-          description: "Description text goes here",
-          icon: "",
-        },
-      ],
-    },
+    // {
+    //   id: 3,
+    //   title: "Our AWG",
+    //   description: `NovNat Tech’s proprietary MOF (UK patent application number:2218176.2), has shown breakthrough water sorption performance with unprecedented capacity and kinetics. With the capacity to capture from air at relative humidity (RH) as low as 10% the MOF is functional in any part of the world.`,
+    //   image: "MOF-sem.jpg",
+    //   challenges: [
+    //     {
+    //       id: 1,
+    //       title: "Design",
+    //       description: "Description text goes here",
+    //       icon: "",
+    //     },
+    //     {
+    //       id: 2,
+    //       title: "Cost",
+    //       description: "Description text goes here",
+    //       icon: "",
+    //     },
+    //     {
+    //       id: 3,
+    //       title: "Footprint",
+    //       description: "Description text goes here",
+    //       icon: "",
+    //     },
+    //   ],
+    // },
   ],
   faqs: [
     {
