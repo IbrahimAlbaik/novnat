@@ -6297,6 +6297,12 @@ h6 {
   z-index: 9;
 }
 
+@media (max-width: 991px) {
+  .uniqueness .uniqueness_card::after {
+    display: none;
+  }
+}
+
 .uniqueness .uniqueness_card.three::after {
   transform: rotate(45deg) !important;
   -webkit-transform: rotate(45deg) !important;
