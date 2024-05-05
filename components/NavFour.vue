@@ -6,9 +6,9 @@
           <a :href="`mailto:${aboutNovNat.email}`"
             ><span class="icon-message"></span>{{ aboutNovNat.email }}</a
           >
-          <a :href="`tel:${aboutNovNat.phone}`"
+          <!-- <a :href="`tel:${aboutNovNat.phone}`"
             ><span class="icon-phone-call"></span>{{ aboutNovNat.phone }}</a
-          >
+          > -->
         </div>
         <div class="topbar-one__middle">
           <a href="/" class="main-nav__logo">
@@ -21,10 +21,16 @@
         </div>
         <div class="topbar-one__right">
           <div class="topbar-one__social home-four">
-            <a href="#"><i class="fab fa-facebook-square"></i></a>
+            <!-- <a href="#"><i class="fab fa-facebook-square"></i></a>
             <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <a href="#"><i class="fab fa-dribbble"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a> -->
+            <a
+              v-for="media in aboutNovNat.socialMediaLinks"
+              :key="media.id"
+              :href="media.link"
+              target="_blank"
+              ><i :class="media.icon"></i
+            ></a>
           </div>
         </div>
       </div>
@@ -54,7 +60,7 @@
               <li>
                 <nuxt-link :to="{ path: '/', hash: 'home' }">Home</nuxt-link>
               </li>
-              <li>
+              <!-- <li>
                 <nuxt-link :to="{ path: '/', hash: 'uniqueness' }"
                   >Uniqueness</nuxt-link
                 >
@@ -63,10 +69,10 @@
                 <nuxt-link :to="{ path: '/', hash: 'services' }"
                   >Services</nuxt-link
                 >
-              </li>
+              </li> -->
               <li>
                 <nuxt-link :to="{ path: '/', hash: 'projects' }"
-                  >Technology</nuxt-link
+                  >Our Technology</nuxt-link
                 >
               </li>
               <li>
@@ -97,7 +103,7 @@
           <li>
             <nuxt-link :to="{ path: '/', hash: 'home' }">Home</nuxt-link>
           </li>
-          <li>
+          <!-- <li>
             <nuxt-link :to="{ path: '/', hash: 'uniqueness' }"
               >Uniqueness</nuxt-link
             >
@@ -106,7 +112,7 @@
             <nuxt-link :to="{ path: '/', hash: 'services' }"
               >Services</nuxt-link
             >
-          </li>
+          </li> -->
           <li>
             <nuxt-link :to="{ path: '/', hash: 'projects' }"
               >Our Technology</nuxt-link
