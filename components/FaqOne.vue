@@ -13,27 +13,24 @@
             </div>
             <div
               class="faq_one_image"
-              style="
-                background-image: url(/assets/images/resources/question_2.jpg);
-              "
+              style="background-image: url(/assets/images/resources/faq.webp);"
             >
               <div class="phone_number">
                 <p>
-                  email us<a
-                    :href="`mailto:${aboutNovNat.email}`"
-                    >{{ aboutNovNat.email }}</a
-                  >
+                  email us<a :href="`mailto:${aboutNovNat.email}`">{{
+                    aboutNovNat.email
+                  }}</a>
                 </p>
               </div>
             </div>
           </div>
         </div>
-        <div class="col-xl-6 col-lg-6">
+        <div class="col-xl-12">
           <div class="faq_one_right">
             <div class="accrodion-grp" data-grp-name="faq-one-accrodion">
               <div class="accordion-container-one">
                 <div class="ac" v-for="faq in faqs" :key="faq.id">
-                  <h2 class="ac-q accordion__title-text" tabIndex="0">
+                  <h2 class="ac-q" tabIndex="0">
                     {{ faq.title }}
                   </h2>
                   <div class="ac-a accordion__content">
@@ -103,7 +100,7 @@ export default {
   cursor: pointer;
   position: relative;
   font-weight: 400;
-  font-family: var(--heading-font);
+  font-family: serif;
 }
 
 .ac.is-active .ac-q {

@@ -6728,7 +6728,7 @@ h6 {
 # Brand Four
 --------------------------------------------------------------*/
 .brand-one.brand-four {
-  background: var(--thm-base);
+  /* background: var(--thm-base); */
   border-bottom: none;
 }
 

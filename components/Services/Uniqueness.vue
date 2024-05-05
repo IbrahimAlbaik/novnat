@@ -4,12 +4,19 @@
       <div class="service_four_top"></div>
       <div class="block-title text-center">
         <p>What distinguishes us</p>
-        <h3>Our Uniqueness</h3>
+        <h3>Our Complete technology solution</h3>
         <div class="leaf">
-          <img src="/assets/images/resources/leaf.png" alt="" />
+          <img src="/assets/images/resources/leaf.png" alt="icon" />
         </div>
       </div>
       <div class="row">
+        <div class="col-lg-12">
+          <div class="complete_solutions wow animated slideInLeft" data-wow-duration="2s" data-wow-delay="1s">
+            <img src="/assets/images/uniqueness/picture1.png" alt="icon_2" />
+          </div>
+        </div>
+      </div>
+      <!-- <div class="row">
         <div
           class="col-xl-4 col-lg-4"
           v-for="(unique, index) in uniqueness"
@@ -49,7 +56,7 @@
             </div>
           </div>
         </div>
-      </div>
+      </div> -->
     </div>
   </section>
 </template>
@@ -113,4 +120,9 @@ export default {
 };
 </script>
 
-<style scoped></style>
+<style scoped>
+.complete_solutions img {
+  width: 100%;
+  height: 100%;
+}
+</style>

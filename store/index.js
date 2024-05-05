@@ -35,8 +35,8 @@ export const state = () => ({
     },
     {
       id: "discover-3",
-      image: "3.jpg",
-      text: `<span>Meshing</span> chemistry<br /> and engineering to solve <br /> today's problems`,
+      image: "5.jpeg",
+      text: `<span>A complete</span><br /> technology solution provider`,
       more: `Welcome to NovNat Tech, your premier technology solution provider. We offer comprehensive services spanning from material selection and tuning to shaping and integration, alongside numerical modelling and system assembly. Whether you're seeking materials for HVAC applications or advanced AWG systems for water sustainability and resilience, NovNat's technology sets the standard. Our breakthrough MOFs and scalable AWG systems cater to all your humidity and water-related needs.`,
       list: ['Share Your Needs: Whether you require MOFs for dehumidification or a complete AWG solution, tell us your requirements.',
         'Diagnose: We assess your needs and ambient conditions, offering tailored technology recommendations.',
@@ -159,7 +159,7 @@ export const state = () => ({
     {
       id: 'advisory-1',
       name: 'Richard Boocock',
-      position: 'former VP and CIO of AirProducts',
+      position: 'Former SVP & CIO of Air Products',
       image: 'Richard.jpg',
       about: `Richard's extensive industrial expertise helps with customer engagement and acquisition and identifying decision makers within various organisations.`,
       socialMediaLinks: ['https://www.linkedin.com/in/richard-boocock-00b071196'],
@@ -271,86 +271,137 @@ export const state = () => ({
   faqs: [
     {
       id: 1,
-      title: 'Q1. What is NovNat material technology MOF for AWG system?',
-      details: 'The company-patented MOF we use displays superior performance compared to existing MOFs, A great quality of the company-patented MOF, through precise engineering of the structure, is its ability to extract ONLY water molecules (H2O) from air, even if the air is polluted or contaminated with other chemicals. ',
+      title: 'Q1. What distinguishes you from other companies working on atmospheric water generation?',
+      details: `What distinguishes NovNat from other companies working on atmospheric water generation
+      is our unique approach and cutting-edge technologies. Unlike technologies that rely on
+      cooling-condensation which can be energy intensive and is limited to humid regions, NovNat
+      has developed unique water capturing materials that are functional even in the driest regions
+      (as low as 10% relative humidity). Furthermore, within the realm of desiccant-based water
+      harvesting technologies, NovNat’s materials boast the highest capacities, fastest kinetics and
+      lowest energy requirements. This along with our vast expertise in engineering and material
+      science enable efficient, scalable water harvesting systems that can be deployed almost
+      anywhere in the world.`,
       features: [
-        {
-          id: 1,
-          title: 'Key features of the company-patented MOF:',
-          featuresDetails: ['Capable of extracting only water from air even at RH<15%',
-            'Capable of capturing amount of water equivalent to 46% of its weight at RH of 20% and 56% of its weight at RH 90% ',
-            'Requires a waste heat source of ONLY 40°C', 'Highly scalable: production costs can be reduced to only £30/kg (≈$35) in large-scale production',
-            'Non-toxic, sustainable and environmentally friendly',
-            'Totally recyclable at the end of its lifecycle; it can be dissolved and reconstructed into other MOF structures.']
-        },
-        {
-          id: 2,
-          title: 'Key features of our AWG:',
-          featuresDetails: ['Low-grade thermal energy required: as little as 0.35kWh/L (@40°C) ',
-            'Size: only 344m2 system footprint required to produce 1 million L/day.',
-            'Capable of achieving net-zero water consumption, meaning water production can be increased to meet consumption. ',
-          ]
-        }]
+        // {
+        //   id: 1,
+        //   title: 'Key features of the company-patented MOF:',
+        //   featuresDetails: ['Capable of extracting only water from air even at RH<15%',
+        //     'Capable of capturing amount of water equivalent to 46% of its weight at RH of 20% and 56% of its weight at RH 90% ',
+        //     'Requires a waste heat source of ONLY 40°C', 'Highly scalable: production costs can be reduced to only £30/kg (≈$35) in large-scale production',
+        //     'Non-toxic, sustainable and environmentally friendly',
+        //     'Totally recyclable at the end of its lifecycle; it can be dissolved and reconstructed into other MOF structures.']
+        // },
+        // {
+        //   id: 2,
+        //   title: 'Key features of our AWG:',
+        //   featuresDetails: ['Low-grade thermal energy required: as little as 0.35kWh/L (@40°C) ',
+        //     'Size: only 344m2 system footprint required to produce 1 million L/day.',
+        //     'Capable of achieving net-zero water consumption, meaning water production can be increased to meet consumption. ',
+        //   ]
+        // }
+      ]
     },
     {
       id: 2,
-      title: 'Q2. How scalable is the system and what is the maximum capacity you can reach?',
-      details: 'Since our technology can be driven using the waste heat instead of consuming huge amount of electrical energy (in the conventional AWG), the scale of the water production for a single unit can reach to up to 50,000L/day. This can be managed by the novel approach that NovNat Tech has developed in optimizing the heat and mass transfer inside the chamber. The enhanced heat transfer has been achieved by developing a coating technique of the MOF material on the heat exchanger surface, to ensure having a uniform temperature distribution along multiple heat exchangers in the unit. A good mass transfer is also achieved in the unit after introducing air channels across the heat exchanger to equally distribute the air through the MOF with minimum pressure drop, which is also helps in scaling up the system.',
+      title: 'Q2. In what industries can your AWG technology be deployed?',
+      details: `NovNat’s versatile AWG technology can be deployed in numerous industrial set-ups
+      including food &amp; beverage, cement manufacturing, desert-located hydroponics, power
+      generation and more. We have seen strong interest from the geothermal and data centre
+      industries due to their large cooling demands and we working with companies in both to set
+      up pilot demonstrations of our AWG technology.`,
       features: []
     },
     {
       id: 3,
-      title: 'Q3. What is your current technology stage?',
-      details: 'We have successfully developed a batch AWG system in TRL 4 with a total water production of 9 L/day. We simulated the waste heat source by having a water tank with a temperature controller to evaluate the system performance at different waste heat temperature. The preliminary results shows that the system can be driven with a temperature of 55oC or higher which is very encouraging with this system scale. The system is designed with single adsorber bed, and a passive condenser as shown in the figure below.',
+      title: 'Q3. Are there any environmental concerns with your MOF?',
+      details: `No. All our MOFs are non-toxic and non-hazardous. The synthesis process is also a green
+      one where we have eliminated the use of harmful solvents that are typically used.`,
       features: []
     },
     {
       id: 4,
-      title: 'Q4. How much MOF is required to produce 10,000 L of water per day and how many cycles?',
-      details: 'To produce 10,000 L of water per day, we would require approximately ~400 kgs of our patented MOF material. We have conducted a case study with Sainsburys and found that using our MOF material, we can achieve this water production through 40 cycles of adsorption and desorption per day.',
+      title: 'Q4. What is the life expectancy of your materials? What happens to them at end-of-life?',
+      details: `Our MOFs boast extremely high stabilities and have been rigorously tested over thousands of
+      cycles showing no degradation in performance. Based on the number of cycles ran per year,
+      the life expectancy can range from 5-10 years. Additionally, at end-of-life our unique
+      recycling process allows us to break down the MOF into its constituents allowing to recover
+      up to 95% of the original structure. The recycled materials can be reused to make more
+      MOFs or find uses in other applications.`,
       features: []
     },
     {
       id: 5,
-      title: 'Q5. Does your system meet drinking water regulatory standards?',
-      details: `Yes, our system produces water that meets the standard water quality requirements for drinking water,
-       with a pH range of 6.5-9.5.
-        This is achieved through our MOF material which acts as a 'nano- scale selective sponge' and 'filter' simultaneously,
-         producing ultra-pure water that is safe for consumption. The MOF is engineered to bond only with water molecules in the air,
-          and the internal structure of the MOF acts as a filter, producing water that meets or exceeds all water safety requirements.
-          Water molecules have a stronger bonding affinity with the adsorption sites in the pore compared to other pollutants such as carbon dioxide, NOx, SOx, methane, ammonia, and hydrogen sulfide,
-          which may potentially be adsorbed by the MOF. This selectivity phenomenon ensures that only water molecules occupy the pore volume and are subsequently desorbed from the MOF.
-          In contrast, other AWG systems that use desiccants such as zeolite, silica gel, or glycerol, or liquid desiccants such as brine,
-          do not possess the same size exclusion and selectivity properties as our MOF, and may require additional filtration steps to achieve the same level of water purity.
-          Similarly, refrigeration-based AWG systems capture all pollutants in the water vapor and must be filtered out,
-          resulting in water of lower quality. Additionally, we conduct regular testing and quality control measures to ensure that the water produced by our system is safe for consumption and meets safety standards.
-          NovNat Tech is also engaged with the EPA in the US to investigate microbial water quality of the produced water to ensure the AWG system maintains the required standard throughout its lifetime.`,
+      title: 'Q5. How far along in the development path are you?',
+      details: `Our AWG system currently sits at TRL 5, having been successfully tested at our lab facility
+      using one of our unique MOFs. On the other hand, our MOFs are slightly ahead on the
+      development roadmap as we have successfully integrated them with different systems and
+      rigorously tested their performance with some of the MOFs currently at TRL 7.`,
       features: []
     },
     {
       id: 6,
-      title: 'Q6: What distinguishes our company-patented MOF from others and why is our MOF expected to achieve commercial success in the field of AWG?',
-      details: `Our company-patented MOF, Nov-1,
-      demonstrates superior performance compared to existing technologies for AWG,
-      including the current leading structure MOF-303, as well as other conventional methods (see Table 2 1and Table 2 2). Nov-1 has been meticulously engineered and precisely manipulated to selectively capture water vapor from air at exceptionally high rates, which is a significant improvement over existing technologies.
-      This unique combination of advanced performance characteristics is expected to make Nov-1 commercially successful in the field of atmospheric water generation. `,
+      title: 'Q6. How do you power your AWG system?',
+      details: `Our AWG systems benefit from being able to utilise multiple sources of power including
+      renewable energy, conventional electrical supply and even waste-heat. Thanks to our
+      materials’ low energy requirements, we can utilise low-grade waste-heat (as low as 55◦C), to
+      regenerate the materials and produce water using a passive condenser. Our innovative
+      systems allow us to eliminate the need for energy intensive active condensation.`,
       features: []
     },
     {
       id: 7,
-      title: 'Q7. Is it commercially viable?',
-      details: `MOFs are not yet used for AWG on a commercial level; however, they have been successfully commercialised for use in several other applications including gas separation and storage including using MOFs: `,
-      features: [{
-        id: 1,
-        title: '',
-        featuresDetails: ['o store arsine gas for semiconductor industry and to purify gases avoiding expensive cryogenic separation. (NuMat)',
-          'To store natural gas in MOF tanks to power vehicles (BASF/Mercedes).',
-          'To store and slowly release 1-methylcyclopropene to control fruit ripening (Note: Decco lost a patent lawsuit in late 2019 and was forced to pull the product) (MOF Technologies/Decco) ',
-          `To make MOF-based CO2-sensors (Matrix Sensors):
-        Preliminary studies on our system in terms of commercial feasibility show that although there is a significant up-front cost to purchasing a working system to produce water using AWG, the benefits gained in return are significant. Firstly, the system can produce water at a faster rate than any other known MOFs based device currently known. Secondly, the nature of our company-patented MOF results in the least amount of thermal energy required to deliver the water which translates to low running costs of the system. Last but not least, the system we have developed requires a relatively small amount of space, making it suitable for both industrial and household applications, where it can be placed on empty roof spaces.`
-        ]
-      }]
-    }
+      title: 'Q7. What are your maintenance requirements?',
+      details: `One of the many advantages of adsorption-based systems is the lack of complexity and
+      maintenance seen in other systems. Our AWG systems have no moving parts and will require
+      minimal occasional maintenance such as replacement of air filters and servicing of fans &amp;
+      pumps (when necessary).`,
+      features: [
+        //   {
+        //   id: 1,
+        //   title: '',
+        //   featuresDetails: ['o store arsine gas for semiconductor industry and to purify gases avoiding expensive cryogenic separation. (NuMat)',
+        //     'To store natural gas in MOF tanks to power vehicles (BASF/Mercedes).',
+        //     'To store and slowly release 1-methylcyclopropene to control fruit ripening (Note: Decco lost a patent lawsuit in late 2019 and was forced to pull the product) (MOF Technologies/Decco) ',
+        //     `To make MOF-based CO2-sensors (Matrix Sensors):
+        //   Preliminary studies on our system in terms of commercial feasibility show that although there is a significant up-front cost to purchasing a working system to produce water using AWG, the benefits gained in return are significant. Firstly, the system can produce water at a faster rate than any other known MOFs based device currently known. Secondly, the nature of our company-patented MOF results in the least amount of thermal energy required to deliver the water which translates to low running costs of the system. Last but not least, the system we have developed requires a relatively small amount of space, making it suitable for both industrial and household applications, where it can be placed on empty roof spaces.`
+        //   ]
+        // }
+      ]
+    },
+    {
+      id: 8,
+      title: 'Q8. How clean is the generated water?',
+      details: `The water generated is ultra-pure thanks to our MOFs high affinity to water molecules. Early
+      testing has shown pH levels between 6.8-7.5 and TDS levels less than 10ppm. The maximum
+      allowable TDS level recommended by the EPA for drinking water is 500ppm.`,
+      features: []
+    },
+    {
+      id: 9,
+      title: 'Q9. What is your productivity rate?',
+      details: `Our best-performing MOF in terms of productivity can produce up to 15l/kg/day and this can
+      be further enhanced with our doping techniques taking the overall productivity to 20l/kg/day.`,
+      features: []
+    },
+    {
+      id: 10,
+      title: 'Q10. What are the challenges that MOFs face in reaching commerciality and how are you addressing them?',
+      details: `One of the primary challenges MOFs face in reaching commercialization is scalability. While
+      MOFs exhibit remarkable properties in the lab, scaling up their production to meet industrial
+      demands can be complex and costly. At NovNat Tech, we&#39;re tackling this challenge through a
+      combination of innovative and green synthesis techniques, process optimization, and strategic
+      partnerships with industry leaders in materials science and manufacturing. By leveraging our
+      expertise and collaborating with key stakeholders, we&#39;re working towards overcoming
+      scalability hurdles and bringing MOF-based technologies to market efficiently and cost-
+      effectively. Another challenge is the way in which they are integrated with various systems
+      whether that is atmospheric water generation systems in our case or others such as desiccant
+      dehumidifiers. This is what we refer to as shaping or form factor and is a critical step in
+      ensuring seamless integration without performance losses. At NovNat we have developed
+      unique form factors allowing us to integrate our MOFs with our AWG systems and are
+      working with clients to demonstrate integration with other systems such as desiccant rotors
+      and adsorption heat pumps.`,
+      features: []
+    },
   ]
 });
 
