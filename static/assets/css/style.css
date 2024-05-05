@@ -3490,7 +3490,7 @@ h6 {
   display: block;
   overflow: hidden;
   z-index: 10;
-  background:linear-gradient(0deg, rgba(255, 0, 150, 0.3), rgba(255, 0, 150, 0.3));
+  /* background:linear-gradient(0deg, rgba(255, 0, 150, 0.3), rgba(255, 0, 150, 0.3)); */
   background-size:cover;
 }
 
@@ -6728,7 +6728,7 @@ h6 {
 # Brand Four
 --------------------------------------------------------------*/
 .brand-one.brand-four {
-  background: var(--thm-base);
+  /* background: var(--thm-base); */
   border-bottom: none;
 }
 
@@ -7661,16 +7661,34 @@ h6 {
   padding: 120px 0 93px;
 }
 
+.project_detail table {
+  margin: 1rem 0 4rem 0;
+}
+
 .project_detail_image {
   margin-bottom: 45px;
-  margin-top: -6rem;
+}
+
+.project_detail_image.more {
+  margin: 1.5rem 0;
 }
 
 .project_detail_image img {
   width: 100%;
-  border-radius: 5px;
-  height: 600px;
+  height: 480px;
+  object-fit: contain;
+  border: 1px solid #ccc;
+  border-radius: 1rem;
+}
+
+.project_detail_image.no-border img {
+  border: none;
+  height: 100%;
   object-fit: cover;
+}
+
+.project_detail_image.more img {
+  height: 100%;
 }
 
 .harvest_innovations_detail h2 {
@@ -7761,6 +7779,7 @@ h6 {
   border-bottom: 1px solid #ffffff;
   padding-bottom: 50px;
   margin-bottom: 40px;
+  padding: 0;
 }
 
 .project_information_list li {
@@ -7768,12 +7787,16 @@ h6 {
   padding-bottom: 17px;
 }
 
+.project_information_list li p {
+  margin-bottom: 0 !important;
+}
+
 .project_information_list span {
   color: #878986;
 }
 
 .project_information_list li:last-child {
-  color: var(--thm-primary);
+  /* color: var(--thm-primary); */
   padding-bottom: 0;
 }
 
@@ -9679,7 +9702,7 @@ h6 {
 
 .cart_table tbody tr td {
   min-width: 160px;
-  padding: 40px 20px 40px 0;
+  padding: 0 20px;
   border: 0px solid #ededed;
 }
 

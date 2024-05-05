@@ -1,12 +1,12 @@
 <template>
-  <section class="banner_four_section">
+  <section class="banner_four_section" id="home">
     <div class="banner-carousel-four owl-theme owl-carousel">
       <no-ssr>
         <carousel
           :items="1"
           :autoplay="true"
           :nav="false"
-          autoplaySpeed="1000ms"
+          autoplaySpeed="2000ms"
         >
           <!-- Slide Item -->
           <div class="slide-item" v-for="item in silderList" :key="item.id">
@@ -14,6 +14,10 @@
               class="image-layer"
               :style="`background-image: url(/assets/images/main-slider/${item.image})`"
             ></div>
+            <!-- <video autoplay muted loop id="myVideo">
+              <source src="assets/images/main-slider/1.mov" type="video/mov" />
+              Your browser does not support HTML5 video.
+            </video> -->
             <div class="auto-container">
               <div class="content-box">
                 <div class="content text-right">

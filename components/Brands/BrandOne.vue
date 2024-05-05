@@ -2,7 +2,7 @@
   <div class="brand-one">
     <div class="container">
       <div class="block-title text-center">
-        <p>our target</p>
+        <p>Working towards UN’s Sustainable Development Goals</p>
         <div class="leaf">
           <img src="/assets/images/resources/leaf.png" alt="" />
         </div>

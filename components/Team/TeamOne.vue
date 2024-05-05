@@ -10,7 +10,7 @@
       </div>
       <div class="row">
         <div
-          class="col-xl-3 col-lg-3 col-md-6"
+          class="col-xl-4 col-lg-4 col-md-6"
           v-for="person in team"
           :key="person.id"
         >
@@ -18,7 +18,7 @@
             <nuxt-link :to="`/team/${person.id}`">
               <div class="team_one_image">
                 <img
-                  v-bind:src="`/assets/images/team/${person.image}`"
+                  :src="`/assets/images/team/${person.image}`"
                   alt="team.id"
                 />
               </div>
@@ -49,34 +49,38 @@
           <img src="/assets/images/resources/leaf.png" alt="" />
         </div>
       </div>
-      <div class="row">
-        <div
-          class="col-xl-4 col-lg-4 col-md-6"
-          v-for="person in otherTeam"
-          :key="person.id"
-        >
-          <div
-            class="team_one_single wow fadeInUp animated"
-            style="visibility: visible; animation-name: fadeInUp"
-          >
-            <nuxt-link :to="`/team/${person.id}`">
-              <div class="team_one_image">
-                <img :src="`/assets/images/team/${person.image}`" alt="" />
-              </div>
-            </nuxt-link>
-            <div class="team_one_deatils">
-              <p>{{ person.position }}</p>
-              <h2>
-                <a href="#">{{ person.name }}</a>
-              </h2>
-              <div class="team_one_social">
-                <a
-                  v-for="link in person.socialMediaLinks"
-                  :key="link"
-                  :href="link"
-                  target="_blank"
-                  ><i class="fab fa-linkedin"></i
-                ></a>
+      <div class="row" style="justify-content: center">
+        <div class="col-xl-8">
+          <div class="row">
+            <div
+              class="col-xl-5 col-lg-5 col-md-6"
+              v-for="person in otherTeam"
+              :key="person.id"
+            >
+              <div
+                class="team_one_single wow fadeInUp animated"
+                style="visibility: visible; animation-name: fadeInUp"
+              >
+                <nuxt-link :to="`/team/${person.id}`">
+                  <div class="team_one_image">
+                    <img :src="`/assets/images/team/${person.image}`" alt="" />
+                  </div>
+                </nuxt-link>
+                <div class="team_one_deatils">
+                  <p>{{ person.position }}</p>
+                  <h2>
+                    <a href="#">{{ person.name }}</a>
+                  </h2>
+                  <div class="team_one_social">
+                    <a
+                      v-for="link in person.socialMediaLinks"
+                      :key="link"
+                      :href="link"
+                      target="_blank"
+                      ><i class="fab fa-linkedin"></i
+                    ></a>
+                  </div>
+                </div>
               </div>
             </div>
           </div>

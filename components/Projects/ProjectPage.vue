@@ -14,7 +14,7 @@
     <div class="container">
       <div class="row">
         <div
-          class="col-xl-4 col-lg-4"
+          class="col-xl-6 col-lg-6"
           v-for="project in projects"
           :key="project.id"
         >
@@ -22,7 +22,7 @@
             <div class="overlay"></div>
             <div class="project_img_box">
               <img
-                :src="`/assets/images/project/${project.image}`"
+                :src="`/assets/images/project/${project.images[0]}`"
                 alt="Recent Project Img"
               />
               <div class="project_content">
