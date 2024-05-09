@@ -22,10 +22,10 @@
 
 <script>
 import NavFour from "@/components/NavFour";
-import SliderFour from "@/components/SliderFour";
-import EcoFriendly from "@/components/EcoFriendly";
-// import WelcomeTwo from "@/components/WelcomeTwo";
-import DetailsOne from "@/components/DetailsOne";
+import SliderFour from "../components/SliderFour";
+import EcoFriendly from "../components/EcoFriendly";
+// import WelcomeTwo from "../components/WelcomeTwo";
+import DetailsOne from "../components/DetailsOne";
 // import ServiceFour from "@/components/Services/ServiceFour";
 import Uniqueness from "@/components/Services/Uniqueness";
 import ProjectPage from "@/components/Projects/ProjectPage";

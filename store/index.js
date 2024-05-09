@@ -35,8 +35,8 @@ export const state = () => ({
     },
     {
       id: "discover-3",
-      image: "5.jpeg",
-      text: `<span>A complete</span><br /> technology solution provider`,
+      image: "3.jpg",
+      text: `<span>Meshing</span> chemistry<br /> and engineering to solve <br /> today's problems`,
       more: `Welcome to NovNat Tech, your premier technology solution provider. We offer comprehensive services spanning from material selection and tuning to shaping and integration, alongside numerical modelling and system assembly. Whether you're seeking materials for HVAC applications or advanced AWG systems for water sustainability and resilience, NovNat's technology sets the standard. Our breakthrough MOFs and scalable AWG systems cater to all your humidity and water-related needs.`,
       list: ['Share Your Needs: Whether you require MOFs for dehumidification or a complete AWG solution, tell us your requirements.',
         'Diagnose: We assess your needs and ambient conditions, offering tailored technology recommendations.',
