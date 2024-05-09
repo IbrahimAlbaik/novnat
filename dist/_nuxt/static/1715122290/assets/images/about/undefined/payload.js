@@ -1,1 +1,0 @@
-__NUXT_JSONP__("/assets/images/about/undefined", {data:[],fetch:[],mutations:[]});
