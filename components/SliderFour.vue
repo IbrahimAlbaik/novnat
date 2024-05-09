@@ -6,7 +6,7 @@
           :items="1"
           :autoplay="true"
           :nav="false"
-          autoplaySpeed="2000ms"
+          autoplaySpeed="3000ms"
         >
           <!-- Slide Item -->
           <div class="slide-item" v-for="item in silderList" :key="item.id">
