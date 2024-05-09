@@ -18,79 +18,68 @@
             <div class="timeline_container left">
               <div class="content">
                 <h2>
-                  2018
-                  <span>Idea</span>
+                  2022
+                  <span>(Q1-Q3) </span>
                 </h2>
                 <p>
-                  It all began with an idea. An idea to create novel nano porous
-                  materials called metal organic frameworks (MOFs) and unleash
-                  their power to enable the development of cost and energy
-                  efficient solutions
+                  NovNat Tech is born on the back of the breakthrough material
+                  and based on the shared vision of its founders to develop
+                  novel solutions for a more resilient, sustainable future.
+                  Additionally, NovNat Tech took part in the Elevate incubator
+                  programme at the University of Birmingham aimed at graduates
+                  with highly innovative business ideas.
                 </p>
               </div>
             </div>
             <div class="timeline_container right">
               <div class="content">
-                <h2>2019 <span>Experimentation</span></h2>
-                <p>
-                  Experimentation began to develop and engineer a novel MOF
-                  precisely tuned for water sorption applications.
-                </p>
-              </div>
-            </div>
-            <div class="timeline_container left">
-              <div class="content">
-                <h2>2021 <span>Formulation</span></h2>
-                <p>
-                  Breakthrough…the novel MOF structure was successfully
-                  synthesised after many trials. The initial results showed
-                  revolutionary water sorption characteristics in terms of
-                  capacity and kinetics.
-                </p>
-              </div>
-            </div>
-            <div class="timeline_container right">
-              <div class="content">
-                <h2>2022 (Q1-Q3) <span>Incorporation</span></h2>
-                <p>
-                  NovNat Tech is born based on the shared vision of its founders
-                  to develop novel solutions for nature and a sustainable future
-                  through commercialising the company-patented MOF.
-                  Additionally, NovNat Tech was incubated as part of the elevate
-                  programme at the UoB and also applied for an Innovate UK smart
-                  grant (£350k).
-                </p>
-              </div>
-            </div>
-            <div class="timeline_container left">
-              <div class="content">
-                <h2>2022 (Q4) <span>IP/MVP</span></h2>
+                <h2>2022 <span>(Q4)  </span></h2>
                 <p>
                   Patent applied for to protect the novel MOF (UK patent
-                  application number: 2218176.2) and an MVP has been designed
-                  and developed to showcase the functionality and to allow
-                  NovNat Tech to evaluate and characterise the key metrics of
-                  the system.
-                </p>
-              </div>
-            </div>
-            <div class="timeline_container right">
-              <div class="content">
-                <h2>2023 <span>MVP 2.0</span></h2>
-                <p>
-                  The funding NovNat Tech seeks will go towards building a
-                  large-scale prototype to demonstrate the applicability of our
-                  technology in industrial processes.
+                  application number: 2218176.2) and an MVP was designed and
+                  developed to showcase the functionality of the MOF to generate
+                  water from air.
                 </p>
               </div>
             </div>
             <div class="timeline_container left">
               <div class="content">
-                <h2>2024 <span> Pilot trials</span></h2>
+                <h2>2023 <span>FUNDING/PDU</span></h2>
                 <p>
-                  Based on the outputs from MVP 2.0, NovNat Tech aims to run
-                  pilot trials at client sites to demonstrate integration of the
-                  technology on an industrial scale.
+                  External funding secured from Innovate UK and Bupa to develop
+                  a process development unit used to test and characterise
+                  specific parameters such as productivity and energy
+                  consumption to inform further development towards reaching a
+                  commercial product.
+                </p>
+              </div>
+            </div>
+            <div class="timeline_container right">
+              <div class="content">
+                <h2>2024 <span>EUROGIA/PILOT TRIALS</span></h2>
+                <p>
+                  Based on the data gathered from the PDU, NovNat aims to
+                  develop a 1000 l/day pilot system to be deployed at client
+                  sites to demonstrate integration of the technology on a scale
+                  that is increasingly commercially relevant. Also, in July of
+                  2024, NovNat will receive ~£500k in funding from Innovate UK
+                  which will go towards scaling material production and
+                  demonstrating integration of NovNat’s materials with
+                  adsorption heat pumps.
+                </p>
+              </div>
+            </div>
+            <div class="timeline_container left">
+              <div class="content">
+                <h2>2025 <span>MOF PILOT PLANT/AWG PILOT</span></h2>
+                <p>
+                  NovNat plans to scale up its MOF production to reach ton scale
+                  by 2025 in partnership with key stakeholders and
+                  manufacturers. The new plant will be used to supply NovNat for
+                  its in-house R&D work and a select few clients in the HVAC
+                  sector. NovNat also anticipates the completion of the
+                  1000l/day pilot mid-2025 ready to be deployed at planned
+                  demonstrations.
                 </p>
               </div>
             </div>

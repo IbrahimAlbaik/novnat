@@ -75,7 +75,7 @@ c-15 -15 -16 -14 -16 9 0 33 11 44 23 23 6 -11 4 -21 -7 -32z"
               </svg>
             </div>
             <div class="details_one_content">
-              <h2>Sustainable </br></h2>
+              <h2>Water anywhere, anytime </br></h2>
             </div>
             <div class="details_one_count_box">
               <h3>01</h3>
@@ -169,7 +169,7 @@ c-15 -15 -16 -14 -16 9 0 33 11 44 23 23 6 -11 4 -21 -7 -32z"
               <!-- <span class="icon-farmer"></span> -->
             </div>
             <div class="details_one_content">
-              <h2>Net Zero<br />Carbon</h2>
+              <h2>Carbon <br />neutral</h2>
             </div>
             <div class="details_one_count_box">
               <h3>02</h3>

@@ -14,10 +14,34 @@
               class="image-layer"
               :style="`background-image: url(/assets/images/main-slider/${item.image})`"
             ></div>
-            <!-- <video autoplay muted loop id="myVideo">
-              <source src="assets/images/main-slider/1.mov" type="video/mov" />
-              Your browser does not support HTML5 video.
-            </video> -->
+            <video
+              v-if="item.id == 'discover-1'"
+              width="100%"
+              height="100%"
+              controls
+              autoplay
+              controlsList="nodownload"
+              oncontextmenu="return false;"
+              muted
+              loop
+              style="
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                object-fit: cover;
+              "
+            >
+              <source
+                src="/assets/images/main-slider/about_slider_1.mov"
+                type="video/mov"
+              />
+              <source
+                src="/assets/images/main-slider/about_slider_1.mp4"
+                type="video/mp4"
+              />
+            </video>
             <div class="auto-container">
               <div class="content-box">
                 <div class="content text-right">

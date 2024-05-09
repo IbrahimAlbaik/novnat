@@ -2959,6 +2959,7 @@ h6 {
 
 .about_content .text p {
   margin: 0;
+  text-align: justify;
 }
 
 .about1_icon_wrap {

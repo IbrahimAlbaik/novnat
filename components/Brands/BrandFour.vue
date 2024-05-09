@@ -51,18 +51,25 @@
                     <img src="/assets/images/partners/union.jpg" alt="brand"
                   /></a>
                 </div>
-                     <div class="single_brand_item">
-                  <a
-                    href="https://www.ukri.org/councils/innovate-uk/"
-                  >
-                    <img src="/assets/images/partners/ukri-innovate-uk-square-logo.png" alt="brand"
+                <div class="single_brand_item">
+                  <a href="https://www.ukri.org/councils/innovate-uk/">
+                    <img
+                      src="/assets/images/partners/ukri-innovate-uk-square-logo.png"
+                      alt="brand"
                   /></a>
                 </div>
-                     <div class="single_brand_item">
-                  <a
-                    href="https://www.bupa.com/"
-                  >
-                    <img src="/assets/images/partners/Bupa-Logo.jpg" alt="brand"
+                <div class="single_brand_item">
+                  <a href="https://www.bupa.com/">
+                    <img
+                      src="/assets/images/partners/Bupa-Logo.jpg"
+                      alt="brand"
+                  /></a>
+                </div>
+                <div class="single_brand_item">
+                  <a href="https://www.ukri.org/councils/innovate-uk/">
+                    <img
+                      src="/assets/images/partners/1.jpeg"
+                      alt="brand"
                   /></a>
                 </div>
               </carousel>

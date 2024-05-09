@@ -25,7 +25,7 @@
             </div>
           </div>
         </div> -->
-        <div class="col-xl-7 col-lg-7">
+        <div :class="about.id == 'discover-1' ? 'col-lg-12' : 'col-xl-7 col-lg-7'">
           <div class="block-title text-left">
             <p v-html="about.text"></p>
             <!-- <h3>We’re leader in agriculture market</h3> -->
@@ -38,6 +38,21 @@
               <p v-html="about.more"></p>
             </div>
           </div>
+
+          <div class="row" v-if="about.id == 'discover-3'">
+            <div class="col-lg-12">
+              <div
+                class="complete_solutions wow animated slideInLeft"
+                data-wow-duration="2s"
+                data-wow-delay="1s"
+              >
+                <img
+                  src="/assets/images/uniqueness/picture1.png"
+                  alt="icon_2"
+                />
+              </div>
+            </div>
+          </div>
         </div>
         <div class="col-lg-5">
           <div class="project_information_box" v-if="about.list">
@@ -48,6 +63,14 @@
               </li>
             </ul>
           </div>
+          <div v-else-if="about.id == 'discover-2'">
+            <video-one
+              :image="about.video.image"
+              :video="about.video.video"
+              :title="about.video.title"
+              :desc="about.video.desc"
+            />
+          </div>
         </div>
       </div>
     </div>
@@ -55,7 +78,9 @@
 </template>
 
 <script>
+import VideoOne from "@/components/VideoOne.vue";
 export default {
+  components: { VideoOne },
   name: "discover",
   computed: {
     about() {
@@ -67,4 +92,10 @@ export default {
 };
 </script>
 
-<style scoped></style>
+<style scoped>
+.complete_solutions img {
+  width: 100%;
+  height: 100%;
+  margin: 2rem 0;
+}
+</style>

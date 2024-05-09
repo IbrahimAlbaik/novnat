@@ -76,6 +76,11 @@
                 >
               </li>
               <li>
+                <nuxt-link :to="{ path: '/', hash: 'gallery' }"
+                  >Gallery</nuxt-link
+                >
+              </li>
+              <li>
                 <nuxt-link :to="{ path: '/', hash: 'faqs' }">Faqs</nuxt-link>
               </li>
               <li>

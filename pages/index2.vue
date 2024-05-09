@@ -19,20 +19,20 @@
 
 <script>
 
-  import FooterTwo from "../components/FooterTwo";
-  import NavTwo from "../components/NavTwo";
-  import SliderTwo from "../components/SliderTwo";
-  import NeedAll from "../components/NeedAll";
-  import CallToActionTwo from "../components/CallToActionTwo";
-  import ProductTwo from "../components/ProductTwo";
-  import RecentProject from "../components/RecentProject";
-  import TestimonialTwo from "../components/TestimonialTwo";
-  import VideoOne from "../components/VideoOne";
+  import FooterTwo from "@/components/FooterTwo";
+  import NavTwo from "@/components/NavTwo";
+  import SliderTwo from "@/components/SliderTwo";
+  import NeedAll from "@/components/NeedAll";
+  import CallToActionTwo from "@/components/CallToActionTwo";
+  import ProductTwo from "@/components/ProductTwo";
+  import RecentProject from "@/components/RecentProject";
+  import TestimonialTwo from "@/components/TestimonialTwo";
+  import VideoOne from "@/components/VideoOne";
   import BrandTwo from "@/components/Brands/BrandTwo";
-  import GetQuote from "../components/GetQuote";
-  import GMap from "../components/GMap";
-  import GalleryOne from "../components/GalleryOne";
-  import ServiceTwo from "../components/Services/ServiceTwo";
+  import GetQuote from "@/components/GetQuote";
+  import GMap from "@/components/GMap";
+  import GalleryOne from "@/components/Gallery/GalleryOne";
+  import ServiceTwo from "@/components/Services/ServiceTwo";
   export default {
     components: {
       ServiceTwo,

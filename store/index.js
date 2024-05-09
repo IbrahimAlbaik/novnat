@@ -18,6 +18,7 @@ export const state = () => ({
     {
       id: "discover-2",
       image: "4.jpg",
+      video: { video: "Website-4.mov", title: "Kamal's interview", desc: "our uniqueness in MOFs", image: "about_video.jpg" },
       text: `<span>Pioneering</span> materials<br /> of the future`,
       more: `<p>Porous materials play a pivotal role in addressing world-scale challenges such as carbon capture and water scarcity by virtue of their unique structural properties. </p> <p>These materials possess a network of pores and channels, offering a large surface area for interactions with gases and liquids. Among the diverse array of porous materials, Metal Organic Frameworks (MOFs) have emerged as particularly promising candidates.</p> <p>MOFs are composed of metal ions or clusters linked by organic ligands, resulting in highly porous structures with tuneable properties.
       MOFs are a unique class of nano porous materials with unprecedented functional and chemical control, making them highly versatile for use in many applications including harvesting water from air.</p>
@@ -50,7 +51,7 @@ export const state = () => ({
     id: 1,
     title: 'NovNat',
     logo: 'novnat-logo.png',
-    address: 'The Exchange, 3 Centenary Sq, <br /> Birmingham B1 2DR',
+    address: 'Vincent Drive, Birmingham Research Park, <br /> Birmingham B15 2SQ<br /> UK',
     register: 'Company registered in England and Wales',
     phone: '+44 (0) 752 128 0697',
     location: '',
@@ -192,7 +193,6 @@ export const state = () => ({
       specifications: ['First atmospheric water generation system for industrial application, utilizing waste heat effectively.',
         'Exceptional water productivity exceeding 250 liters per square meter.',
         'Versatile deployment, functional in diverse environments with relative humidity over 7% and temperatures between 5 to 40 degrees Celsius.',
-        'Versatile deployment, functional in diverse environments with relative humidity over 7% and temperatures between 5 to 40 degrees Celsius.',
         'Selective binding of MOFs with water molecules eliminates the need for further water treatment, regardless of air pollution levels.',
         'Includes energy recovery to minimize thermal energy requirements, enhancing overall energy efficiency of the system.', 'Operates through passive condensation using ambient temperature, ensuring energy efficiency and minimizing reliance on external energy sources.',
         'Scalable design, with each unit capable of producing 10,000 liters per day, offering flexibility to meet varying water demands.',
@@ -272,15 +272,14 @@ export const state = () => ({
     {
       id: 1,
       title: 'Q1. What distinguishes you from other companies working on atmospheric water generation?',
-      details: `What distinguishes NovNat from other companies working on atmospheric water generation
-      is our unique approach and cutting-edge technologies. Unlike technologies that rely on
-      cooling-condensation which can be energy intensive and is limited to humid regions, NovNat
-      has developed unique water capturing materials that are functional even in the driest regions
-      (as low as 10% relative humidity). Furthermore, within the realm of desiccant-based water
-      harvesting technologies, NovNat’s materials boast the highest capacities, fastest kinetics and
-      lowest energy requirements. This along with our vast expertise in engineering and material
-      science enable efficient, scalable water harvesting systems that can be deployed almost
-      anywhere in the world.`,
+      details: `What distinguishes NovNat from other companies working on atmospheric water generation is our unique approach and cutting-edge technologies.
+      Unlike technologies that rely on cooling-condensation which can be energy intensive and is limited to humid regions,
+      NovNat has developed unique water capturing materials that are functional even in the driest regions (as low as 10% relative humidity).
+      Furthermore, within the realm of desiccant-based water harvesting technologies,
+      NovNat’s materials boast the highest capacities,
+      fastest kinetics and lowest energy requirements.
+      This along with our vast expertise in engineering and material science enable efficient,
+      scalable water harvesting systems that can be deployed almost anywhere in the world.`,
       features: [
         // {
         //   id: 1,
@@ -304,29 +303,26 @@ export const state = () => ({
     {
       id: 2,
       title: 'Q2. In what industries can your AWG technology be deployed?',
-      details: `NovNat’s versatile AWG technology can be deployed in numerous industrial set-ups
-      including food &amp; beverage, cement manufacturing, desert-located hydroponics, power
-      generation and more. We have seen strong interest from the geothermal and data centre
-      industries due to their large cooling demands and we working with companies in both to set
-      up pilot demonstrations of our AWG technology.`,
+      details: `NovNat’s versatile AWG technology can be deployed in numerous industrial set-ups including food & beverage,
+      cement manufacturing, desert-located hydroponics, power generation and more.
+      We have seen strong interest from the geothermal and data centre industries due to their large cooling demands and we are working with companies in both to set up pilot demonstrations of our AWG technology.`,
       features: []
     },
     {
       id: 3,
       title: 'Q3. Are there any environmental concerns with your MOF?',
-      details: `No. All our MOFs are non-toxic and non-hazardous. The synthesis process is also a green
-      one where we have eliminated the use of harmful solvents that are typically used.`,
+      details: `No. All our MOFs are non-toxic and non-hazardous.
+      The synthesis process is also a green one where we have eliminated the use of harmful solvents
+      that are typically used and replaced them with water.`,
       features: []
     },
     {
       id: 4,
       title: 'Q4. What is the life expectancy of your materials? What happens to them at end-of-life?',
-      details: `Our MOFs boast extremely high stabilities and have been rigorously tested over thousands of
-      cycles showing no degradation in performance. Based on the number of cycles ran per year,
-      the life expectancy can range from 5-10 years. Additionally, at end-of-life our unique
-      recycling process allows us to break down the MOF into its constituents allowing to recover
-      up to 95% of the original structure. The recycled materials can be reused to make more
-      MOFs or find uses in other applications.`,
+      details: `Our MOFs boast extremely high stabilities and have been rigorously tested over thousands of cycles showing no degradation in performance.
+      Based on the number of cycles ran per year, the life expectancy can range from 5-10 years.
+      Additionally, at end-of-life our unique recycling process allows us to break down the MOF into its constituents allowing to recover up to 95% of the original structure.
+      The recycled materials can be reused to make more MOFs or find uses in other applications.`,
       features: []
     },
     {
@@ -341,20 +337,17 @@ export const state = () => ({
     {
       id: 6,
       title: 'Q6. How do you power your AWG system?',
-      details: `Our AWG systems benefit from being able to utilise multiple sources of power including
-      renewable energy, conventional electrical supply and even waste-heat. Thanks to our
-      materials’ low energy requirements, we can utilise low-grade waste-heat (as low as 55◦C), to
-      regenerate the materials and produce water using a passive condenser. Our innovative
-      systems allow us to eliminate the need for energy intensive active condensation.`,
+      details: `Our AWG systems benefit from being able to utilise multiple sources of power including renewable energy,
+      conventional electrical supply and even waste-heat.
+      Thanks to our materials’ low energy requirements,
+      we can utilise low-grade waste-heat (as low as 55◦C), to regenerate the materials and produce water using a passive condenser. Our innovative systems allow us to eliminate the need for energy intensive active condensation.`,
       features: []
     },
     {
       id: 7,
       title: 'Q7. What are your maintenance requirements?',
-      details: `One of the many advantages of adsorption-based systems is the lack of complexity and
-      maintenance seen in other systems. Our AWG systems have no moving parts and will require
-      minimal occasional maintenance such as replacement of air filters and servicing of fans &amp;
-      pumps (when necessary).`,
+      details: `One of the many advantages of adsorption-based systems is the lack of complexity and maintenance seen in other systems.
+      Our AWG systems have no moving parts and will require minimal occasional maintenance such as replacement of air filters and servicing of fans & pumps (when necessary).`,
       features: [
         //   {
         //   id: 1,
@@ -402,6 +395,70 @@ export const state = () => ({
       and adsorption heat pumps.`,
       features: []
     },
+  ],
+  gallery: [
+    {
+      id: 1,
+      title: "Innovate UK project - Innovate UK Transformative Technologies",
+      date: "(June to Oct 2023)",
+      images: ["2.jpg", "1.jpeg", "3.jpg", "4.jpg"],
+      description: `Invented Multivariate MOF Material Enables Sustainable Atmospheric Water Generation for Rescue and Military Vehicles with Zero Carbon Emissions.
+    The UN estimates that by 2030, intense water scarcity could displace around 700 million people and,
+    by 2025, half of the world's population could be living in areas facing water scarcity. The inevitable global water shortage due to increased usage and climate change, has caused many governments, institutions, organisations and industrial corporations around the world to investigate alternative sources of water. In this regard, NovNat Tech has invented a novel Multivariant Metal Organic Framework material capable of
+    extracting water from air in any environment around the world,
+    significantly reducing energy usage and fully eliminating carbon emissions from the water production process.
+    The founding team utilised this project to investigate and develop an atmospheric water generation device
+    for rescue and military vehicles utilizing the waste heat to drive the water generation process,
+    with the vision of commercialising the product in the UK and across the globe to provide
+    an alternative sustainable source of water. The system has been developed to Technology Readiness Level (TRL) 5 with a water production of 15L per day.
+    The UK government provided funding for this project, which has since been successfully completed.
+    NovNat is currently in the process of scaling the system to achieve a higher TRL with the aim of reaching
+    a commercial productby 2027.` },
+    {
+      id: 2,
+      title: "Bupa Eco Disruptive Programme",
+      date: "(Oct - Dec 2023)",
+      images: ["5.jpeg", "6.jpeg", "7.jpeg", "8.jpg", "9.jpg", "10.jpg", "11.jpg", "12.jpg", "13.jpg"],
+      description: `Eco-Disruptive is a global talent and innovation program,
+       an integral part of Mission Accelerate, within Bupa sustainability strategy.
+        Sustainability challenges within business and the health sector are addressed by Bupa employees,
+        entrepreneurs, and start-ups coming together.
+        The aim is to identify and provide support to scalable start-ups where Bupa contribution can enhance their sustainability solutions.
+        NovNat was chosen from among two Bupa Global & UK start-ups advancing to the global final—a thrilling talent program empowering emerging eco-entrepreneurs on Bupa's path towards achieving our net zero targets.
+        NovNat has spearheaded a revolutionary technology capable of extracting water from the air, presenting a solution to the severe water scarcity afflicting numerous communities worldwide. Partnering with Bupa, NovNat aims to address water challenges within their global facilities and structures, which are adversely affected by water shortages. NovNat conducted site visits to various Bupa buildings in the UK to explore the feasibility of harnessing waste heat within the buildings to convert it into pure water, as well as utilizing our system as a dehumidification solution. `
+    },
+    {
+      id: 3,
+      title: "The Emerging Technologies Competition – Royal Society of Chemistry",
+      date: "(July 2023)",
+      images: ["14.jpeg", "15.jpeg"],
+      description: `The Emerging Technologies Competition, an annual innovation contest,
+    is dedicated to identifying and supporting chemistry-led technologies based in the UK.
+    This dynamic event offers an invaluable platform for early-stage start-ups, spinouts,
+    and academic entrepreneurs to spotlight their innovations, increasing visibility and attracting potential customers,
+    partners, and investors.
+    NovNat was selected as a finalist in the environmental category among six competitors from across the UK.` },
+    {
+      id: 4,
+      title: "SMART EUREKA CLUSTER PO proposer's day and Manufacture ETF (European Technology Platform) – San Sebastián",
+      date: "(Nov 2023)",
+      images: ["16.jpeg"],
+      description: `NovNat took part in the PO Proposers Day held in Donostia – San Sebastián (Spain) as part of the 7th call of Smart Advanced Manufacturing through the Eureka Cluster network.
+    This in-person gathering attracted 60 participants representing 15 countries. NovNat actively participated in the event by presenting a project proposal aimed at structuring a consortium project with our partners.
+    Our goal is to further develop our Atmospheric Water Generation system using advanced and scalable techniques,
+    focusing on optimizing the condenser surface design and scaling up the MOF coating process.
+    We are pleased to report that NovNat received exceptionally positive feedback during the PO stage of the proposal process.` },
+    {
+      id: 5,
+      title: "Food 2030: green and resilient food systems Conference – Brussels",
+      date: "(Dec 2023)",
+      images: ["17.jpg", "18.jpg", "19.jpg", "20.jpg"],
+      description: `NovNat participated in this conference with the aim of investigating opportunities to integrate the atmospheric water generation system into the food supply chain of Europe. This focus is particularly crucial for regions grappling with water scarcity induced by climate change, which has now extended to parts of Europe such as Spain and Italy.
+    NovNat is poised to address this challenge by proposing a circular economy solution.
+    Given that many food production systems consume significant amounts of water while also generating substantial waste heat,
+    NovNat aims to leverage this excess heat to produce water. Through this innovative approach,
+     not only can we achieve a net-zero water vision,
+    but we can also contribute positively to the environment.` },
   ]
 });
 
