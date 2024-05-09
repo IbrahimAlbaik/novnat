@@ -3,11 +3,11 @@
     <NavFour />
     <SliderFour />
     <DetailsOne />
-    <WelcomeTwo />
-    <EcoFriendly />
-    <Uniqueness />
-    <ServiceFour />
+    <!-- <WelcomeTwo /> -->
+    <!-- <EcoFriendly /> -->
+    <!-- <ServiceFour /> -->
     <ProjectPage />
+    <Uniqueness />
     <FaqOne />
     <TeamOne />
     <!-- <TestimonialThree /> -->
@@ -23,10 +23,10 @@
 <script>
 import NavFour from "@/components/NavFour";
 import SliderFour from "../components/SliderFour";
-import DetailsOne from "../components/DetailsOne";
-import WelcomeTwo from "../components/WelcomeTwo";
 import EcoFriendly from "../components/EcoFriendly";
-import ServiceFour from "@/components/Services/ServiceFour";
+// import WelcomeTwo from "../components/WelcomeTwo";
+import DetailsOne from "../components/DetailsOne";
+// import ServiceFour from "@/components/Services/ServiceFour";
 import Uniqueness from "@/components/Services/Uniqueness";
 import ProjectPage from "@/components/Projects/ProjectPage";
 import FaqOne from "../components/FaqOne";
@@ -45,11 +45,11 @@ export default {
     BrandFour,
     FaqOne,
     TeamOne,
-    ServiceFour,
+    // ServiceFour,
     Uniqueness,
     ProjectPage,
     EcoFriendly,
-    WelcomeTwo,
+    // WelcomeTwo,
     DetailsOne,
     SliderFour,
     Timeline,

@@ -2,25 +2,48 @@ export const state = () => ({
   silderList: [
     {
       id: "discover-1",
-      image: "1.jpg",
-      text: `<span>Harvesting</span> water from air,<br /> one drop at a time`,
-      more: `We have developed and patented a novel Metal Organic Framework (MOF) material, for an industrial-scale (passive) atmospheric water generator device. MOFs are porous materials with high functional and chemical control, making them ideal for harvesting water from air. NovNat Tech's MOF is capable of extracting water vapor from air at high capacity and speed; it bonds only with water molecules in the air and acts as a 'nano-scale selective sponge', ensuring the quality of water captured is not affected by impurities.
-      The major advantage of the patented MOF is its ability to capture water from air in environments where the RH is as low as 15%, making it functional in any part of the world, including deserts and has a maximum water capacity of 60% of its weight. Additionally, the MOF is made up of an abundant and highly recyclable metal and an organic linker, and is synthesized using only water, making the manufacturing process completely environmentally friendly and highly scalable. We  aim to develop an industrial-scale AWG system that uses low grade waste heat (40-100°C) from industrial operations to produce water.`
+      image: "",
+      video: "1.mov",
+      text: `<span>Redefining Industry&#39;s </span> Thirst: Air-Water Solutions for Sustainable Growth`,
+      more: `<p>Water is an abundant resource on our planet, existing not only in vast bodies like oceans and lakes but also in the air we breathe. </p> <p>While land-based water sources are finite and often subject to depletion, the atmosphere holds a considerable reservoir of untapped moisture. </p> In fact, it's estimated that the Earth's atmosphere contains around 13,000 cubic kilometres of water vapor at any given time, far surpassing the volume of freshwater found in rivers and lakes combined. </p>
+      <p> Atmospheric water generation emerges as a crucial solution in harnessing this immense yet overlooked resource. </p> <p>By leveraging innovative technologies like Metal Organic Frameworks (MOFs), atmospheric water generation systems can extract water from even the driest of environments, offering a sustainable alternative to traditional water sources. </p> <p> As we confront the challenges of climate change and water scarcity, the role of atmospheric water generation in securing clean, accessible water for communities worldwide will only continue to grow, providing a vital lifeline for future generations. </p>
+      <p> Welcome to NovNat Tech, where innovation meets sustainability. Our team has pioneered groundbreaking Metal Organic Framework (MOF) materials,
+      meticulously designed for use in large-scale atmospheric water generation systems.
+      The proprietary MOFs boast exceptional porous properties and precise chemical control, rendering them perfect for extracting water from air.
+      Our ground-breaking MOFs coupled with our extensive engineering expertise of water systems,
+      allow us to develop pioneering solutions that redefine the boundaries of water resource management and sustainability.</p>
+      <p>Our ultimate goal? To develop an industrial-scale Atmospheric Water Generator (AWG) system, harnessing low-grade waste heat (55-100°C) from industrial processes to produce water efficiently and sustainably.
+      Join us in revolutionizing water procurement for a greener, more resilient future.</p>`
     },
     {
       id: "discover-2",
       image: "4.jpg",
-      text: `<span>Pioneering</span> nanomaterials<br /> of the future`,
-      more: ``,
+      text: `<span>Pioneering</span> materials<br /> of the future`,
+      more: `<p>Porous materials play a pivotal role in addressing world-scale challenges such as carbon capture and water scarcity by virtue of their unique structural properties. </p> <p>These materials possess a network of pores and channels, offering a large surface area for interactions with gases and liquids. Among the diverse array of porous materials, Metal Organic Frameworks (MOFs) have emerged as particularly promising candidates.</p> <p>MOFs are composed of metal ions or clusters linked by organic ligands, resulting in highly porous structures with tuneable properties.
+      MOFs are a unique class of nano porous materials with unprecedented functional and chemical control, making them highly versatile for use in many applications including harvesting water from air.</p>
+      <p>In the realm of water scarcity, MOFs hold immense potential for atmospheric water generation (AWG) systems. These materials excel in adsorbing water vapor from the air, even in low-humidity environments, making them invaluable for harvesting water in arid regions and mitigating water shortages.
+      By acting as nano-scale selective sponges, MOFs can selectively capture water molecules while excluding impurities, ensuring the quality and purity of the harvested water.</p>
+      <p>NovNat Tech's MOF materials excel in water vapor extraction, operating at remarkable capacities and speeds.
+      Acting as a nano-scale selective sponge, they exclusively bond with airborne water molecules, ensuring the purity of captured water remains untainted by impurities.
+      What sets our patented MOFs apart is their unparalleled ability to harvest water even in environments with humidity levels as low as 10%, making them adaptable worldwide,
+      from arid deserts to humid climates. With a water capacity of up to 60% of their weight, they are game-changers in water resource management.</p>
+      <p>Moreover, our MOFs are crafted from abundant, easily recyclable metals and organic linkers,
+      synthesized using water alone. This eco-friendly manufacturing process is not only sustainable but also highly scalable,
+      ensuring minimal environmental impact as we expand our operations.
+      Additionally, due to our MOFs being highly affinitive to water, the water generated is completely pure H2O!</p>
+      `,
     },
     {
       id: "discover-3",
       image: "3.jpg",
       text: `<span>Meshing</span> chemistry<br /> and engineering to solve <br /> today's problems`,
-      more: `Meshing chemistry and engineering to solve today's problems
-      NovNat is an interdisciplinary company that blends the power of chemistry and engineering to pioneer novel solutions to address the contemporary global challenges facing our planet today. Our team of experts is driven by a passion for creating solutions that protect our planet and secure our future to make a real difference in the world by harnessing the power of science and technology (engineering). Our innovative approach starts at the molecular level, designing and synthesizing novel materials that possess exceptional properties. We then deploy these materials in advanced engineered systems, creating unprecedented solutions that can tackle some of the most pressing issues of our time.
-      Among our notable achievements, we have developed a cutting-edge technology to combat water scarcity by engineering a nanoscale biomimetic material that draws inspiration from Nature (spider webs), the way they capture water droplets from fog but in nanoscale and extremely arid environments which is then integrated into an innovative engineered system. This enables us to extract water from the air at any time, even in the most challenging environments. Our breakthrough innovation is a testament to our relentless pursuit of scientific excellence, marrying chemical design with engineering ingenuity to create an effective and sustainable solutions.
-      At NovNat, we are committed to making a difference in the world. We are tackling the problems that face our planet through our unique approach to science. By designing atoms and molecules that have never been found before, we are creating materials that can transform our world. And by integrating these materials into cutting-edge engineering systems, we are creating solutions that have never been possible before! Our mission is to inspire a better future for all, by meshing chemistry and engineering to solve today's problems. Our multidisciplinary team of experts endeavours to leverage the synergies between chemistry and engineering to innovate and push the boundaries of scientific knowledge.`
+      more: `Welcome to NovNat Tech, your premier technology solution provider. We offer comprehensive services spanning from material selection and tuning to shaping and integration, alongside numerical modelling and system assembly. Whether you're seeking materials for HVAC applications or advanced AWG systems for water sustainability and resilience, NovNat's technology sets the standard. Our breakthrough MOFs and scalable AWG systems cater to all your humidity and water-related needs.`,
+      list: ['Share Your Needs: Whether you require MOFs for dehumidification or a complete AWG solution, tell us your requirements.',
+        'Diagnose: We assess your needs and ambient conditions, offering tailored technology recommendations.',
+        'MOF Selection: Based on your feedback, we choose and fine-tune the appropriate MOF from our selection.',
+        'MOF Formulation: We not only provide MOFs but also shape and customize them to seamlessly integrate with our AWG systems or your HVAC systems.',
+        'AWG System Design & Integration: Through computational analysis, we optimize heat and mass transfer, ensuring optimal airflow and identifying the best ways to integrate the AWG system with your operations to utilize waste heat efficiently.',
+        'System Construction & Testing: In collaboration with reliable suppliers, we construct your systems and subject each to rigorous testing before shipment, guaranteeing proper and optimal operation upon delivery.'],
     },
   ],
   novnat: {
@@ -32,7 +55,7 @@ export const state = () => ({
     phone: '+44 (0) 752 128 0697',
     location: '',
     email: 'info@novnat.co.uk',
-    socialMedia: [{ icon: '', link: '' }, { icon: '', link: '' }],
+    socialMediaLinks: [{ id: 1, icon: 'fab fa-linkedin', link: 'https://www.linkedin.com/company/novnattech/' }],
   },
   searchPopupStatus: false,
   services: [
@@ -114,7 +137,7 @@ export const state = () => ({
     {
       id: 2,
       name: 'Dr. Ibrahim Albaik',
-      position: 'Co-Founder and CEO',
+      position: 'Co-Founder and CTO',
       image: 'ibrahim.jpg',
       about: `Ibrahim is responsible for designing the integration of MOFs in systems for gas storage,
       gas separation and HVAC applications. Ibrahim completed his PhD at the University of Birmingham,
@@ -124,22 +147,11 @@ export const state = () => ({
     {
       id: 3,
       name: 'Abdulbari Belouafi',
-      position: 'Co-Founder and COO',
+      position: 'Co-Founder and CEO',
       image: 'abed.jpg',
       about: `Abdulbari holds an MSc in advanced mechanical engineering from the University of Birmingham specialising
        in engineering design using CAD and CFD software. Furthermore, he is highly capable in report writing and simplifying technical language for all stakeholders involved in this project.`,
       socialMediaLinks: ['https://www.linkedin.com/in/abdulbari-belouafi-6b7697139'],
-
-    },
-    {
-      id: 4,
-      name: 'Asmaa Hanafi',
-      position: 'Research Chemist',
-      image: 'asmaa.jpg',
-      about: `Asmaa is a highly accomplished research scientist with a strong background in materials chemistry.
-       She earned her Bachelor's degree in Chemistry from IMAC at the University of Alexandria. She later worked as a research assistant at the American University in Cairo and the Egypt Japan University of Science and Technology, where she gained extensive experience in the preparation and characterization of metal-organic frameworks (MOFs) for applications in drug delivery, water treatment, and carbon capture. Asmaa's research focuses on the development of novel materials for addressing global challenges in energy and sustainability. She uses fundamental chemistry, high-throughput materials screening, and experimental chemistry to accelerate the discovery of materials with desirable properties.
-       Asmaa is committed to advancing the field of materials chemistry and promoting scientific breakthrough at NovNat delivering kg-scale MOF production onsite, and undertaking research and design work for future tonne-scale projects. `,
-      socialMediaLinks: ['https://www.linkedin.com/in/asmaa-hanafi-01aa75259'],
 
     }
   ],
@@ -162,62 +174,71 @@ export const state = () => ({
       socialMediaLinks: ['https://www.linkedin.com/in/jccooke'],
 
     },
-    {
-      id: 'advisory-3',
-      name: 'Philip Gray',
-      position: 'commercial strategist',
-      image: 'Philip.jpg',
-      about: `helps in developing and implementing commercial and IP strategy.`,
-      socialMediaLinks: ['https://www.linkedin.com/in/philgraycommercialdoctor'],
-    },
   ],
   projects: [
-    {
-      id: 1,
-      title: "Metal Organic Framework (MOF)",
-      description: `Recently, MOFs have emerged as a unique class of nano porous materials with unprecedented functional and chemical control,
-      making them highly versatile for use in many applications including harvesting water from air. Through precise engineering and many trials,
-      NovNat Tech has developed a new MOF (patent pending) capable of extracting water vapour from air with minimal energy usage and zero carbon emissions.
-      Due to the chemistry and internal structure of the MOF, it will bond only with water molecules in the air acting as a ‘nano-scale selective sponge’. This means that no matter how contaminated or polluted the air is, this will have no effect on the quality of water captured as the MOF acts as a ‘sponge’ and ‘filter’ simultaneously, producing ultra-pure water.`,
-      image: "metal-organic.jpg",
-      challenges: [],
-    },
+    // {
+    //   id: 1,
+    //   title: "Metal Organic Framework (MOF)",
+    //   description: `Recently, MOFs have emerged as a unique class of nano porous materials with unprecedented functional and chemical control,
+    //   making them highly versatile for use in many applications including harvesting water from air. Through precise engineering and many trials,
+    //   NovNat Tech has developed a new MOF (patent pending) capable of extracting water vapour from air with minimal energy usage and zero carbon emissions.
+    //   Due to the chemistry and internal structure of the MOF, it will bond only with water molecules in the air acting as a ‘nano-scale selective sponge’. This means that no matter how contaminated or polluted the air is, this will have no effect on the quality of water captured as the MOF acts as a ‘sponge’ and ‘filter’ simultaneously, producing ultra-pure water.`,
+    //   image: "metal-organic.jpg",
+    //   challenges: [],
+    // },
     {
       id: 2,
       title: "Atmospheric water generation (AWG)",
-      description: `Atmospheric water generation devices employ various technologies to extract and produce potable water from air.
-      The technologies can be categorised into 2 main types, cooling condensation and hygroscopy (adsorption/absorption).
-      While cooling condensation is the most commonly used technology it still remains energy-intensive and requires refrigerants which are potent greenhouse gases and extremely damaging to the ozone layer. These negative characteristics currently rule cooling condensation out as a viable application in a large-scale. On the other hand, hygroscopic technologies have shown great potential in large-scale applications and have garnered strong interest in recent times due to their lower energy requirements and significantly smaller carbon footprints.`,
-      image: "System.jpg",
+      specifications: ['First atmospheric water generation system for industrial application, utilizing waste heat effectively.',
+        'Exceptional water productivity exceeding 250 liters per square meter.',
+        'Versatile deployment, functional in diverse environments with relative humidity over 7% and temperatures between 5 to 40 degrees Celsius.',
+        'Versatile deployment, functional in diverse environments with relative humidity over 7% and temperatures between 5 to 40 degrees Celsius.',
+        'Selective binding of MOFs with water molecules eliminates the need for further water treatment, regardless of air pollution levels.',
+        'Includes energy recovery to minimize thermal energy requirements, enhancing overall energy efficiency of the system.', 'Operates through passive condensation using ambient temperature, ensuring energy efficiency and minimizing reliance on external energy sources.',
+        'Scalable design, with each unit capable of producing 10,000 liters per day, offering flexibility to meet varying water demands.',
+        'Modular construction allows for easy expansion or replication of units to increase overall water production capacity.'],
+      description: `<h3> The AWG process: </h3>
+      NovNat's AWG technology is powered by cutting edge sorbent materials (Metal Organic Frameworks- MOFs).
+      Upon being exposed to moisture in the air, our MOFs capture (adsorb) the moisture utilising their high capacities (60wt%) and facile kinetics (saturation @90%RH in 15mins).
+      Subsequently, the desorption process is initiated by passing a heated working fluid through the adsorbent heat exchangers transferring the heat to the coated MOF material causing it to release the captured vapour which is then transferred to the condenser chamber.
+      Here, the vapour condenses and becomes pure liquid water that can be directly injected to point of need (distilled water) or mineralised if potability is required.`,
+      images: ["AWG_system_1.png", "AWG_system_2.png"],
       challenges: [],
     },
     {
       id: 3,
       title: "Our MOF",
-      description: `NovNat Tech’s proprietary MOF (UK patent application number:2218176.2), has shown breakthrough water sorption performance with unprecedented capacity and kinetics. With the capacity to capture from air at relative humidity (RH) as low as 10% the MOF is functional in any part of the world.`,
-      image: "MOF-sem.jpg",
+      specifications: [`<span>Green Synthesis Procedure:</span> Utilizes water instead of harmful solvents, making it environmentally friendly.`,
+        `<span> Scalable and Cost-Effective:</span> Production process is scalable and cost-efficient, ensuring widespread accessibility.`,
+        `<span> Lowest Heat of Adsorption: </span> Exhibits the lowest heat of adsorption ever reported in literature, indicating exceptional efficiency in capturing target molecules.`,
+        `<span> Chemically Stable: </span> Demonstrates remarkable chemical stability even after undergoing hundreds of cycles, without any degradation.`,
+        `<span>High Water Capacity:</span> Capable of holding up to 60% of its body weight in water, highlighting its excellent moisture absorption properties.`,
+        `<span>Rapid Adsorption Kinetics: </span> Shows exceptionally quick adsorption kinetics compared to existing adsorbent materials, ensuring swift capture of target molecules.`,
+        `<span> High Density:</span> Possesses a high density, enhancing volumetric capacity and making it an efficient choice for various applications. `],
+      description: `NovNat Tech’s proprietary MOF, has shown breakthrough water sorption performance with unprecedented capacity and kinetics. With the capacity to capture from air at relative humidity (RH) as low as 10% the MOF is functional in any part of the world.`,
+      images: ["MOF-sem.jpg", "f3_page-0001.jpg"],
       challenges: [
-        {
-          id: 1,
-          title: "Capacity",
-          description:
-            "Our MOF is capable of capturing up to 60% of its body weight in water from the air (at 90% RH).",
-          icon: "",
-        },
-        {
-          id: 2,
-          title: "Kinetics",
-          description:
-            "Early tests have shown the proprietary MOF can capture up to 63 L/kg/day.",
-          icon: "",
-        },
-        {
-          id: 3,
-          title: "Tuneability",
-          description:
-            "The MOF has been precisely engineered to have a high affinity to water molecules, thereby, capturing water molecules from the air regardless of how contaminated the air is.",
-          icon: "",
-        },
+        // {
+        //   id: 1,
+        //   title: "Capacity",
+        //   description:
+        //     "Our MOF is capable of capturing up to 60% of its body weight in water from the air (at 90% RH).",
+        //   icon: "",
+        // },
+        // {
+        //   id: 2,
+        //   title: "Kinetics",
+        //   description:
+        //     "Early tests have shown the proprietary MOF can capture up to 63 L/kg/day.",
+        //   icon: "",
+        // },
+        // {
+        //   id: 3,
+        //   title: "Tuneability",
+        //   description:
+        //     "The MOF has been precisely engineered to have a high affinity to water molecules, thereby, capturing water molecules from the air regardless of how contaminated the air is.",
+        //   icon: "",
+        // },
       ],
     },
     // {

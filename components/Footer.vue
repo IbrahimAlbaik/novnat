@@ -43,16 +43,6 @@
               </div>
               <ul class="footer-widget__links-list list-unstyled">
                 <li>
-                  <nuxt-link :to="{ path: '/', hash: 'uniqueness' }"
-                    >Uniqueness</nuxt-link
-                  >
-                </li>
-                <li>
-                  <nuxt-link :to="{ path: '/', hash: 'services' }"
-                    >Services</nuxt-link
-                  >
-                </li>
-                <li>
                   <nuxt-link :to="{ path: '/', hash: 'projects' }"
                     >Technology</nuxt-link
                   >
@@ -138,14 +128,17 @@
                   aboutNovNat.email
                 }}</a
                 ><br />
-                <a :href="`tel:${aboutNovNat.phone}`">{{
+                <!-- <a :href="`tel:${aboutNovNat.phone}`">{{
                   aboutNovNat.phone
-                }}</a>
+                }}</a> -->
                 <div class="site-footer__social">
-                  <a href="#"><i class="fab fa-facebook-square"></i></a>
-                  <a href="#"><i class="fab fa-twitter"></i></a>
-                  <a href="#"><i class="fab fa-instagram"></i></a>
-                  <a href="#"><i class="fab fa-dribbble"></i></a>
+                  <a
+                    v-for="media in aboutNovNat.socialMediaLinks"
+                    :key="media.id"
+                    :href="media.link"
+                    target="_blank"
+                    ><i :class="media.icon"></i
+                  ></a>
                 </div>
               </div>
             </div>

@@ -20,7 +20,6 @@
                   <a
                     href="https://www.gbslepgrowthhub.co.uk/programmes/amtecaa"
                   >
-                    <h4>taking part in</h4>
                     <img src="/assets/images/partners/amtecaa.png" alt="brand"
                   /></a>
                 </div>
@@ -28,13 +27,11 @@
                   <a
                     href="https://www.birmingham.ac.uk/research/energy/climate-innovation-platform.aspx"
                   >
-                    <h4>in a partnership with</h4>
                     <img src="/assets/images/partners/climate.png" alt="brand"
                   /></a>
                 </div>
                 <div class="single_brand_item">
                   <a href="https://www.birmingham.ac.uk/index.aspx">
-                    <h4>incubated by</h4>
                     <img
                       src="/assets/images/partners/university.jpg"
                       alt="brand"
@@ -44,7 +41,6 @@
                   <a
                     href="https://intranet.birmingham.ac.uk/as/employability/b-enterprising/uobelevate/index.aspx"
                   >
-                    <h4>incubated by:</h4>
                     <img src="/assets/images/partners/UOB.png" alt="brand"
                   /></a>
                 </div>
@@ -52,9 +48,21 @@
                   <a
                     href="https://ec.europa.eu/regional_policy/funding/erdf_en"
                   >
-                    <h4>funded by</h4>
-
                     <img src="/assets/images/partners/union.jpg" alt="brand"
+                  /></a>
+                </div>
+                     <div class="single_brand_item">
+                  <a
+                    href="https://www.ukri.org/councils/innovate-uk/"
+                  >
+                    <img src="/assets/images/partners/ukri-innovate-uk-square-logo.png" alt="brand"
+                  /></a>
+                </div>
+                     <div class="single_brand_item">
+                  <a
+                    href="https://www.bupa.com/"
+                  >
+                    <img src="/assets/images/partners/Bupa-Logo.jpg" alt="brand"
                   /></a>
                 </div>
               </carousel>

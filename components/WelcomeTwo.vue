@@ -1,5 +1,5 @@
 <template>
-  <section class="welcome_two" id="home">
+  <section class="welcome_two">
     <div
       class="welcome_two_bg"
       style="background-image: url(/assets/images/resources/welcome_2_bg.png)"
