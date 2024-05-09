@@ -4,7 +4,7 @@
     :style="`background-image:url(/assets/images/about/${image});`"
   >
     <div class="container text-center">
-      <a :href="`/assets/images/about/${video}`" class="video-one__btn videoOne"
+      <a :href="`${video}`" class="video-one__btn videoOne"
         ><i class="fa fa-play"></i
       ></a>
       <p>{{ title }}</p>

@@ -18,7 +18,7 @@ export const state = () => ({
     {
       id: "discover-2",
       image: "4.jpg",
-      video: { video: "Website-4.mov", title: "Kamal's interview", desc: "our uniqueness in MOFs", image: "about_video.jpg" },
+      video: { video: "https://www.youtube.com/watch?v=V6IdHrBnnOE", title: "Kamal's interview", desc: "our uniqueness in MOFs", image: "about_video.jpg" },
       text: `<span>Pioneering</span> materials<br /> of the future`,
       more: `<p>Porous materials play a pivotal role in addressing world-scale challenges such as carbon capture and water scarcity by virtue of their unique structural properties. </p> <p>These materials possess a network of pores and channels, offering a large surface area for interactions with gases and liquids. Among the diverse array of porous materials, Metal Organic Frameworks (MOFs) have emerged as particularly promising candidates.</p> <p>MOFs are composed of metal ions or clusters linked by organic ligands, resulting in highly porous structures with tuneable properties.
       MOFs are a unique class of nano porous materials with unprecedented functional and chemical control, making them highly versatile for use in many applications including harvesting water from air.</p>
