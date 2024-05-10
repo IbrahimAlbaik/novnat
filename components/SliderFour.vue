@@ -6,7 +6,7 @@
           :items="1"
           :autoplay="true"
           :nav="false"
-          autoplaySpeed="3000ms"
+          autoplaySpeed="10000ms"
         >
           <!-- Slide Item -->
           <div class="slide-item" v-for="item in silderList" :key="item.id">
@@ -14,16 +14,11 @@
               class="image-layer"
               :style="`background-image: url(/assets/images/main-slider/${item.image})`"
             ></div>
-            <video
+            <iframe
               v-if="item.id == 'discover-1'"
               width="100%"
               height="100%"
-              controls
-              autoplay
-              controlsList="nodownload"
-              oncontextmenu="return false;"
-              muted
-              loop
+              src="https://www.youtube.com/embed/sxhsLQK6s00?si=Ym-X5KJdijhZoKDJ&playlist=sxhsLQK6s00&autoplay=1&mute=1&loop=1&controls=0"
               style="
                 position: absolute;
                 top: 0;
@@ -32,16 +27,14 @@
                 right: 0;
                 object-fit: cover;
               "
-            >
-              <source
-                src="/assets/images/main-slider/about_slider_1.mov"
-                type="video/mov"
-              />
-              <source
-                src="/assets/images/main-slider/about_slider_1.mp4"
-                type="video/mp4"
-              />
-            </video>
+              allowfullscreen="true"
+              mozallowfullscreen="mozallowfullscreen"
+              msallowfullscreen="msallowfullscreen"
+              oallowfullscreen="oallowfullscreen"
+              webkitallowfullscreen="webkitallowfullscreen"
+              frameBorder="0"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; modestbranding; showinfo=0; fullscreen"
+            ></iframe>
             <div class="auto-container">
               <div class="content-box">
                 <div class="content text-right">
@@ -79,4 +72,12 @@ export default {
 };
 </script>
 
-<style scoped></style>
+<style scoped>
+iframe {
+  background: #ccc;
+}
+iframe div,
+iframe span {
+  width: 100%;
+}
+</style>
