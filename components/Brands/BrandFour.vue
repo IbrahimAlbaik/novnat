@@ -7,13 +7,13 @@
             <no-ssr>
               <carousel
                 :autoplay="true"
-                :dots="false"
+                :dots="true"
                 :nav="false"
                 :responsive="{
                   0: { items: 1 },
                   640: { items: 2 },
                   992: { items: 3 },
-                  1024: { items: 5 },
+                  1024: { items: 4 },
                 }"
               >
                 <div class="single_brand_item">
@@ -87,12 +87,15 @@ export default {
 };
 </script>
 
-<style scoped>
+<style>
 .single_brand_item {
   margin: 0 0.5rem;
 }
 .single_brand_item a img {
   height: 90px;
   object-fit: fill;
+}
+.owl-carousel .owl-stage {
+    transition: all 0.25s linear 0s !important;
 }
 </style>

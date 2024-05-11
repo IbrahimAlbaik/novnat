@@ -91,7 +91,7 @@ export default {
 }
 
 .ac > .ac-q {
-  font-size: 20px;
+  font-size: 25px;
   color: #444;
   padding: 10px 30px 10px 10px;
   margin: 0;
@@ -99,8 +99,7 @@ export default {
   display: block;
   cursor: pointer;
   position: relative;
-  font-weight: 400;
-  font-family: serif;
+  font-weight: 600;
 }
 
 .ac.is-active .ac-q {

@@ -18,7 +18,7 @@
               v-if="item.id == 'discover-1'"
               width="100%"
               height="100%"
-              src="https://www.youtube.com/embed/sxhsLQK6s00?si=Ym-X5KJdijhZoKDJ&playlist=sxhsLQK6s00&autoplay=1&mute=1&loop=1&controls=0"
+              src="https://www.youtube.com/embed/sxhsLQK6s00?si=Ym-X5KJdijhZoKDJ&playlist=sxhsLQK6s00&autoplay=1&mute=1&loop=1&modestbranding=1&autohide=1&showinfo=0"
               style="
                 position: absolute;
                 top: 0;
@@ -27,10 +27,9 @@
                 right: 0;
                 object-fit: cover;
               "
-              allowfullscreen="true"
               mozallowfullscreen="mozallowfullscreen"
               msallowfullscreen="msallowfullscreen"
-              oallowfullscreen="oallowfullscreen"
+              allowfullscreen="allowfullscreen"
               webkitallowfullscreen="webkitallowfullscreen"
               frameBorder="0"
               allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; modestbranding; showinfo=0; fullscreen"

@@ -381,10 +381,10 @@ export const state = () => ({
       title: 'Q10. What are the challenges that MOFs face in reaching commerciality and how are you addressing them?',
       details: `One of the primary challenges MOFs face in reaching commercialization is scalability. While
       MOFs exhibit remarkable properties in the lab, scaling up their production to meet industrial
-      demands can be complex and costly. At NovNat Tech, we&#39;re tackling this challenge through a
+      demands can be complex and costly. At NovNat Tech, we're tackling this challenge through a
       combination of innovative and green synthesis techniques, process optimization, and strategic
       partnerships with industry leaders in materials science and manufacturing. By leveraging our
-      expertise and collaborating with key stakeholders, we&#39;re working towards overcoming
+      expertise and collaborating with key stakeholders, we're working towards overcoming
       scalability hurdles and bringing MOF-based technologies to market efficiently and cost-
       effectively. Another challenge is the way in which they are integrated with various systems
       whether that is atmospheric water generation systems in our case or others such as desiccant
@@ -401,7 +401,7 @@ export const state = () => ({
       id: 1,
       title: "Innovate UK project - Innovate UK Transformative Technologies",
       date: "(June to Oct 2023)",
-      images: ["2.jpg", "1.jpeg", "3.jpg", "4.jpg"],
+      images: ["2.jpg","3.jpg", "4.jpg","innovate_uk.jpeg"],
       description: `Invented Multivariate MOF Material Enables Sustainable Atmospheric Water Generation for Rescue and Military Vehicles with Zero Carbon Emissions.
     The UN estimates that by 2030, intense water scarcity could displace around 700 million people and,
     by 2025, half of the world's population could be living in areas facing water scarcity. The inevitable global water shortage due to increased usage and climate change, has caused many governments, institutions, organisations and industrial corporations around the world to investigate alternative sources of water. In this regard, NovNat Tech has invented a novel Multivariant Metal Organic Framework material capable of
@@ -418,7 +418,7 @@ export const state = () => ({
       id: 2,
       title: "Bupa Eco Disruptive Programme",
       date: "(Oct - Dec 2023)",
-      images: ["5.jpeg", "6.jpeg", "7.jpeg", "8.jpg", "9.jpg", "10.jpg", "11.jpg", "12.jpg", "13.jpg"],
+      images: ["5.jpeg", "6.jpeg", "7.jpeg", "11.jpg", "12.jpg", "13.jpg", "bupa_2.jpeg", "bupa.jpeg"],
       description: `Eco-Disruptive is a global talent and innovation program,
        an integral part of Mission Accelerate, within Bupa sustainability strategy.
         Sustainability challenges within business and the health sector are addressed by Bupa employees,
@@ -442,7 +442,7 @@ export const state = () => ({
       id: 4,
       title: "SMART EUREKA CLUSTER PO proposer's day and Manufacture ETF (European Technology Platform) – San Sebastián",
       date: "(Nov 2023)",
-      images: ["16.jpeg"],
+      images: ["16.jpeg", "eureka_2.jpeg", "eureka_3.jpeg", "eureka.jpeg"],
       description: `NovNat took part in the PO Proposers Day held in Donostia – San Sebastián (Spain) as part of the 7th call of Smart Advanced Manufacturing through the Eureka Cluster network.
     This in-person gathering attracted 60 participants representing 15 countries. NovNat actively participated in the event by presenting a project proposal aimed at structuring a consortium project with our partners.
     Our goal is to further develop our Atmospheric Water Generation system using advanced and scalable techniques,
