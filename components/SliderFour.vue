@@ -15,6 +15,7 @@
               :style="`background-image: url(/assets/images/main-slider/${item.image})`"
             ></div>
             <video
+              v-if="item.id == 'discover-1'"
               autoplay
               muted
               loop
