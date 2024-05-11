@@ -66,120 +66,6 @@
             </div>
           </div>
         </div>
-        <!-- <div
-          class="col-xl-4 col-lg-6 col-md-6 masonary-item"
-          style="position: absolute; left: 400px; top: 0px"
-        >
-          <div class="gallery_two_single">
-            <div class="gallery_two_image">
-              <img src="/assets/images/gallery/gallery-2-img-2.jpg" alt="" />
-              <div class="gallery_two_hover_box">
-                <div class="gallery_two_icon">
-                  <a
-                    class="img-popup"
-                    href="/assets/images/gallery/gallery-2-img-2.jpg"
-                    ><span class="icon-plus-symbol"></span
-                  ></a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div
-          class="col-xl-4 col-lg-6 col-md-6 masonary-item"
-          style="position: absolute; left: 800px; top: 0px"
-        >
-          <div class="gallery_two_single">
-            <div class="gallery_two_image">
-              <img src="/assets/images/gallery/gallery-2-img-3.jpg" alt="" />
-              <div class="gallery_two_hover_box">
-                <div class="gallery_two_icon">
-                  <a
-                    class="img-popup"
-                    href="/assets/images/gallery/gallery-2-img-3.jpg"
-                    ><span class="icon-plus-symbol"></span
-                  ></a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div
-          class="col-xl-4 col-lg-6 col-md-6 masonary-item"
-          style="position: absolute; left: 0px; top: 280px"
-        >
-          <div class="gallery_two_single">
-            <div class="gallery_two_image">
-              <img src="/assets/images/gallery/gallery-2-img-4.jpg" alt="" />
-              <div class="gallery_two_hover_box">
-                <div class="gallery_two_icon">
-                  <a
-                    class="img-popup"
-                    href="/assets/images/gallery/gallery-2-img-4.jpg"
-                    ><span class="icon-plus-symbol"></span
-                  ></a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div
-          class="col-xl-4 col-lg-6 col-md-6 masonary-item"
-          style="position: absolute; left: 800px; top: 280px"
-        >
-          <div class="gallery_two_single">
-            <div class="gallery_two_image">
-              <img src="/assets/images/gallery/gallery-2-img-5.jpg" alt="" />
-              <div class="gallery_two_hover_box">
-                <div class="gallery_two_icon">
-                  <a
-                    class="img-popup"
-                    href="/assets/images/gallery/gallery-2-img-5.jpg"
-                    ><span class="icon-plus-symbol"></span
-                  ></a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div
-          class="col-xl-4 col-lg-6 col-md-6 masonary-item"
-          style="position: absolute; left: 0px; top: 731px"
-        >
-          <div class="gallery_two_single">
-            <div class="gallery_two_image">
-              <img src="/assets/images/gallery/gallery-2-img-6.jpg" alt="" />
-              <div class="gallery_two_hover_box">
-                <div class="gallery_two_icon">
-                  <a
-                    class="img-popup"
-                    href="/assets/images/gallery/gallery-2-img-6.jpg"
-                    ><span class="icon-plus-symbol"></span
-                  ></a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div
-          class="col-xl-4 col-lg-6 col-md-6 masonary-item"
-          style="position: absolute; left: 400px; top: 731px"
-        >
-          <div class="gallery_two_single">
-            <div class="gallery_two_image">
-              <img src="/assets/images/gallery/gallery-2-img-7.jpg" alt="" />
-              <div class="gallery_two_hover_box">
-                <div class="gallery_two_icon">
-                  <a
-                    class="img-popup"
-                    href="/assets/images/gallery/gallery-2-img-7.jpg"
-                    ><span class="icon-plus-symbol"></span
-                  ></a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div> -->
       </div>
     </div>
   </section>
@@ -237,5 +123,16 @@ export default {
 }
 .gallery_two_single .gallery_two_image {
   height: 100%;
+}
+@media only screen and (max-width: 767px) {
+  .masonary-layout {
+    height: auto !important;
+  }
+  .col-xl-4 {
+    position: unset !important;
+  }
+  .col-xl-4 .gallery_two_single {
+    height: 250px !important;
+  }
 }
 </style>

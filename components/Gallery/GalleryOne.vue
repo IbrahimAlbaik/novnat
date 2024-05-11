@@ -3,7 +3,7 @@
     <div class="container-fullwidth">
       <div class="block-title text-center">
         <p>our gallery</p>
-        <h3>checkout gallery</h3>
+        <h3>highlights</h3>
         <div class="leaf">
           <img src="/assets/images/resources/leaf.png" alt="" />
         </div>
