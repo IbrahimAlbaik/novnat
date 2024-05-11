@@ -14,26 +14,15 @@
               class="image-layer"
               :style="`background-image: url(/assets/images/main-slider/${item.image})`"
             ></div>
-            <iframe
-              v-if="item.id == 'discover-1'"
-              width="100%"
-              height="100%"
-              src="https://www.youtube.com/embed/sxhsLQK6s00?si=Ym-X5KJdijhZoKDJ&playlist=sxhsLQK6s00&autoplay=1&mute=1&loop=1&modestbranding=1&autohide=1&showinfo=0"
-              style="
-                position: absolute;
-                top: 0;
-                bottom: 0;
-                left: 0;
-                right: 0;
-                object-fit: cover;
-              "
-              mozallowfullscreen="mozallowfullscreen"
-              msallowfullscreen="msallowfullscreen"
-              allowfullscreen="allowfullscreen"
-              webkitallowfullscreen="webkitallowfullscreen"
-              frameBorder="0"
-              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; modestbranding; showinfo=0; fullscreen"
-            ></iframe>
+            <video
+              autoplay
+              muted
+              loop
+              id="myVideo"
+              style="position: absolute;top: 0;bottom: 0;left: 0;right: 0;object-fit: cover;">
+              <source src="assets/images/main-slider/about_slider_1.mp4" type="video/mp4" />
+              Your browser does not support HTML5 video.
+            </video>
             <div class="auto-container">
               <div class="content-box">
                 <div class="content text-right">
