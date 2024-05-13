@@ -81,7 +81,7 @@
                 >
               </li>
               <li>
-                <nuxt-link :to="{ path: '/', hash: 'faqs' }">Faqs</nuxt-link>
+                <nuxt-link :to="{ path: '/', hash: 'faqs' }">FAQs</nuxt-link>
               </li>
               <li>
                 <nuxt-link :to="{ path: '/', hash: 'team' }">Team</nuxt-link>

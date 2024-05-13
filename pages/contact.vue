@@ -2,7 +2,7 @@
   <div>
     <PageHeader title="Contact" />
     <!-- <Location /> -->
-    <ContactTwo />
+  <ContactTwo />
     <!-- <GMap /> -->
   </div>
 </template>

@@ -54,21 +54,21 @@
             </div> -->
             <div class="block-title text-center">
               <p>get in touch with us</p>
-              <h3>Have question?</h3>
+              <h3>Have a question?</h3>
               <div class="leaf">
                 <img src="/assets/images/resources/leaf.png" alt="" />
               </div>
             </div>
             <div class="have_questions_text">
               <p>
-                There are many variations of passages available <br />
-                but the majority have suffered alteration in some form by inject
-                humour or donec vel erat sollicitudin,<br />
-                dapibus duiat, porttitor sem.
+                Please feel free to get in touch <br />
+                by clicking in the button below <br /> if you are interested in
+                collaborating or partnering with us,<br /> please email
+                <span> abdulbari@novnat.uk </span>
               </p>
             </div>
             <div class="have_questions_btn">
-              <a :href="`mailto:${aboutNovNat.email}`" class="thm-btn"
+              <a :href="`mailto:abdulbari@novnat.uk`" class="thm-btn"
                 >Send a Message</a
               >
             </div>
@@ -90,4 +90,8 @@ export default {
 };
 </script>
 
-<style scoped></style>
+<style scoped>
+.have_questions_text p span {
+  color: #6ea1bb;
+}
+</style>
