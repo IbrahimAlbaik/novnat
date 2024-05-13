@@ -8572,7 +8572,8 @@ h6 {
 }
 
 .have_questions_btn {
-  margin-top: 42px;
+  margin-top: 0px;
+  margin-bottom: 1rem;
 }
 
 .have_questions_btn .thm-btn {

@@ -51,7 +51,7 @@ export const state = () => ({
     id: 1,
     title: 'NovNat',
     logo: 'novnat-logo.png',
-    address: 'Vincent Drive, Birmingham Research Park, <br /> Birmingham B15 2SQ<br /> UK',
+    address: 'Birmingham Research Park,<br /> Vincent Drive, <br /> Birmingham <br /> B15 2SQ<br /> United Kingdom',
     register: 'Company registered in England and Wales',
     phone: '+44 (0) 752 128 0697',
     location: '',
@@ -150,8 +150,11 @@ export const state = () => ({
       name: 'Abdulbari Belouafi',
       position: 'Co-Founder and CEO',
       image: 'abed.jpg',
-      about: `Abdulbari holds an MSc in advanced mechanical engineering from the University of Birmingham specialising
-       in engineering design using CAD and CFD software. Furthermore, he is highly capable in report writing and simplifying technical language for all stakeholders involved in this project.`,
+      about: `Abdulbari is a mechanical engineer by trade having studied mechanical engineering at Aston University and UoB and worked as a freelance consultant. He now applies his engineering experience coupled with his enthusiastic approach to commercialising
+      engineering innovations in the real world and serves as the backbone of NovNat.
+      <br />
+      His entrepreneurial passion and strong willingness to learn and adapt is instrumental in driving
+      NovNat’s journey forward.`,
       socialMediaLinks: ['https://www.linkedin.com/in/abdulbari-belouafi-6b7697139'],
 
     }

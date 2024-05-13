@@ -151,7 +151,7 @@
       <div class="container">
         <div class="site-footer_bottom_copyright">
           <p>
-            @ All copyright 2023, <a href="#">{{ aboutNovNat.title }}</a>
+            &#169; All copyright 2023, <a href="#">{{ aboutNovNat.title }}</a>
           </p>
         </div>
         <!-- <div class="site-footer_bottom_menu">

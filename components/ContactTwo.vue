@@ -61,17 +61,18 @@
             </div>
             <div class="have_questions_text">
               <p>
-                Please feel free to get in touch <br />
-                by clicking in the button below <br /> if you are interested in
-                collaborating or partnering with us,<br /> please email
-                <span> abdulbari@novnat.uk </span>
+                Please feel free to get in touch by clicking on the button below
               </p>
             </div>
             <div class="have_questions_btn">
-              <a :href="`mailto:abdulbari@novnat.uk`" class="thm-btn"
+              <a href="mailto:abdulbari@novnat.co.uk" class="thm-btn"
                 >Send a Message</a
               >
             </div>
+            <p>
+              f you are interested in collaborating or partnering with us,<br />
+              please email <span> abdulbari@novnat.co.uk </span>
+            </p>
           </div>
         </div>
       </div>
@@ -91,7 +92,7 @@ export default {
 </script>
 
 <style scoped>
-.have_questions_text p span {
+p span {
   color: #6ea1bb;
 }
 </style>

@@ -24,7 +24,7 @@
                 <img src="/assets/images/resources/leaf.png" alt="" />
               </div>
             </div>
-            <p>{{ singlePerson.about }}</p>
+            <p v-html="singlePerson.about"></p>
             <!-- <ul class="company_list_box list-unstyled">
               <li>
                 <i class="fa fa-check"></i>Every employee wears a photo ID
