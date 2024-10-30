@@ -3,7 +3,7 @@
     <div class="topbar-one">
       <div
         class="topbar_bg"
-        style="background-image: url(/assets/images/shapes/header-bg.png)"
+        style="background-image: url(~assets/images/shapes/header-bg.png)"
       ></div>
       <div class="container">
         <div class="topbar-one__left">
@@ -17,7 +17,7 @@
         <div class="topbar-one__middle">
           <a href="/" class="main-nav__logo">
             <img
-              src="/assets/images/resources/logo.png"
+              src="~assets/images/resources/logo.png"
               class="main-logo"
               alt="Awesome Image"
             />

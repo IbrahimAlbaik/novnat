@@ -56,7 +56,7 @@
               <p>get in touch with us</p>
               <h3>Have a question?</h3>
               <div class="leaf">
-                <img src="/assets/images/resources/leaf.png" alt="" />
+                <img src="~assets/images/resources/leaf.png" alt="" />
               </div>
             </div>
             <div class="have_questions_text">

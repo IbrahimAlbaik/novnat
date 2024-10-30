@@ -3,7 +3,7 @@
     <footer class="site-footer">
       <div class="site-footer_farm_image">
         <img
-          src="/assets/images/resources/site-footer-farm.png"
+          src="~assets/images/resources/site-footer-farm.png"
           alt="Farm Image"
         />
       </div>
@@ -43,18 +43,18 @@
               </div>
               <ul class="footer-widget__links-list list-unstyled">
                 <li>
-                  <nuxt-link :to="{ path: '/', hash: 'projects' }"
+                  <nuxt-link :to="{ path: '/', hash: '#projects' }"
                     >Technology</nuxt-link
                   >
                 </li>
                 <li>
-                  <nuxt-link :to="{ path: '/', hash: 'faqs' }">Faqs</nuxt-link>
+                  <nuxt-link :to="{ path: '/', hash: '#faqs' }">Faqs</nuxt-link>
                 </li>
                 <li>
-                  <nuxt-link :to="{ path: '/', hash: 'team' }">Team</nuxt-link>
+                  <nuxt-link :to="{ path: '/', hash: '#team' }">Team</nuxt-link>
                 </li>
                 <li>
-                  <nuxt-link :to="{ path: '/', hash: 'about' }"
+                  <nuxt-link :to="{ path: '/', hash: '#about' }"
                     >About</nuxt-link
                   >
                 </li>

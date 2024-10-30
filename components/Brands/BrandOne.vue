@@ -11,7 +11,9 @@
         <div class="col-xl-12">
           <div class="brand-one-carousel">
             <no-ssr>
-              <carousel
+              <Swiper
+                :slides-per-view="3"
+                :space-between="10"
                 :autoplay="true"
                 :dots="false"
                 :nav="false"
@@ -22,28 +24,14 @@
                   1024: { items: 3 },
                 }"
               >
-                <div class="single_brand_item target">
-                  <a href="https://sdgs.un.org/goals/goal6" target="_blank"
-                    ><img
-                      src="/assets/images/resources/target_1.jpg"
-                      alt="brand"
-                  /></a>
-                </div>
-                <div class="single_brand_item target">
-                  <a href="https://sdgs.un.org/goals/goal9" target="_blank"
-                    ><img
-                      src="/assets/images/resources/target_2.png"
-                      alt="brand"
-                  /></a>
-                </div>
-                <div class="single_brand_item target">
-                  <a href="https://sdgs.un.org/goals/goal13" target="_blank"
-                    ><img
-                      src="/assets/images/resources/target_3.jpg"
-                      alt="brand"
-                  /></a>
-                </div>
-              </carousel>
+                <SwiperSlide v-for="goal in goals" :key="goal.id">
+                  <div class="single_brand_item target">
+                    <a :href="goal.URL" target="_blank"
+                      ><img :src="goal.image" alt="brand"
+                    /></a>
+                  </div>
+                </SwiperSlide>
+              </Swiper>
             </no-ssr>
           </div>
         </div>
@@ -55,6 +43,7 @@
 <script>
 export default {
   name: "BrandOne",
+  props: ["goals"],
 };
 </script>
 

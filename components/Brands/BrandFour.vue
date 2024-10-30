@@ -5,7 +5,9 @@
         <div class="col-xl-12">
           <div class="brand-one-carousel owl-carousel">
             <no-ssr>
-              <carousel
+              <Swiper
+                :slides-per-view="4"
+                :space-between="50"
                 :autoplay="true"
                 :dots="true"
                 :nav="false"
@@ -16,63 +18,14 @@
                   1024: { items: 4 },
                 }"
               >
-                <div class="single_brand_item">
-                  <a
-                    href="https://www.gbslepgrowthhub.co.uk/programmes/amtecaa"
-                  >
-                    <img src="/assets/images/partners/amtecaa.png" alt="brand"
-                  /></a>
-                </div>
-                <div class="single_brand_item">
-                  <a
-                    href="https://www.birmingham.ac.uk/research/energy/climate-innovation-platform.aspx"
-                  >
-                    <img src="/assets/images/partners/climate.png" alt="brand"
-                  /></a>
-                </div>
-                <div class="single_brand_item">
-                  <a href="https://www.birmingham.ac.uk/index.aspx">
-                    <img
-                      src="/assets/images/partners/university.jpg"
-                      alt="brand"
-                  /></a>
-                </div>
-                <div class="single_brand_item">
-                  <a
-                    href="https://intranet.birmingham.ac.uk/as/employability/b-enterprising/uobelevate/index.aspx"
-                  >
-                    <img src="/assets/images/partners/UOB.png" alt="brand"
-                  /></a>
-                </div>
-                <div class="single_brand_item">
-                  <a
-                    href="https://ec.europa.eu/regional_policy/funding/erdf_en"
-                  >
-                    <img src="/assets/images/partners/union.jpg" alt="brand"
-                  /></a>
-                </div>
-                <div class="single_brand_item">
-                  <a href="https://www.ukri.org/councils/innovate-uk/">
-                    <img
-                      src="/assets/images/partners/ukri-innovate-uk-square-logo.png"
-                      alt="brand"
-                  /></a>
-                </div>
-                <div class="single_brand_item">
-                  <a href="https://www.bupa.com/">
-                    <img
-                      src="/assets/images/partners/Bupa-Logo.jpg"
-                      alt="brand"
-                  /></a>
-                </div>
-                <div class="single_brand_item">
-                  <a href="https://www.ukri.org/councils/innovate-uk/">
-                    <img
-                      src="/assets/images/partners/1.jpeg"
-                      alt="brand"
-                  /></a>
-                </div>
-              </carousel>
+                <SwiperSlide v-for="partner in partners" :key="partner.id">
+                  <div class="single_brand_item">
+                    <a :href="partner.URL" target="_balnk">
+                      <img :src="partner.image" alt="brand"
+                    /></a>
+                  </div>
+                </SwiperSlide>
+              </Swiper>
             </no-ssr>
           </div>
         </div>
@@ -84,6 +37,7 @@
 <script>
 export default {
   name: "BrandFour",
+  props: ["partners"],
 };
 </script>
 
@@ -91,11 +45,16 @@ export default {
 .single_brand_item {
   margin: 0 0.5rem;
 }
+.single_brand_item a {
+  display: inline-block;
+  width: 100%;
+}
 .single_brand_item a img {
   height: 90px;
   object-fit: fill;
+  width: 100%;
 }
 .owl-carousel .owl-stage {
-    transition: all 0.25s linear 0s !important;
+  transition: all 0.25s linear 0s !important;
 }
 </style>

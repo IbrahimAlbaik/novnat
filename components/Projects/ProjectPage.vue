@@ -15,21 +15,18 @@
       <div class="row">
         <div
           class="col-xl-6 col-lg-6"
-          v-for="project in projects"
-          :key="project.id"
+          v-for="technology in technologies"
+          :key="technology.id"
         >
-          <div class="recent_project_single mrb-30">
+          <div class="recent_project_single mrb-30 wow fadeInUp">
             <div class="overlay"></div>
             <div class="project_img_box">
-              <img
-                :src="`/assets/images/project/${project.images[0]}`"
-                alt="Recent Project Img"
-              />
+              <img :src="technology.image" alt="Recent Project Img" />
               <div class="project_content">
-                <h3>{{ project.title }}</h3>
+                <h3>{{ technology.title }}</h3>
               </div>
               <div class="hover_box">
-                <nuxt-link :to="`/technology-details/${project.id}`"
+                <nuxt-link :to="`/technology-details/${technology.id}`"
                   ><span class="icon-left-arrow"></span
                 ></nuxt-link>
               </div>
@@ -37,13 +34,6 @@
           </div>
         </div>
       </div>
-      <!-- <div class="row">
-        <div class="col-xl-12">
-          <div class="our_projects_btn">
-            <a href="#" class="thm-btn">Load More Projects</a>
-          </div>
-        </div>
-      </div> -->
     </div>
   </section>
 </template>
@@ -51,15 +41,6 @@
 <script>
 export default {
   name: "ProjectPage",
-  data() {
-    return {};
-  },
-  computed: {
-    projects() {
-      return this.$store.state.projects;
-    },
-  },
+  props: ["technologies"],
 };
 </script>
-
-<style scoped></style>

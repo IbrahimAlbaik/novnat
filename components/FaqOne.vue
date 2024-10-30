@@ -3,17 +3,17 @@
     <div class="container">
       <div class="row">
         <div class="col-xl-6 col-lg-6">
-          <div class="faq_one_left">
+          <div class="faq_one_left wow slideInLeft">
             <div class="block-title text-left">
               <p>frequently asked questions</p>
               <h3>have any question?</h3>
               <div class="leaf">
-                <img src="/assets/images/resources/leaf.png" alt="" />
+                <img src="~/assets/images/resources/leaf.png" alt="" />
               </div>
             </div>
             <div
               class="faq_one_image"
-              style="background-image: url(/assets/images/resources/faq.webp);"
+              style="background-image: url(~/assets/images/resources/faq.webp)"
             >
               <div class="phone_number">
                 <p>
@@ -26,34 +26,22 @@
           </div>
         </div>
         <div class="col-xl-12">
-          <div class="faq_one_right">
+          <div class="faq_one_right wow slideInLeft">
             <div class="accrodion-grp" data-grp-name="faq-one-accrodion">
               <div class="accordion-container-one">
-                <div class="ac" v-for="faq in faqs" :key="faq.id">
-                  <h2 class="ac-q" tabIndex="0">
-                    {{ faq.title }}
+                <div class="ac" v-for="(faq, index) in faqs" :key="faq.id">
+                  <h2 class="ac-q" tabIndex="0" @click="toggle(index)">
+                    {{ faq.question }}
                   </h2>
-                  <div class="ac-a accordion__content">
-                    <p class="accordion__content-desc">
-                      {{ faq.details }}
-                    </p>
-                    <ul
-                      class="list-unstyled"
-                      v-for="feature in faq.features"
-                      :key="feature.id"
-                    >
-                      <p>
-                        <i class="fa fa-angle-right"></i>
-                        {{ feature.title }}
-                      </p>
-                      <li
-                        v-for="detail in feature.featuresDetails"
-                        :key="detail"
-                      >
-                        <i class="fa fa-check"></i>
-                        {{ detail }}
-                      </li>
-                    </ul>
+                  <div
+                    class="ac-a accordion__content"
+                    v-show="isOpen(index)"
+                    v-if="isOpen(index)"
+                  >
+                    <div
+                      class="accordion__content-desc"
+                      v-html="faq.answer"
+                    ></div>
                   </div>
                 </div>
               </div>
@@ -64,20 +52,27 @@
     </div>
   </section>
 </template>
-
 <script>
 export default {
   name: "FaqOne",
+  props: ["faqs"],
+  data() {
+    return {
+      openIndex: null,
+    };
+  },
   computed: {
     aboutNovNat() {
       return this.$store.state.novnat;
     },
-    faqs() {
-      return this.$store.state.faqs;
-    },
   },
-  mounted() {
-    new Accordion(".accordion-container-one");
+  methods: {
+    toggle(index) {
+      this.openIndex = this.openIndex === index ? null : index;
+    },
+    isOpen(index) {
+      return this.openIndex === index;
+    },
   },
 };
 </script>

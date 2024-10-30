@@ -1,30 +1,34 @@
 <template>
   <div class="page-wrapper">
-    <nuxt />
+    <NuxtPage />
     <Footer />
-    <!-- <SearchPopup /> -->
   </div>
 </template>
 
 <script>
-// import SearchPopup from "../components/SearchPopup";
-import Footer from "../components/Footer";
+import Footer from "@/components/Footer";
 export default {
   components: {
-    // SearchPopup,
-    Footer
+    Footer,
   },
   head() {
     return {
-      title: "NovNat - "
+      title: "NovNat - ",
     };
   },
-  mounted() {
+  methods: {
+    fetchData() {
+      this.$store.dispatch("fetchLandingPageData");
+    },
+  },
+  async mounted() {
+    const { $startLoading, $stopLoading } = useNuxtApp();
+    $startLoading();
+    await this.fetchData();
     this.$nextTick(() => {
-      this.$nuxt.$loading.start();
-      setTimeout(() => this.$nuxt.$loading.finish(), 500);
+      setTimeout(() => $stopLoading(), 500);
     });
-  }
+  },
 };
 </script>
 
