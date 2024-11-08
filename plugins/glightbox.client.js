@@ -3,5 +3,6 @@ import GLightbox from 'glightbox';
 import 'glightbox/dist/css/glightbox.min.css';
 
 export default defineNuxtPlugin((nuxtApp) => {
-  nuxtApp.provide('glightbox', () => GLightbox());
+  // Provide GLightbox as a function to allow flexible initialization
+  nuxtApp.provide('glightbox', (options = {}) => GLightbox(options));
 });

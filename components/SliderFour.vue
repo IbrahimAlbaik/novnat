@@ -1,42 +1,19 @@
 <template>
   <client-only>
     <section class="banner_four_section" id="home">
-      <div
-        class="banner-carousel-four owl-theme owl-carousel"
-        v-if="sliders && sliders.length"
-      >
+      <div class="swiper-wrapper" v-if="sliders && sliders.length">
         <Swiper
-          :autoplay="{ delay: 5000, disableOnInteraction: false }"
+          :autoplay="{ delay: 5000, disableOnInteraction: true }"
+          :modules="[Autoplay, Pagination, Navigation]"
           loop
+          :pagination="{ clickable: true }"
+          ref="swiper"
         >
           <SwiperSlide
-            class="slide-item"
+            class="swiper-wrapper-slider"
             v-for="slider in sliders"
             :key="slider.id"
           >
-            <div
-              v-if="mediaType === 'image'"
-              class="image-layer"
-              :style="`background-image: url(${slider.media})`"
-            ></div>
-            <video
-              v-else-if="mediaType === 'video'"
-              autoplay
-              muted
-              loop
-              id="myVideo"
-              style="
-                position: absolute;
-                top: 0;
-                bottom: 0;
-                left: 0;
-                right: 0;
-                object-fit: cover;
-              "
-            >
-              <source :src="slider.media" type="video/mp4" />
-              Your browser does not support HTML5 video.
-            </video>
             <div class="auto-container">
               <div class="content-box">
                 <div class="content text-right">
@@ -45,7 +22,7 @@
                     <div class="link-box">
                       <nuxt-link
                         :to="`/discover-more/${slider.id}`"
-                        class="thm-btn"
+                        class="thm-btn link-full-width"
                         >Discover More</nuxt-link
                       >
                     </div>
@@ -53,6 +30,29 @@
                 </div>
               </div>
             </div>
+            <div
+              v-if="mediaType(slider.media) === 'image'"
+              class="image-layer"
+              :style="`background-image: url(${slider.media});`"
+            ></div>
+            <video
+              v-else-if="mediaType(slider.media) === 'video'"
+              autoplay
+              muted
+              loop
+              id="myVideo"
+              style="
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+              "
+            >
+              <source :src="slider.media" type="video/mp4" />
+              Your browser does not support HTML5 video.
+            </video>
           </SwiperSlide>
         </Swiper>
       </div>
@@ -61,18 +61,16 @@
 </template>
 
 <script>
-import { computed, watch } from "vue";
+import { Autoplay, Pagination, Navigation } from "swiper"; // Import necessary modules
+import { nextTick, onMounted } from "vue"; // Import Vue's nextTick and onMounted
 
 export default {
   name: "SliderFour",
   props: ["sliders"],
   setup(props) {
-    // Compute the media type for the first slider for the demo
-    const mediaType = computed(() => {
-      return props.sliders && props.sliders.length
-        ? checkMediaTypeFromUrl(props.sliders[0].media)
-        : null;
-    });
+    function mediaType(url) {
+      return url ? checkMediaTypeFromUrl(url) : null;
+    }
 
     function checkMediaTypeFromUrl(url) {
       if (url) {
@@ -83,7 +81,7 @@ export default {
           return "video";
         }
       }
-      return null; // Return null for unsupported media types
+      return null;
     }
 
     function getFileExtension(url) {
@@ -108,26 +106,35 @@ export default {
       return videoExtensions.includes(extension);
     }
 
+    const swiperRef = ref(null); // Create a ref for the Swiper instance
+
+    onMounted(() => {
+      nextTick(() => {
+        const swiperInstance = swiperRef.value.swiper;
+        if (swiperInstance) {
+          swiperInstance.update(); // Manually trigger update to ensure slides are properly initialized
+        }
+      });
+    });
+
     return {
+      swiperRef,
       mediaType,
       checkMediaTypeFromUrl,
+      Autoplay,
+      Pagination,
+      Navigation,
     };
   },
 };
 </script>
 
-<style scoped>
-iframe {
-  background: #ccc;
-}
-iframe div,
-iframe span {
-  width: 100%;
-}
+<style>
 .swiper-pagination {
   position: absolute;
   right: 10px; /* Adjust as needed */
-  top: 50%;
+  top: 70%;
+  left: 13rem !important;
   transform: translateY(-50%);
   display: flex;
   flex-direction: column; /* Align dots vertically */
@@ -135,7 +142,7 @@ iframe span {
 .swiper-pagination-bullet {
   background: #fff; /* Color of pagination bullets */
   opacity: 0.5; /* Default opacity */
-  margin: 4px 0; /* Space between bullets */
+  margin: 4px !important; /* Space between bullets */
 }
 .swiper-pagination-bullet-active {
   opacity: 1; /* Active bullet opacity */

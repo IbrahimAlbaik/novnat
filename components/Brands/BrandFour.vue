@@ -8,14 +8,14 @@
               <Swiper
                 :slides-per-view="4"
                 :space-between="50"
-                :autoplay="true"
-                :dots="true"
-                :nav="false"
-                :responsive="{
-                  0: { items: 1 },
-                  640: { items: 2 },
-                  992: { items: 3 },
-                  1024: { items: 4 },
+                :autoplay="{ delay: 1000, disableOnInteraction: false }"
+                :modules="[Autoplay, Pagination, Navigation]"
+                loop
+                :breakpoints="{
+                  0: { slidesPerView: 1, spaceBetween: 10 },
+                  640: { slidesPerView: 2, spaceBetween: 20 },
+                  992: { slidesPerView: 3, spaceBetween: 30 },
+                  1024: { slidesPerView: 4, spaceBetween: 50 },
                 }"
               >
                 <SwiperSlide v-for="partner in partners" :key="partner.id">
@@ -35,9 +35,17 @@
 </template>
 
 <script>
+import { Autoplay, Pagination, Navigation } from "swiper";
 export default {
   name: "BrandFour",
   props: ["partners"],
+  setup(props) {
+    return {
+      Autoplay,
+      Pagination,
+      Navigation,
+    };
+  },
 };
 </script>
 

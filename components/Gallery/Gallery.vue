@@ -5,7 +5,7 @@
       <div data-v-3cbd7405="" class="leaf">
         <img
           data-v-3cbd7405=""
-          src="~assets/images/resources/leaf.png"
+          src="~/assets/images/resources/leaf.png"
           alt="icon"
         />
       </div>
@@ -72,14 +72,21 @@
 </template>
 
 <script>
+import { onMounted } from "vue";
+import { useNuxtApp } from "#app";
 export default {
   name: "Gallery",
-  mounted() {
-    new GLightbox({
-      selector: ".img-popup",
+  props: ["gallery"],
+  setup() {
+    const { $glightbox } = useNuxtApp();
+
+    onMounted(() => {
+      // Initialize GLightbox
+      $glightbox({
+        selector: ".img-popup", // Define selector for GLightbox
+      });
     });
   },
-  props: ["gallery"],
 };
 </script>
 

@@ -99,6 +99,7 @@ h6 {
   max-width: 1200px;
   padding: 0px 15px;
   margin: 0 auto;
+  z-index: 99;
 }
 
 .block-title {
@@ -119,7 +120,7 @@ h6 {
 .block-title h3 {
   margin: 0;
   color: var(--thm-black);
-  font-size: 70px;
+  font-size: 2rem;
   font-weight: 700;
   font-family: var(--heading-font);
   line-height: 1em;
@@ -2039,7 +2040,7 @@ h6 {
   transform: scale(1);
 }
 
-.banner-carousel .active .slide-item .image-layer {
+.banner-carousel .active .slide-item .image-layer, .banner-carousel .active .slide-item .video-layer  {
   -webkit-transform: scale(1.15);
   -ms-transform: scale(1.15);
   transform: scale(1.15);
@@ -2076,7 +2077,7 @@ h6 {
   text-transform: uppercase;
   letter-spacing: 0.2em;
   margin-bottom: 0px;
-  opacity: 0;
+  /* opacity: 0; */
   -webkit-transform: translateY(80px);
   -moz-transform: translateY(80px);
   -ms-transform: translateY(80px);
@@ -2096,7 +2097,7 @@ h6 {
   content: "";
 }
 
-.banner-carousel .active .content-box .sub-title {
+.banner-carousel .swiper-slide-active .content-box .sub-title {
   opacity: 1;
   -webkit-transform: translate(0);
   -moz-transform: translate(0);
@@ -2133,7 +2134,7 @@ h6 {
   transform: translateY(80px);
 }
 
-.banner-carousel .active .content-box h1 {
+.banner-carousel .swiper-slide-active .content-box h1 {
   opacity: 1;
   -webkit-transform: translate(0);
   -moz-transform: translate(0);
@@ -2163,7 +2164,7 @@ h6 {
   transform: translateY(50px);
 }
 
-.banner-carousel .active .content-box .link-box {
+.banner-carousel .swiper-slide-active .content-box .link-box {
   opacity: 1;
   -webkit-transform: translate(0);
   -moz-transform: translate(0);
@@ -2391,7 +2392,7 @@ h6 {
   transform: translateY(80px);
 }
 
-.banner-carousel-two .active .content-box .sub-title {
+.banner-carousel-two .swiper-slide-active .content-box .sub-title {
   opacity: 1;
   -webkit-transform: translate(0);
   -moz-transform: translate(0);
@@ -2445,7 +2446,7 @@ h6 {
   content: "";
 }
 
-.banner-carousel-two .active .content-box .big_text h2 {
+.banner-carousel-two .swiper-slide-active .content-box .big_text h2 {
   opacity: 1;
   -webkit-transform: translate(0);
   -moz-transform: translate(0);
@@ -2475,7 +2476,7 @@ h6 {
   transform: translateY(50px);
 }
 
-.banner-carousel-two .active .content-box .link-box {
+.banner-carousel-two .swiper-slide-active .content-box .link-box {
   opacity: 1;
   -webkit-transform: translate(0);
   -moz-transform: translate(0);
@@ -2690,7 +2691,7 @@ h6 {
   margin: 0 auto;
 }
 
-.banner-carousel-three .active .content-box .big_text h2 {
+.banner-carousel-three .swiper-slide-active .content-box .big_text h2 {
   opacity: 1;
   -webkit-transform: translate(0);
   -moz-transform: translate(0);
@@ -2725,7 +2726,7 @@ h6 {
   transform: translateY(80px);
 }
 
-.banner-carousel-three .active .content-box .sub-title {
+.banner-carousel-three .swiper-slide-active .content-box .sub-title {
   opacity: 1;
   -webkit-transform: translate(0);
   -moz-transform: translate(0);
@@ -3329,7 +3330,7 @@ h6 {
 
 .project-content h3 {
   color: var(--thm-black);
-  font-size: 70px;
+  font-size: 2rem;
   font-weight: 700;
   margin: 0;
 }
@@ -3536,7 +3537,7 @@ h6 {
 
 .project_content h3 {
   color: #ffffff;
-  font-size: 50px;
+  font-size: 1.5rem;
   font-weight: 700;
   margin: 0;
 }
@@ -4115,7 +4116,7 @@ h6 {
 
 .footer-widget__title h3 {
   color: #ffffff;
-  font-size: 30px;
+  font-size: 1rem;
   margin: 0;
   font-weight: 700;
   text-transform: uppercase;
@@ -4824,7 +4825,7 @@ h6 {
 
 .get_quote_one_form_inner h3 {
   color: var(--thm-black);
-  font-size: 50px;
+  font-size: 1.5rem;
   font-weight: 700;
   margin: 0;
   margin-bottom: 35px;
@@ -4948,6 +4949,7 @@ h6 {
   position: relative;
   display: block;
   max-width: 315px;
+  height: 100%;
 }
 
 .gallery_one_image {
@@ -4955,6 +4957,7 @@ h6 {
   overflow: hidden;
   border-radius: 5px;
   height: 200px;
+  width: 100%;
 }
 
 .gallery_one_image img {
@@ -4965,12 +4968,14 @@ h6 {
   transition: transform 500ms ease, opacity 500ms ease;
   transition: transform 500ms ease, opacity 500ms ease,
     -webkit-transform 500ms ease;
-  object-fit: contain;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
 }
 
 .gallery_one_single:hover .gallery_one_image img {
-  -webkit-transform: scale(1.05);
-  transform: scale(1.05);
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
 }
 
 .gallery_one_hover_box {
@@ -5649,7 +5654,7 @@ h6 {
 }
 
 .team_one_deatils h2 {
-  font-size: 30px;
+  font-size: 1rem;
   font-weight: 700;
   margin: 0;
 }
@@ -6055,7 +6060,7 @@ h6 {
 
 .details_one_content h2 {
   color: #ffffff;
-  font-size: 30px;
+  font-size: 1rem;
   font-weight: 700;
   margin: 0;
   position: relative;
@@ -6074,7 +6079,7 @@ h6 {
 }
 
 .details_one_count_box h3 {
-  font-size: 100px;
+  font-size: 2rem;
   font-weight: 700;
   color: #ffffff;
   margin: 0;
@@ -6873,7 +6878,7 @@ h6 {
 
 .funfact_one_single h3 {
   color: #ffffff;
-  font-size: 70px;
+  font-size: 2rem;
   font-weight: 700;
   margin: 0;
   margin-top: 17px;
@@ -7115,7 +7120,7 @@ h6 {
 }
 
 .trusted_one_couter_single h3 {
-  font-size: 70px;
+  font-size: 2rem;
   color: var(--thm-black);
   margin: 0;
   font-weight: 700;
@@ -10528,21 +10533,20 @@ h6 {
   z-index: 1;
 }
 
-.banner-carousel-four {
+.swiper-wrapper {
   position: relative;
   z-index: 1;
 }
 
-.banner-carousel-four .slide-item {
+.swiper-wrapper .swiper-wrapper-slider {
   position: relative;
   display: block;
-  background-color: #111111;
   color: #ffffff;
   overflow: hidden;
   height: 100vh;
 }
 
-.banner-carousel-four .slide-item:before {
+.swiper-wrapper .swiper-wrapper-slider:before {
   content: "";
   position: absolute;
   left: 0;
@@ -10554,7 +10558,7 @@ h6 {
   z-index: 1;
 }
 
-.banner-carousel-four .slide-item .image-layer {
+.swiper-wrapper .swiper-wrapper-slider .image-layer {
   position: absolute;
   left: 0;
   top: 0;
@@ -10570,7 +10574,7 @@ h6 {
   transform: scale(1);
 }
 
-.banner-carousel-four .active .slide-item .image-layer {
+.swiper-wrapper .swiper-slide-active.swiper-wrapper-slider .image-layer {
   -webkit-transform: scale(1.15);
   -ms-transform: scale(1.15);
   transform: scale(1.15);
@@ -10581,27 +10585,27 @@ h6 {
   transition: all 7000ms linear;
 }
 
-.banner-carousel-four .content-box {
+.swiper-wrapper .content-box {
   position: relative;
   z-index: 11;
 }
 
-.banner-carousel-four .content-box .content {
+.swiper-wrapper .content-box .content {
   position: relative;
   padding: 250px 0px 160px;
 }
 
-.banner-carousel-four .content-box .inner {
+.swiper-wrapper .content-box .inner {
   position: relative;
   display: block;
 }
 
-.banner-carousel-four .content-box h1 {
+.swiper-wrapper .content-box h1 {
   position: relative;
   display: block;
   margin: 0 0 32px;
   color: #ffffff;
-  font-size: 90px;
+  font-size: 3rem;
   line-height: 1.1em;
   font-weight: 400;
   opacity: 0;
@@ -10612,9 +10616,11 @@ h6 {
   -ms-transform: translateY(80px);
   -o-transform: translateY(80px);
   transform: translateY(80px);
+  width: 80%;
+  margin-left: auto;
 }
 
-.banner-carousel-four .content-box h1 span {
+.swiper-wrapper .content-box h1 span {
   position: relative;
   display: inline-block;
   padding: 0 10px;
@@ -10622,7 +10628,7 @@ h6 {
   z-index: 1;
 }
 
-.banner-carousel-four .content-box h1 span:before {
+.swiper-wrapper .content-box h1 span:before {
   position: absolute;
   top: 6px;
   left: 0;
@@ -10634,7 +10640,7 @@ h6 {
   z-index: -1;
 }
 
-.banner-carousel-four .active .content-box h1 {
+.swiper-wrapper .swiper-slide-active .content-box h1 {
   opacity: 1;
   -webkit-transform: translate(0);
   -moz-transform: translate(0);
@@ -10653,7 +10659,7 @@ h6 {
   transition-delay: 800ms;
 }
 
-.banner-carousel-four .content-box .link-box {
+.swiper-wrapper .content-box .link-box {
   position: relative;
   display: block;
   opacity: 0;
@@ -10664,16 +10670,16 @@ h6 {
   transform: translateY(50px);
 }
 
-.banner-carousel-four .content-box .link-box a {
+.swiper-wrapper .content-box .link-box a {
   color: var(--thm-black);
   background: #ffffff;
 }
 
-.banner-carousel-four .content-box .link-box a:hover {
+.swiper-wrapper .content-box .link-box a:hover {
   background: var(--thm-base);
 }
 
-.banner-carousel-four .active .content-box .link-box {
+.swiper-wrapper .swiper-slide-active .content-box .link-box {
   opacity: 1;
   -webkit-transform: translate(0);
   -moz-transform: translate(0);

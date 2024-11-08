@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div v-if="singleTechnology">
     <PageHeader :title="singleTechnology.title" />
     <ProjectDetail :singleTechnology="singleTechnology" />
   </div>
@@ -21,7 +21,7 @@ export default {
       title: "NovNat  | Technology Detail",
     };
   },
-    setup() {
+  setup() {
     const store = useStore(); // Access Vuex store
     const route = useRoute(); // Access current route
 
@@ -35,9 +35,9 @@ export default {
     // Computed property to get the single person based on the route params
     const singleTechnology = computed(() => {
       const id = route.params.id;
-      return landingPageData.value.technologies.find(
-        (person) => person.id == id
-      );
+      return landingPageData.value && landingPageData.value.technologies
+        ? landingPageData.value.technologies.find((person) => person.id == id)
+        : null;
     });
 
     return {

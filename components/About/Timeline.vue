@@ -154,6 +154,7 @@ body {
 
 .content h2 {
   color: #eddd5e;
+  font-size: 1rem;
 }
 
 .content h2 span {

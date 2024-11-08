@@ -1,7 +1,8 @@
 <template>
   <div>
     <PageHeader title="Gallery" />
-    <Gallery :gallery="gallery" />
+    <Gallery v-if="gallery && !loading" :gallery="gallery" />
+    <div v-else>Loading...</div>
   </div>
 </template>
 
@@ -21,7 +22,7 @@ export default {
       title: "Novnat  | Gallery",
     };
   },
-    setup() {
+  setup() {
     const store = useStore(); // Access Vuex store
     const route = useRoute(); // Access current route
     // Fetch the landing page data asynchronously
@@ -34,26 +35,18 @@ export default {
     // Computed property to get the single person based on the route params
     const gallery = computed(() => {
       const id = route.params.id;
-      return landingPageData.value.galleries.find(
-        (person) => person.id == id
-      );
+      return landingPageData.value && landingPageData.value.galleries
+        ? landingPageData.value.galleries.find((gallery) => gallery.id == id)
+        : null;
     });
+
+    const loading = computed(() => store.getters.isLoading);
 
     return {
       gallery,
       landingPageData,
+      loading,
     };
   },
-
-  // computed: {
-  //   gallery() {
-  //     return this.$store.getters["getLandingPageData"].data.galleries.find(
-  //       (gallery) => gallery.id == this.$route.params.id
-  //     );
-  //   },
-  // },
-  // async fetch({ store }) {
-  //   await store.dispatch("fetchLandingPageData"); // Fetch API data when the component is loaded
-  // },
 };
 </script>

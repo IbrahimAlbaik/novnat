@@ -8,13 +8,10 @@
               <p>frequently asked questions</p>
               <h3>have any question?</h3>
               <div class="leaf">
-                <img src="~/assets/images/resources/leaf.png" alt="" />
+                <img src="~/assets/images/resources/leaf.png" alt="leaf" />
               </div>
             </div>
-            <div
-              class="faq_one_image"
-              style="background-image: url(~/assets/images/resources/faq.webp)"
-            >
+            <div class="faq_one_image">
               <div class="phone_number">
                 <p>
                   email us<a :href="`mailto:${aboutNovNat.email}`">{{
@@ -78,6 +75,9 @@ export default {
 </script>
 
 <style scoped>
+.faq_one_image {
+  background-image: url("/assets/images/resources/faq.webp");
+}
 .ac {
   margin-top: 10px;
   padding: 10px;
@@ -86,7 +86,7 @@ export default {
 }
 
 .ac > .ac-q {
-  font-size: 25px;
+  font-size: 1rem;
   color: #444;
   padding: 10px 30px 10px 10px;
   margin: 0;

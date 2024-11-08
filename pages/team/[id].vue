@@ -29,17 +29,15 @@ export default {
     const { data: landingPageData } = useAsyncData("landingPage", async () => {
       const { $axios } = useNuxtApp(); // Access the injected Axios instance
       await store.dispatch("fetchLandingPageData", $axios);
-      // console.log(store.getters.getLandingPageData);
       return store.getters.getLandingPageData.data;
     });
 
     // Computed property to get the single person based on the route params
     const singlePerson = computed(() => {
       const id = route.params.id;
-      console.log(landingPageData);
-      return landingPageData.value.teams.find(
-        (person) => person.id == id
-      );
+      return landingPageData.value.teams
+        ? landingPageData.value.teams.find((person) => person.id == id)
+        : null;
     });
 
     return {

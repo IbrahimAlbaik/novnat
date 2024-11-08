@@ -6,7 +6,7 @@
           <div class="block-title text-left">
             <p v-html="about.title"></p>
             <div class="leaf">
-              <img src="~assets/images/resources/leaf.png" alt="" />
+              <img src="~/assets/images/resources/leaf.png" alt="" />
             </div>
           </div>
           <div class="about_content">
@@ -41,21 +41,7 @@ import VideoOne from "@/components/VideoOne.vue";
 export default {
   components: { VideoOne },
   name: "discover",
-  computed: {
-    about() {
-      return this.$store.getters["getLandingPageData"]?.data?.sliders?.find(
-        (item) => item.id == this.$route.params.id
-      );
-    },
-  },
-  methods: {
-    fetchData() {
-      this.$store.dispatch("fetchLandingPageData");
-    },
-  },
-  async mounted() {
-    await this.fetchData();
-  },
+  props: ['about'],
 };
 </script>
 
