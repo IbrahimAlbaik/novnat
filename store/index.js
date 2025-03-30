@@ -14,41 +14,66 @@ const store = createStore({
       socialMediaLinks: [{ id: 1, icon: 'fab fa-linkedin', link: 'https://www.linkedin.com/company/novnattech/' }],
     },
     searchPopupStatus: false,
-    landingPageData: null,  // Holds the API response data
-    error: null,            // Holds any error from the API call
-    loading: false,         // Optional: Loading state for fetching data
+    pageData: {
+      sliders: [],
+      features: [],
+      technologies: [],
+      galleries: [],
+      faqs: [],
+      teams: [],
+      stories: [],
+      goals: [],
+      partners: []
+    },
+    error: null,
+    loading: true,
+    dataFetched: false
   }),
 
   getters: {
-    getLandingPageData: (state) => state.landingPageData,  // Get the API response data
-    getLandingPageError: (state) => state.error,           // Get the API error
-    isLoading: (state) => state.loading,                    // Get loading state
+    getPageData: (state) => state.pageData,
+    getError: (state) => state.error,
+    isLoading: (state) => state.loading,
+    isDataFetched: (state) => state.dataFetched
   },
 
   actions: {
-    async fetchLandingPageData({ commit }, axios) {
-      commit('setLoading', true); // Set loading to true
-      try {
-        const response = await axios.get('/landingPage'); // Use leading slash for proper endpoint
-        commit('setLandingPageData', response.data); // Commit only the data
-      } catch (error) {
-        console.error('Error fetching landing page data:', error);
-        commit('setError', error.response ? error.response.data : 'API call failed');
-      } finally {
-        commit('setLoading', false); // Set loading to false
+    async fetchPageData({ commit, state }, axios) {
+      if (state.dataFetched) {
+        return state.pageData;
       }
-    },
+
+      try {
+        commit('setLoading', true);
+        const response = await axios.get('/landingPage');
+        if (response?.data?.data) {
+          commit('setPageData', response.data.data);
+          commit('setDataFetched', true);
+        }
+        return response?.data?.data;
+      } catch (error) {
+        console.error('Error fetching page data:', error);
+        commit('setError', error.response ? error.response.data : 'API call failed');
+        throw error;
+      } finally {
+        commit('setLoading', false);
+      }
+    }
   },
+
   mutations: {
-    setLandingPageData(state, data) {
-      state.landingPageData = data; // Update the state with API data
+    setPageData(state, data) {
+      state.pageData = data;
     },
     setError(state, error) {
-      state.error = error;  // Update the state with error information
+      state.error = error;
     },
     setLoading(state, loading) {
-      state.loading = loading; // Update loading state
+      state.loading = loading;
     },
+    setDataFetched(state, fetched) {
+      state.dataFetched = fetched;
+    }
   }
 });
 

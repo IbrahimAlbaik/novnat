@@ -1,7 +1,7 @@
 <template>
   <section class="best_company">
     <div class="container">
-      <div class="row" v-if="singlePerson">
+      <div class="row" v-if="member">
         <div class="col-xl-12">
           <div class="block-title text-center">
             <p>the best team</p>
@@ -13,20 +13,20 @@
         </div>
         <div class="col-xl-6">
           <div class="company_image">
-            <img :src="singlePerson.image" :alt="singlePerson.name" />
+            <img :src="member.image" :alt="member.name" />
           </div>
         </div>
         <div class="col-xl-6">
           <div class="company_content">
             <div class="block-title text-left">
-              <p>{{ singlePerson.name }} / {{ singlePerson.position }}</p>
+              <p>{{ member.name }} / {{ member.position }}</p>
 
               <div class="leaf">
                 <img src="/assets/images/resources/leaf.png" alt="" />
               </div>
             </div>
-            <p v-html="singlePerson.bio"></p>
-            <p v-if="singlePerson.provide">{{ singlePerson.provide }}</p>
+            <p v-html="member.bio"></p>
+            <p v-if="member.provide">{{ member.provide }}</p>
           </div>
         </div>
       </div>
@@ -37,8 +37,7 @@
 <script>
 export default {
   name: "teamDetails",
-  props: ["singlePerson"],
-  computed: {},
+  props: ["member"],
 };
 </script>
 

@@ -1,51 +1,44 @@
 <template>
   <div>
-    <PageHeader title="Gallery" />
-    <Gallery v-if="gallery && !loading" :gallery="gallery" />
-    <div v-else>Loading...</div>
+    <PageHeader title="Gallery Details" />
+    <GalleryDetail v-if="gallery" :gallery="gallery" />
   </div>
 </template>
 
 <script>
 import PageHeader from "@/components/PageHeader";
-import Gallery from "@/components/Gallery/Gallery";
+import GalleryDetail from "@/components/Gallery/Gallery";
 import { computed } from "vue";
 import { useStore } from "vuex";
-import { useAsyncData, useRoute } from "#app";
+import { useRoute } from "#app";
+
 export default {
   components: {
+    GalleryDetail,
     PageHeader,
-    Gallery,
   },
   head() {
     return {
-      title: "Novnat  | Gallery",
+      title: "NovNat | Gallery Detail",
     };
   },
   setup() {
-    const store = useStore(); // Access Vuex store
-    const route = useRoute(); // Access current route
-    // Fetch the landing page data asynchronously
-    const { data: landingPageData } = useAsyncData("landingPage", async () => {
-      const { $axios } = useNuxtApp(); // Access the injected Axios instance
-      await store.dispatch("fetchLandingPageData", $axios);
-      return store.getters.getLandingPageData.data;
-    });
+    const route = useRoute();
+    const store = useStore();
 
-    // Computed property to get the single person based on the route params
+    // Get data directly from store
+    const pageData = computed(() => store.getters.getPageData);
+
+    // Get the gallery item based on route params
     const gallery = computed(() => {
       const id = route.params.id;
-      return landingPageData.value && landingPageData.value.galleries
-        ? landingPageData.value.galleries.find((gallery) => gallery.id == id)
+      return pageData.value.galleries
+        ? pageData.value.galleries.find((item) => item.id == id)
         : null;
     });
 
-    const loading = computed(() => store.getters.isLoading);
-
     return {
       gallery,
-      landingPageData,
-      loading,
     };
   },
 };

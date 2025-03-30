@@ -1,48 +1,44 @@
 <template>
-  <div v-if="singlePerson">
-    <PageHeader :title="singlePerson ? singlePerson.name : null" />
-    <TeamDetails :singlePerson="singlePerson" />
+  <div>
+    <PageHeader title="Team Member Details" />
+    <TeamDetail :member="member" />
   </div>
 </template>
+
 <script>
 import PageHeader from "@/components/PageHeader";
-import TeamDetails from "@/components/Team/TeamDetails";
+import TeamDetail from "@/components/Team/TeamDetails";
 import { computed } from "vue";
 import { useStore } from "vuex";
-import { useAsyncData, useRoute } from "#app";
+import { useRoute } from "#app";
 
 export default {
   components: {
+    TeamDetail,
     PageHeader,
-    TeamDetails,
   },
   head() {
     return {
-      title: "NovNat | Team details",
+      title: "NovNat | Team Member",
     };
   },
   setup() {
-    const store = useStore(); // Access Vuex store
-    const route = useRoute(); // Access current route
+    const route = useRoute();
+    const store = useStore();
 
-    // Fetch the landing page data asynchronously
-    const { data: landingPageData } = useAsyncData("landingPage", async () => {
-      const { $axios } = useNuxtApp(); // Access the injected Axios instance
-      await store.dispatch("fetchLandingPageData", $axios);
-      return store.getters.getLandingPageData.data;
-    });
+    // Get data directly from store
+    const pageData = computed(() => store.getters.getPageData);
 
-    // Computed property to get the single person based on the route params
-    const singlePerson = computed(() => {
+    // Get the team member based on route params
+    const member = computed(() => {
       const id = route.params.id;
-      return landingPageData.value.teams
-        ? landingPageData.value.teams.find((person) => person.id == id)
+      return pageData.value.teams
+        ? pageData.value.teams.find((item) => item.id == id)
         : null;
     });
 
     return {
-      singlePerson,
-      landingPageData,
+      member,
     };
   },
 };
