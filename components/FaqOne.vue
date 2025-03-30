@@ -59,18 +59,27 @@ export default {
     },
   },
   mounted() {
-    // Initialize heights after component is mounted
-    this.$nextTick(() => {
+    // Initialize heights after component is mounted and when content changes
+    this.updateHeights();
+    // Add a small delay to ensure content is fully rendered
+    setTimeout(this.updateHeights, 100);
+  },
+  methods: {
+    updateHeights() {
       const contents = this.$refs.content;
       if (Array.isArray(contents)) {
         contents.forEach((content, index) => {
-          this.heights[index] = content.clientHeight;
+          if (content) {
+            this.heights[index] = content.scrollHeight;
+          }
         });
       }
-    });
-  },
-  methods: {
+    },
     toggle(index) {
+      // Update heights before toggling to ensure accurate measurements
+      this.$nextTick(() => {
+        this.updateHeights();
+      });
       this.openIndex = this.openIndex === index ? null : index;
     },
     isOpen(index) {
@@ -79,12 +88,24 @@ export default {
     getContentStyle(index) {
       const isOpen = this.isOpen(index);
       return {
-        maxHeight: isOpen ? `${this.heights[index]}px` : '0px',
+        maxHeight: isOpen ? `${this.heights[index]}px` : '0',
         opacity: isOpen ? 1 : 0,
-        visibility: isOpen ? 'visible' : 'hidden'
+        visibility: isOpen ? 'visible' : 'hidden',
+        transition: 'all 0.3s ease-in-out'
       };
     }
   },
+  watch: {
+    // Watch for changes in faqs data
+    faqs: {
+      handler() {
+        this.$nextTick(() => {
+          this.updateHeights();
+        });
+      },
+      deep: true
+    }
+  }
 };
 </script>
 
@@ -139,6 +160,7 @@ export default {
   overflow: hidden;
   transition: all 0.3s ease-in-out;
   padding: 0 15px;
+  will-change: max-height, opacity, visibility;
 }
 
 .ac > .ac-a .accordion__content-desc {
@@ -158,5 +180,14 @@ export default {
 .ac.is-active > .ac-a {
   visibility: visible;
   opacity: 1;
+}
+
+/* Add transition for height changes */
+.ac-a {
+  transition: max-height 0.3s ease-in-out, opacity 0.3s ease-in-out, visibility 0s;
+}
+
+.ac-a[style*="visibility: hidden"] {
+  transition: max-height 0.3s ease-in-out, opacity 0.3s ease-in-out, visibility 0s 0.3s;
 }
 </style>
