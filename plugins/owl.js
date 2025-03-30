@@ -1,4 +1,7 @@
-import Vue from 'vue'
-import OwlCarousel from 'v-owl-carousel'
+import { Swiper, SwiperSlide } from 'swiper/vue';
+import 'swiper/swiper-bundle.min.css'; // Import Swiper styles
 
-Vue.component('carousel', OwlCarousel)
+export default defineNuxtPlugin((nuxtApp) => {
+  nuxtApp.vueApp.component('Swiper', Swiper);
+  nuxtApp.vueApp.component('SwiperSlide', SwiperSlide);
+});

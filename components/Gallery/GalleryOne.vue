@@ -10,59 +10,61 @@
       </div>
       <div class="gallery_one_carousel owl-carousel">
         <no-ssr>
-          <carousel
-            :margin="30"
-            :autoplay="true"
-            :dots="false"
-            :nav="false"
-            :responsive="{
-              0: { items: 1 },
-              640: { items: 2 },
-              992: { items: 3 },
-              1024: { items: 5 },
-            }"
+          <Swiper
+            :space-between="40"
+            :autoplay="{ delay: 5000 }"
+            :loop="true"
+            :slides-per-view="5"
           >
-            <nuxt-link
-              v-for="item in gallery"
-              :key="item.id"
-              :to="`/gallery/${item.id}`"
-            >
-              <div
-                class="gallery_one_single wow fadeInLeft"
-                data-wow-delay="300ms"
-              >
-                <span>{{ item.title }}</span>
-                <div class="gallery_one_image">
-                  <img
-                    :src="`/assets/images/gallery/${item.images[0]}`"
-                    alt=""
-                  />
+            <SwiperSlide v-for="gallery in galleries" :key="gallery.id">
+              <nuxt-link :to="`/gallery/${gallery.id}`">
+                <div
+                  class="gallery_one_single wow fadeInLeft"
+                  data-wow-delay="300ms"
+                >
+                  <span>{{ gallery.title }}</span>
+                  <div class="gallery_one_image">
+                    <img :src="gallery.image" :alt="gallery.title" />
+                  </div>
                 </div>
-              </div>
-            </nuxt-link>
-          </carousel>
+              </nuxt-link>
+            </SwiperSlide>
+          </Swiper>
         </no-ssr>
       </div>
     </div>
   </section>
 </template>
 
-<script>
-export default {
-  name: "GalleryOne",
-  mounted() {
-    new GLightbox({
-      selector: ".glightbox",
-    });
-  },
-  computed: {
-    gallery() {
-      return this.$store.state.gallery;
-    },
-  },
-};
-</script>
+<script setup>
+import { onMounted, watch } from "vue";
+const { $glightbox } = useNuxtApp();
 
+// Define props for receiving gallery data
+const props = defineProps({
+  galleries: {
+    type: Array,
+    required: true,
+  },
+});
+
+// Reinitialize GLightbox whenever galleries data changes
+onMounted(() => {
+  const lightbox = $glightbox();
+  lightbox.init();
+});
+
+// Watch for any updates to the galleries data and reinitialize GLightbox if it changes
+watch(
+  () => props.galleries,
+  (newGalleries) => {
+    if (newGalleries.length) {
+      const lightbox = $glightbox();
+      lightbox.init(); // Reinitialize lightbox when galleries change
+    }
+  }
+);
+</script>
 <style scoped>
 .gallery_one_single span {
   position: absolute;

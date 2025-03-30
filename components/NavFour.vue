@@ -13,7 +13,7 @@
         <div class="topbar-one__middle">
           <a href="/" class="main-nav__logo">
             <img
-              src="/assets/images/resources/logo_novnat.png"
+              src="~assets/images/resources/logo_novnat.png"
               class="main-logo"
               alt="Awesome Image"
             />
@@ -58,43 +58,32 @@
           <div class="main-nav__main-navigation four">
             <ul class="main-nav__navigation-box">
               <li>
-                <nuxt-link :to="{ path: '/', hash: 'home' }">Home</nuxt-link>
-              </li>
-              <!-- <li>
-                <nuxt-link :to="{ path: '/', hash: 'uniqueness' }"
-                  >Uniqueness</nuxt-link
-                >
+                <nuxt-link :to="{ path: '/', hash: '#home' }">Home</nuxt-link>
               </li>
               <li>
-                <nuxt-link :to="{ path: '/', hash: 'services' }"
-                  >Services</nuxt-link
-                >
-              </li> -->
-              <li>
-                <nuxt-link :to="{ path: '/', hash: 'projects' }"
+                <nuxt-link :to="{ path: '/', hash: '#projects' }"
                   >Our Technology</nuxt-link
                 >
               </li>
               <li>
-                <nuxt-link :to="{ path: '/', hash: 'gallery' }"
+                <nuxt-link :to="{ path: '/', hash: '#gallery' }"
                   >Gallery</nuxt-link
                 >
               </li>
               <li>
-                <nuxt-link :to="{ path: '/', hash: 'faqs' }">FAQs</nuxt-link>
+                <nuxt-link :to="{ path: '/', hash: '#faqs' }">FAQs</nuxt-link>
               </li>
               <li>
-                <nuxt-link :to="{ path: '/', hash: 'team' }">Team</nuxt-link>
+                <nuxt-link :to="{ path: '/', hash: '#team' }">Team</nuxt-link>
               </li>
               <li>
-                <nuxt-link :to="{ path: '/', hash: 'about' }">About</nuxt-link>
+                <nuxt-link :to="{ path: '/', hash: '#about' }">About</nuxt-link>
               </li>
               <li>
                 <nuxt-link to="/contact">Contact</nuxt-link>
               </li>
             </ul>
           </div>
-          <!-- /.navbar-collapse -->
         </div>
       </nav>
 
@@ -106,113 +95,26 @@
 
         <ul class="main-nav__navigation-box">
           <li>
-            <nuxt-link :to="{ path: '/', hash: 'home' }">Home</nuxt-link>
-          </li>
-          <!-- <li>
-            <nuxt-link :to="{ path: '/', hash: 'uniqueness' }"
-              >Uniqueness</nuxt-link
-            >
+            <nuxt-link :to="{ path: '/', hash: '#home' }">Home</nuxt-link>
           </li>
           <li>
-            <nuxt-link :to="{ path: '/', hash: 'services' }"
-              >Services</nuxt-link
-            >
-          </li> -->
-          <li>
-            <nuxt-link :to="{ path: '/', hash: 'projects' }"
+            <nuxt-link :to="{ path: '/', hash: '#projects' }"
               >Our Technology</nuxt-link
             >
           </li>
           <li>
-            <nuxt-link :to="{ path: '/', hash: 'faqs' }">Faqs</nuxt-link>
+            <nuxt-link :to="{ path: '/', hash: '#faqs' }">Faqs</nuxt-link>
           </li>
 
           <li>
-            <nuxt-link :to="{ path: '/', hash: 'team' }">Team</nuxt-link>
+            <nuxt-link :to="{ path: '/', hash: '#team' }">Team</nuxt-link>
           </li>
           <li>
-            <nuxt-link :to="{ path: '/', hash: 'about' }">About</nuxt-link>
+            <nuxt-link :to="{ path: '/', hash: '#about' }">About</nuxt-link>
           </li>
           <li>
             <nuxt-link to="/contact">Contact</nuxt-link>
           </li>
-          <!-- <li><nuxt-link to="/">Home</nuxt-link></li> -->
-          <!-- <li class="dropdown current">
-            <div class="menu-holder">
-              Home<button class="dropdown-btn">
-                <i class="fa fa-angle-right"></i>
-              </button>
-            </div>
-          </li> -->
-          <!-- <li class="dropdown">
-            <div class="menu-holder">
-              Services<button class="dropdown-btn">
-                <i class="fa fa-angle-right"></i>
-              </button>
-            </div>
-            <ul>
-              <li><nuxt-link to="/service">Services</nuxt-link></li>
-              <li>
-                <nuxt-link to="/service-detail">Services Detail</nuxt-link>
-              </li>
-            </ul>
-          </li> -->
-          <!-- <li><nuxt-link to="/product">Products</nuxt-link>asanmama</li> -->
-          <!-- <li class="dropdown">
-            <div class="menu-holder">
-              Our Technology<button class="dropdown-btn">
-                <i class="fa fa-angle-right"></i>
-              </button>
-            </div>
-            <ul>
-              <li><nuxt-link to="/projects">Projects</nuxt-link></li>
-              <li>
-                <nuxt-link to="/projects_detail">Projects Detail</nuxt-link>
-              </li>
-            </ul>
-          </li> -->
-          <!-- <li class="dropdown">
-            <div class="menu-holder">
-              Shop<button class="dropdown-btn">
-                <i class="fa fa-angle-right"></i>
-              </button>
-            </div>
-            <ul>
-              <li><nuxt-link to="/product">Products</nuxt-link></li>
-              <li>
-                <nuxt-link to="/product-detail">Product Detail</nuxt-link>
-              </li>
-              <li><nuxt-link to="/cart">Cart</nuxt-link></li>
-              <li><nuxt-link to="/checkout">Checkout</nuxt-link></li>
-            </ul>
-          </li> -->
-          <!-- <li class="dropdown">
-            <div class="menu-holder">
-              Pages<button class="dropdown-btn">
-                <i class="fa fa-angle-right"></i>
-              </button>
-            </div>
-            <ul>
-              <li><nuxt-link to="/about">About</nuxt-link></li>
-              <li><nuxt-link to="/why_choose_us">Why Choose Us</nuxt-link></li>
-              <li><nuxt-link to="/farmers">Farmers</nuxt-link></li>
-              <li><nuxt-link to="/gallery">Gallery</nuxt-link></li>
-            </ul>
-          </li> -->
-          <!-- <li class="dropdown">
-            <div class="menu-holder">
-              News<button class="dropdown-btn">
-                <i class="fa fa-angle-right"></i>
-              </button>
-            </div>
-            <ul>
-              <li><nuxt-link to="/news">News</nuxt-link></li>
-              <li><nuxt-link to="/news_detail">News Details</nuxt-link></li>
-            </ul>
-          </li> -->
-          <!-- <li>
-            <nuxt-link to="/contact">Contact</nuxt-link>
-          </li> -->
         </ul>
       </nav>
     </header>

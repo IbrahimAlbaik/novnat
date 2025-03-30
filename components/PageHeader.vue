@@ -1,29 +1,30 @@
 <template>
-
-  <section class="page-header" style="background-image: url(/assets/images/backgrounds/shutterstock_1936156318.jpg);">
+  <section class="page-header">
     <div class="container">
       <h2>{{ title }}</h2>
       <ul class="thm-breadcrumb list-unstyled">
         <li><nuxt-link to="/">Home</nuxt-link></li>
-        <li><span>{{ title }}</span></li>
+        <li>
+          <span>{{ title }}</span>
+        </li>
       </ul>
     </div>
   </section>
-
 </template>
 
 <script>
-  export default {
-    name: "PageHeader",
-    props: {
-      title: {
-        type: String
-      }
-    }
-
-  }
+export default {
+  name: "PageHeader",
+  props: {
+    title: {
+      type: String,
+    },
+  },
+};
 </script>
 
 <style scoped>
-
+.page-header {
+  background-image: url(~/assets/images/backgrounds/shutterstock_1936156318.jpg);
+}
 </style>

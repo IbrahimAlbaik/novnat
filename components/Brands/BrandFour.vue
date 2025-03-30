@@ -5,74 +5,27 @@
         <div class="col-xl-12">
           <div class="brand-one-carousel owl-carousel">
             <no-ssr>
-              <carousel
-                :autoplay="true"
-                :dots="true"
-                :nav="false"
-                :responsive="{
-                  0: { items: 1 },
-                  640: { items: 2 },
-                  992: { items: 3 },
-                  1024: { items: 4 },
+              <Swiper
+                :slides-per-view="4"
+                :space-between="50"
+                :autoplay="{ delay: 1000, disableOnInteraction: false }"
+                :modules="[Autoplay, Pagination, Navigation]"
+                loop
+                :breakpoints="{
+                  0: { slidesPerView: 1, spaceBetween: 10 },
+                  640: { slidesPerView: 2, spaceBetween: 20 },
+                  992: { slidesPerView: 3, spaceBetween: 30 },
+                  1024: { slidesPerView: 4, spaceBetween: 50 },
                 }"
               >
-                <div class="single_brand_item">
-                  <a
-                    href="https://www.gbslepgrowthhub.co.uk/programmes/amtecaa"
-                  >
-                    <img src="/assets/images/partners/amtecaa.png" alt="brand"
-                  /></a>
-                </div>
-                <div class="single_brand_item">
-                  <a
-                    href="https://www.birmingham.ac.uk/research/energy/climate-innovation-platform.aspx"
-                  >
-                    <img src="/assets/images/partners/climate.png" alt="brand"
-                  /></a>
-                </div>
-                <div class="single_brand_item">
-                  <a href="https://www.birmingham.ac.uk/index.aspx">
-                    <img
-                      src="/assets/images/partners/university.jpg"
-                      alt="brand"
-                  /></a>
-                </div>
-                <div class="single_brand_item">
-                  <a
-                    href="https://intranet.birmingham.ac.uk/as/employability/b-enterprising/uobelevate/index.aspx"
-                  >
-                    <img src="/assets/images/partners/UOB.png" alt="brand"
-                  /></a>
-                </div>
-                <div class="single_brand_item">
-                  <a
-                    href="https://ec.europa.eu/regional_policy/funding/erdf_en"
-                  >
-                    <img src="/assets/images/partners/union.jpg" alt="brand"
-                  /></a>
-                </div>
-                <div class="single_brand_item">
-                  <a href="https://www.ukri.org/councils/innovate-uk/">
-                    <img
-                      src="/assets/images/partners/ukri-innovate-uk-square-logo.png"
-                      alt="brand"
-                  /></a>
-                </div>
-                <div class="single_brand_item">
-                  <a href="https://www.bupa.com/">
-                    <img
-                      src="/assets/images/partners/Bupa-Logo.jpg"
-                      alt="brand"
-                  /></a>
-                </div>
-                <div class="single_brand_item">
-                  <a href="https://www.ukri.org/councils/innovate-uk/">
-                    <img
-                      src="/assets/images/partners/1.jpeg"
-                      alt="brand"
-                  /></a>
-                </div>
-              </carousel>
+                <SwiperSlide v-for="partner in partners" :key="partner.id">
+                  <div class="single_brand_item">
+                    <a :href="partner.URL" target="_balnk">
+                      <img :src="partner.image" alt="brand"
+                    /></a>
+                  </div>
+                </SwiperSlide>
+              </Swiper>
             </no-ssr>
           </div>
         </div>
@@ -82,8 +35,17 @@
 </template>
 
 <script>
+import { Autoplay, Pagination, Navigation } from "swiper";
 export default {
   name: "BrandFour",
+  props: ["partners"],
+  setup(props) {
+    return {
+      Autoplay,
+      Pagination,
+      Navigation,
+    };
+  },
 };
 </script>
 
@@ -91,11 +53,16 @@ export default {
 .single_brand_item {
   margin: 0 0.5rem;
 }
+.single_brand_item a {
+  display: inline-block;
+  width: 100%;
+}
 .single_brand_item a img {
   height: 90px;
   object-fit: fill;
+  width: 100%;
 }
 .owl-carousel .owl-stage {
-    transition: all 0.25s linear 0s !important;
+  transition: all 0.25s linear 0s !important;
 }
 </style>

@@ -17,10 +17,7 @@
           <div class="team_one_single wow fadeInUp">
             <nuxt-link :to="`/team/${person.id}`">
               <div class="team_one_image">
-                <img
-                  :src="`/assets/images/team/${person.image}`"
-                  alt="team.id"
-                />
+                <img :src="person.image" :alt="team.id" />
               </div>
             </nuxt-link>
             <div class="team_one_deatils">
@@ -31,11 +28,7 @@
                 </a>
               </h2>
               <div class="team_one_social">
-                <a
-                  v-for="link in person.socialMediaLinks"
-                  :key="link"
-                  :href="link"
-                  target="_blank"
+                <a :href="person.linkedin_url" target="_blank"
                   ><i class="fab fa-linkedin"></i
                 ></a>
               </div>
@@ -63,7 +56,7 @@
               >
                 <nuxt-link :to="`/team/${person.id}`">
                   <div class="team_one_image">
-                    <img :src="`/assets/images/team/${person.image}`" alt="" />
+                    <img :src="person.image" :alt="person.id" />
                   </div>
                 </nuxt-link>
                 <div class="team_one_deatils">
@@ -72,11 +65,7 @@
                     <a href="#">{{ person.name }}</a>
                   </h2>
                   <div class="team_one_social">
-                    <a
-                      v-for="link in person.socialMediaLinks"
-                      :key="link"
-                      :href="link"
-                      target="_blank"
+                    <a :href="person.linkedin_url" target="_blank"
                       ><i class="fab fa-linkedin"></i
                     ></a>
                   </div>
@@ -93,12 +82,13 @@
 <script>
 export default {
   name: "TeamOne",
+  props: ["teams"],
   computed: {
     team() {
-      return this.$store.state.team;
+      return this.teams?.filter((team) => team.role == "member");
     },
     otherTeam() {
-      return this.$store.state.otherTeam;
+      return this.teams?.filter((team) => team.role == "adviser");
     },
   },
 };

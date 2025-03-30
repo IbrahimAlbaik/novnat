@@ -5,11 +5,11 @@
       <div data-v-3cbd7405="" class="leaf">
         <img
           data-v-3cbd7405=""
-          src="/assets/images/resources/leaf.png"
+          src="~/assets/images/resources/leaf.png"
           alt="icon"
         />
       </div>
-      <p>{{ gallery.description }}</p>
+      <p>{{ gallery.desc }}</p>
 
       <div
         class="row masonary-layout"
@@ -51,14 +51,14 @@
               : '1000'
           }px`"
           v-for="(image, index) in gallery.images"
-          :key="image"
+          :key="image.id"
         >
           <div class="gallery_two_single">
             <div class="gallery_two_image">
-              <img :src="`/assets/images/gallery/${image}`" alt="" />
+              <img :src="image.image_path" :alt="image.image_path" />
               <div class="gallery_two_hover_box">
                 <div class="gallery_two_icon">
-                  <a class="img-popup" :href="`/assets/images/gallery/${image}`"
+                  <a class="img-popup" :href="image.image_path"
                     ><span class="icon-plus-symbol"></span
                   ></a>
                 </div>
@@ -72,19 +72,20 @@
 </template>
 
 <script>
+import { onMounted } from "vue";
+import { useNuxtApp } from "#app";
 export default {
   name: "Gallery",
-  mounted() {
-    new GLightbox({
-      selector: ".img-popup",
+  props: ["gallery"],
+  setup() {
+    const { $glightbox } = useNuxtApp();
+
+    onMounted(() => {
+      // Initialize GLightbox
+      $glightbox({
+        selector: ".img-popup", // Define selector for GLightbox
+      });
     });
-  },
-  computed: {
-    gallery() {
-      return this.$store.state.gallery.find(
-        (item) => item.id == this.$route.params.id
-      );
-    },
   },
 };
 </script>

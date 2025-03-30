@@ -10,76 +10,24 @@
               for a sustainable future
             </h3>
             <div class="leaf">
-              <img src="/assets/images/resources/leaf.png" alt="" />
+              <img src="/assets/images/resources/leaf.png" alt="leaf" />
             </div>
           </div>
 
           <div class="timeline">
-            <div class="timeline_container left">
+            <div
+              v-for="(story, index) in stories"
+              :key="story.id"
+              class="timeline_container wow"
+              :class="index % 2 === 1 ? 'right slideInRight' : 'left slideInLeft'"
+            >
               <div class="content">
                 <h2>
-                  2022
-                  <span>(Q1-Q3) </span>
+                  {{ story.year }}
+                  <span>{{ story.title }} </span>
                 </h2>
                 <p>
-                  NovNat Tech is born on the back of the breakthrough material
-                  and based on the shared vision of its founders to develop
-                  novel solutions for a more resilient, sustainable future.
-                  Additionally, NovNat Tech took part in the Elevate incubator
-                  programme at the University of Birmingham aimed at graduates
-                  with highly innovative business ideas.
-                </p>
-              </div>
-            </div>
-            <div class="timeline_container right">
-              <div class="content">
-                <h2>2022 <span>(Q4)  </span></h2>
-                <p>
-                  Patent applied for to protect the novel MOF (UK patent
-                  application number: 2218176.2) and an MVP was designed and
-                  developed to showcase the functionality of the MOF to generate
-                  water from air.
-                </p>
-              </div>
-            </div>
-            <div class="timeline_container left">
-              <div class="content">
-                <h2>2023 <span>FUNDING/PDU</span></h2>
-                <p>
-                  External funding secured from Innovate UK and Bupa to develop
-                  a process development unit used to test and characterise
-                  specific parameters such as productivity and energy
-                  consumption to inform further development towards reaching a
-                  commercial product.
-                </p>
-              </div>
-            </div>
-            <div class="timeline_container right">
-              <div class="content">
-                <h2>2024 <span>EUROGIA/PILOT TRIALS</span></h2>
-                <p>
-                  Based on the data gathered from the PDU, NovNat aims to
-                  develop a 1000 l/day pilot system to be deployed at client
-                  sites to demonstrate integration of the technology on a scale
-                  that is increasingly commercially relevant. Also, in July of
-                  2024, NovNat will receive ~£500k in funding from Innovate UK
-                  which will go towards scaling material production and
-                  demonstrating integration of NovNat’s materials with
-                  adsorption heat pumps.
-                </p>
-              </div>
-            </div>
-            <div class="timeline_container left">
-              <div class="content">
-                <h2>2025 <span>MOF PILOT PLANT/AWG PILOT</span></h2>
-                <p>
-                  NovNat plans to scale up its MOF production to reach ton scale
-                  by 2025 in partnership with key stakeholders and
-                  manufacturers. The new plant will be used to supply NovNat for
-                  its in-house R&D work and a select few clients in the HVAC
-                  sector. NovNat also anticipates the completion of the
-                  1000l/day pilot mid-2025 ready to be deployed at planned
-                  demonstrations.
+                  {{ story.description }}
                 </p>
               </div>
             </div>
@@ -93,6 +41,7 @@
 <script>
 export default {
   name: "timeline",
+  props: ["stories"],
 };
 </script>
 
@@ -205,6 +154,7 @@ body {
 
 .content h2 {
   color: #eddd5e;
+  font-size: 1rem;
 }
 
 .content h2 span {
