@@ -2,15 +2,7 @@
   <client-only>
     <section class="banner_four_section" id="home">
       <div class="swiper-wrapper">
-        <div v-if="!sliders || sliders.length === 0" class="loading-state">
-          <div class="loading-content">
-            <div class="spinner">
-              <div class="spinner-inner"></div>
-            </div>
-          </div>
-        </div>
         <Swiper
-          v-else
           :autoplay="{ delay: 5000, disableOnInteraction: true }"
           :modules="[Autoplay, Pagination, Navigation]"
           loop
@@ -206,7 +198,7 @@ export default {
 }
 
 .swiper-wrapper-slider:before {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   top: 0;
