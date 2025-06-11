@@ -1,5 +1,5 @@
 import { ref, watchEffect, watch, getCurrentInstance } from 'vue';
-import { i as injectHead, f as resolveUnrefHeadInput } from './server.mjs';
+import { i as injectHead, g as resolveUnrefHeadInput } from './server.mjs';
 import { composableNames } from '@unhead/shared';
 
 function useHead(input, options = {}) {
