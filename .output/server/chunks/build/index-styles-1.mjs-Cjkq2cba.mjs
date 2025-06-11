@@ -1,0 +1,4 @@
+const index_vue_vue_type_style_index_0_scoped_f743083b_lang = ".banner_four_section[data-v-f743083b]{background-color:#f5f5f5;height:700px;min-height:700px;overflow:hidden;position:relative}.loading-state[data-v-f743083b]{background-color:#f5f5f5;left:0;position:absolute;top:0}.loading-content[data-v-f743083b],.loading-state[data-v-f743083b]{height:100%;width:100%}.loading-content[data-v-f743083b],.loading-state[data-v-f743083b],.spinner[data-v-f743083b]{align-items:center;display:flex;justify-content:center}.spinner[data-v-f743083b]{height:80px;position:relative;width:80px}.spinner-inner[data-v-f743083b]{animation:spin-f743083b .8s linear infinite;border:6px solid rgba(0,0,0,.1);border-radius:50%;border-top-color:#333;height:100%;width:100%}@keyframes spin-f743083b{0%{transform:rotate(0deg)}to{transform:rotate(1turn)}}";
+
+export { index_vue_vue_type_style_index_0_scoped_f743083b_lang as i };
+//# sourceMappingURL=index-styles-1.mjs-Cjkq2cba.mjs.map
