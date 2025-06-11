@@ -65,13 +65,13 @@
               </p>
             </div>
             <div class="have_questions_btn">
-              <a href="mailto:abdulbari@novnat.co.uk" class="thm-btn"
+              <a :href="`mailto:${aboutNovNat.partnering_email}`" class="thm-btn"
                 >Send a Message</a
               >
             </div>
             <p>
               f you are interested in collaborating or partnering with us,<br />
-              please email <span> abdulbari@novnat.co.uk </span>
+              please email <span> {aboutNovNat.partnering_email} </span>
             </p>
           </div>
         </div>
@@ -80,15 +80,13 @@
   </section>
 </template>
 
-<script>
-export default {
-  name: "ContactTwo",
-  computed: {
-    aboutNovNat() {
-      return this.$store.state.novnat;
-    },
-  },
-};
+<script setup>
+import { computed } from 'vue';
+import { useStore } from 'vuex';
+
+const store = useStore();
+const aboutNovNat = computed(() => store.getters.getPageData.about || {});
+
 </script>
 
 <style scoped>

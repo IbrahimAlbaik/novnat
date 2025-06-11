@@ -25,11 +25,10 @@
             <a href="#"><i class="fab fa-twitter"></i></a>
             <a href="#"><i class="fab fa-instagram"></i></a> -->
             <a
-              v-for="media in aboutNovNat.socialMediaLinks"
-              :key="media.id"
-              :href="media.link"
+              :key="aboutNovNat.id"
+              :href="aboutNovNat.linkedin_url"
               target="_blank"
-              ><i :class="media.icon"></i
+              ><i class="fab fa-linkedin"></i
             ></a>
           </div>
         </div>
@@ -137,7 +136,7 @@ export default {
       return this.$store.state.searchPopupStatus;
     },
     aboutNovNat() {
-      return this.$store.state.novnat;
+      return this.$store.getters.getPageData.about;
     },
   },
   mounted() {

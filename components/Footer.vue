@@ -128,16 +128,15 @@
                   aboutNovNat.email
                 }}</a
                 ><br />
-                <!-- <a :href="`tel:${aboutNovNat.phone}`">{{
+                <a :href="`tel:${aboutNovNat.phone}`" v-if="aboutNovNat.phone">{{
                   aboutNovNat.phone
-                }}</a> -->
+                }}</a>
                 <div class="site-footer__social">
                   <a
-                    v-for="media in aboutNovNat.socialMediaLinks"
-                    :key="media.id"
-                    :href="media.link"
+                    :key="aboutNovNat.id"
+                    :href="aboutNovNat.linkedin_url"
                     target="_blank"
-                    ><i :class="media.icon"></i
+                    ><i class="fab fa-linkedin"></i
                   ></a>
                 </div>
               </div>
@@ -151,7 +150,7 @@
       <div class="container">
         <div class="site-footer_bottom_copyright">
           <p>
-            &#169; All copyright 2023, <a href="#">{{ aboutNovNat.title }}</a>
+            &#169; All copyright 2023, <a href="#">Novnat</a>
           </p>
         </div>
         <!-- <div class="site-footer_bottom_menu">
@@ -173,37 +172,36 @@
   </div>
 </template>
 
-<script>
-export default {
-  name: "Footer",
-  data() {
-    return {
-      scrollBtn: false,
-    };
-  },
-  computed: {
-    aboutNovNat() {
-      return this.$store.state.novnat;
-    },
-  },
-  mounted() {
-    window.addEventListener("scroll", this.handleScroll);
-  },
+<script setup>
+import { computed, ref, onMounted, onUnmounted } from 'vue';
+import { useStore } from 'vuex';
 
-  methods: {
-    handleScroll() {
-      if (window.scrollY > 70) {
-        this.scrollBtn = true;
-      } else if (window.scrollY < 70) {
-        this.scrollBtn = false;
-      }
-    },
+const store = useStore();
+const scrollBtn = ref(false);
 
-    scrollTop() {
-      window.scrollTo(0, 0);
-    },
-  },
+// Use the getter for pageData, just like in index.vue
+const pageData = computed(() => store.getters.getPageData);
+const aboutNovNat = computed(() => pageData.value.about || {});
+
+const handleScroll = () => {
+  if (window.scrollY > 70) {
+    scrollBtn.value = true;
+  } else if (window.scrollY < 70) {
+    scrollBtn.value = false;
+  }
 };
+
+const scrollTop = () => {
+  window.scrollTo(0, 0);
+};
+
+onMounted(() => {
+  window.addEventListener('scroll', handleScroll);
+});
+
+onUnmounted(() => {
+  window.removeEventListener('scroll', handleScroll);
+});
 </script>
 
 <style scoped></style>
